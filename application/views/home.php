@@ -45,8 +45,7 @@
                     <div class="get-start-area">
                         <!-- Form Start -->
                         <form action="#" method="post" class="form-inline">
-                            <input type="email" class="form-control email" placeholder="name@company.com">
-                            <input type="submit" class="submit" value="Get Started">
+                            <input type="submit" class="submit" value="Sign Up Free">
                         </form>
                         <!-- Form End -->
                     </div>
@@ -74,30 +73,30 @@
                 <div class="col-12 col-md-4">
                     <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
                         <div class="single-icon">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <i class="fa fa-tachometer" aria-hidden="true"></i>
                         </div>
-                        <h4>Easy to use</h4>
-                        <p>We build pretty complex tools and this allows us to take designs and turn them into functional quickly and easily</p>
+                        <h4>Casino Virtual</h4>
+                        <p>Tendremos variadades de juegos tanto de casinos como apuestas deportivas. Al implementar nuestra monedas podremos lograr que nuestro casino tenga la capacidad de ser un casino mas justo para los jugadores y mucho mas rapido al momento de hacer apuestas.</p>
                     </div>
                 </div>
                 <!-- Single Special Area -->
                 <div class="col-12 col-md-4">
                     <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
                         <div class="single-icon">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <i class="fa fa-university" aria-hidden="true"></i>
                         </div>
-                        <h4>Powerful Design</h4>
-                        <p>We build pretty complex tools and this allows us to take designs and turn them into functional quickly and easily</p>
+                        <h4>Wallet</h4>
+                        <p>Etherwhitegold contara con su wallet exclusiva la cual procesara pagos en tiempo real y podra sustuir fichas en casinos fisicos o cualquier otro material que pudiera ser ultilizado con fines fradulentos. </p>
                     </div>
                 </div>
                 <!-- Single Special Area -->
                 <div class="col-12 col-md-4">
                     <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
                         <div class="single-icon">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
                         </div>
-                        <h4>Customizability</h4>
-                        <p>We build pretty complex tools and this allows us to take designs and turn them into functional quickly and easily</p>
+                        <h4>App Movil</h4>
+                        <p>Con nuestra aplicacion movil usted podra jugar en nuestro casino virtual desde donde quiera que este. Sera una aplicacion sencilla y muy intuitiva para nuestros usuario de la cual tambien podra retirar sus ganacias directo su wallet. </p>
                     </div>
                 </div>
             </div>
@@ -108,7 +107,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="special_description_img">
-                            <img src="https://colorlib.com/etc/ca/img/bg-img/special.png" alt="">
+                            <img src="<?php echo site_url().'static/page_front/images/special_2.png';?>" alt="ether">
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-5 ml-xl-auto">
@@ -125,7 +124,7 @@ With ether white gold we will make possible an absolute transparency between the
     <!-- ***** Special Area End ***** -->
 
     <!-- ***** Awesome Features Start ***** -->
-    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
+    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -198,9 +197,9 @@ With ether white gold we will make possible an absolute transparency between the
             <div class="row">
                 <div class="col-12">
                     <!-- Video Area Start -->
-                    <div class="video-area" style="background-image: url(https://colorlib.com/etc/ca/img/bg-img/video.jpg);">
+                    <div class="video-area" style="background-image: url(<?php echo site_url().'static/page_front/images/video.jpg';?>);">
                         <div class="video-play-btn">
-                            <a href="https://www.youtube.com/watch?v=f5BBJ4ySgpo" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/watch?v=V99Tj5xSXn4" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -211,9 +210,9 @@ With ether white gold we will make possible an absolute transparency between the
 
     <!-- ***** Cool Facts Area Start ***** -->
     <section class="cool_facts_area clearfix">
-        <div class="container">
-            <div class="row">
-                <!-- Single Cool Fact-->
+        <!--<div class="container">-->
+<!--            <div class="row">
+                 Single Cool Fact
                 <div class="col-12 col-md-3 col-lg-3">
                     <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                         <div class="counter-area">
@@ -225,7 +224,7 @@ With ether white gold we will make possible an absolute transparency between the
                         </div>
                     </div>
                 </div>
-                <!-- Single Cool Fact-->
+                 Single Cool Fact
                 <div class="col-12 col-md-3 col-lg-3">
                     <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.4s">
                         <div class="counter-area">
@@ -237,7 +236,7 @@ With ether white gold we will make possible an absolute transparency between the
                         </div>
                     </div>
                 </div>
-                <!-- Single Cool Fact-->
+                 Single Cool Fact
                 <div class="col-12 col-md-3 col-lg-3">
                     <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.6s">
                         <div class="counter-area">
@@ -249,7 +248,7 @@ With ether white gold we will make possible an absolute transparency between the
                         </div>
                     </div>
                 </div>
-                <!-- Single Cool Fact-->
+                 Single Cool Fact
                 <div class="col-12 col-md-3 col-lg-3">
                     <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.8s">
                         <div class="counter-area">
@@ -261,8 +260,8 @@ With ether white gold we will make possible an absolute transparency between the
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>-->
+        <!--</div>-->
     </section>
     <!-- ***** Cool Facts Area End ***** -->
     <!-- ***** Pricing Plane Area Start *****==== -->
@@ -381,12 +380,12 @@ With ether white gold we will make possible an absolute transparency between the
     <!-- ***** Pricing Plane Area End ***** -->
 
     <!-- ***** Client Feedback Area Start ***** -->
-    <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="testimonials">
+<!--    <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="testimonials">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10">
                     <div class="slider slider-for">
-                        <!-- Client Feedback Text  -->
+                         Client Feedback Text  
                         <div class="client-feedback-text text-center">
                             <div class="client">
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -406,7 +405,7 @@ With ether white gold we will make possible an absolute transparency between the
                                 <p>Ceo Colorlib</p>
                             </div>
                         </div>
-                        <!-- Client Feedback Text  -->
+                         Client Feedback Text  
                         <div class="client-feedback-text text-center">
                             <div class="client">
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -426,7 +425,7 @@ With ether white gold we will make possible an absolute transparency between the
                                 <p>Developer</p>
                             </div>
                         </div>
-                        <!-- Client Feedback Text  -->
+                         Client Feedback Text  
                         <div class="client-feedback-text text-center">
                             <div class="client">
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -446,7 +445,7 @@ With ether white gold we will make possible an absolute transparency between the
                                 <p>Marketer</p>
                             </div>
                         </div>
-                        <!-- Client Feedback Text  -->
+                         Client Feedback Text  
                         <div class="client-feedback-text text-center">
                             <div class="client">
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -468,7 +467,7 @@ With ether white gold we will make possible an absolute transparency between the
                         </div>
                     </div>
                 </div>
-                <!-- Client Thumbnail Area -->
+                 Client Thumbnail Area 
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="slider slider-nav">
                         <div class="client-thumbnail">
@@ -487,29 +486,8 @@ With ether white gold we will make possible an absolute transparency between the
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- ***** Client Feedback Area End ***** -->
-
-    <!-- ***** CTA Area Start ***** -->
-    <section class="our-monthly-membership section_padding_50 clearfix">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <div class="membership-description">
-                        <h2>Join our Monthly Membership</h2>
-                        <p>Find the perfect plan for you — 100% satisfaction guaranteed.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="get-started-button wow bounceInDown" data-wow-delay="0.5s">
-                        <a href="#">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** CTA Area End ***** -->
-
     <!-- ***** Our Team Area Start ***** -->
     <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
         <div class="container">
@@ -537,8 +515,8 @@ With ether white gold we will make possible an absolute transparency between the
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Jackson Nash</h4>
-                            <p>Tax Advice</p>
+                            <h4>Jesús Garcia</h4>
+                            <p>Asesoria Programación blockchain</p>
                         </div>
                     </div>
                 </div>
@@ -556,8 +534,8 @@ With ether white gold we will make possible an absolute transparency between the
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Alex Manning</h4>
-                            <p>CEO-Founder</p>
+                            <h4>Reivy Gimenes</h4>
+                            <p>Diseñador Grafico</p>
                         </div>
                     </div>
                 </div>
@@ -575,15 +553,15 @@ With ether white gold we will make possible an absolute transparency between the
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Ollie Schneider</h4>
-                            <p>Business Planner</p>
+                            <h4>José Diaz</h4>
+                            <p>Fundador</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="https://colorlib.com/etc/ca/img/team-img/team-4.jpg" alt="">
+                            <img src="<?php echo site_url().'static/page_front/images/team/rolandoc.jpg';?>" alt="Rolando Contreras">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -594,8 +572,8 @@ With ether white gold we will make possible an absolute transparency between the
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Roger West</h4>
-                            <p>Financer</p>
+                            <h4>Rolando Contreras</h4>
+                            <p>Programador y Desarrollador</p>
                         </div>
                     </div>
                 </div>
@@ -615,16 +593,16 @@ With ether white gold we will make possible an absolute transparency between the
                         <div class="line-shape"></div>
                     </div>
                     <div class="footer-text">
-                        <p>We'll send you epic weekly blogs, whitepapers and things to make your app startup thrive, all FREE!</p>
+                        <p>We will send you information about the cryptocurrency that will change the world</p>
                     </div>
-                    <div class="address-text">
+<!--                    <div class="address-text">
                         <p><span>Address:</span> 40 Baria Sreet 133/2 NewYork City, US</p>
-                    </div>
+                    </div>-->
                     <div class="phone-text">
                         <p><span>Phone:</span> +11-225-888-888-66</p>
                     </div>
                     <div class="email-text">
-                        <p><span>Email:</span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95fcfbf3fabbf1f0f0e7f6e7f0f4e1fce3f0d5f2f8f4fcf9bbf6faf8">[email&#160;protected]</a></p>
+                        <p><span>Email:</span> info.etherwhitegold.com</p>
                     </div>
                 </div>
                 <div class="col-md-6">

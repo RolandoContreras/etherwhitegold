@@ -2,7 +2,7 @@
     <footer class="footer-social-icon text-center section_padding_70 clearfix">
         <!-- footer logo -->
         <div class="footer-text">
-            <h2>EtherWhiteGold.</h2>
+            <img width="90" src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="logo"/>
         </div>
         <!-- social icon-->
         <div class="footer-social-icon">
@@ -14,10 +14,10 @@
         <div class="footer-menu">
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Terms &amp; Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
