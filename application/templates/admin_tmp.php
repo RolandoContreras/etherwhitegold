@@ -3,7 +3,7 @@
 <!-- Mirrored from wbpreview.com/previews/WB0LX21H9/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 06 Sep 2012 04:37:29 GMT -->
     <head>
         <meta charset="utf-8">
-        <title>The empire - CMS</title>
+        <title>EtherWhiteGold - CMS</title>
         <base href="<?php echo site_url();?>">
         <link rel="apple-touch-icon" sizes="57x57" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-57x57.png';?>">
         <link rel="apple-touch-icon" sizes="60x60" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-60x60.png';?>">
@@ -57,7 +57,7 @@
         <div class="navbar-inner">
             <div class="container-fluid">
                 <a class="brand" href="<?php echo site_url();?>dashboard/panel">
-                    <img src="<?php echo site_url().'static/page_front/images/logo/logo_empire.png'?>" alt="logo" width="80"></a>
+                    <img src="<?php echo site_url().'static/page_front/images/logo/logo.png'?>" alt="logo" width="60"></a>
                 <div class="btn-toolbar pull-right">                        
                 <!-- /btn-group -->
                     <div class="btn-group">
@@ -82,8 +82,6 @@
                 <!-- sidebar -->
             <div id="sidebar" class="span2">			
                     <div class="accordion custom-acc" id="accordionSB">
-                            
-                        <?php if($_SESSION['usercms']['privilage'] == 3){ ?>
                             <div class="accordion-group fs">
                                     <div class="accordion-heading">
                                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#dashboardsb">
@@ -93,71 +91,14 @@
                                     <div id="dashboardsb" class="accordion-body collapse">
                                       <div class="accordion-inner">
                                         <ul class="nav nav-list">
+                                            <li><a href="<?php echo site_url()."dashboard/panel";?>"><i class="icon-large icon-th"></i>Panel</a></li>
                                             <li><a href="<?php echo site_url()."dashboard/clientes";?>"><i class="icon-large icon-th"></i>Clientes</a></li>
                                             <li><a href="<?php echo site_url()."dashboard/comentarios";?>"><i class="icon-large icon-th"></i>Comentarios</a></li>
                                             <li><a href="<?php echo site_url()."dashboard/usuarios";?>"><i class="icon-large icon-th"></i>Usuarios</a></li>
-                                            <li><a href="<?php echo site_url()."dashboard/panel";?>"><i class="icon-large icon-th"></i>Panel</a></li>
                                         </ul>
                                         </div>
                                     </div>
                             </div>
-                            <?php } ?>
-                            
-                            <div class="accordion-group">
-                                    <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#post">
-                                        Publicaciones
-                                        </a>
-                                    </div>
-                                    <div id="post" class="accordion-body collapse">
-                                      <div class="accordion-inner">
-                                        <ul class="nav nav-list">
-                                             <li><a href="<?php echo site_url()."dashboard/blog";?>"><i class="icon-large icon-th"></i>Blog</a></li>
-                                             <li><a href="<?php echo site_url()."dashboard/report_blog";?>"><i class="icon-large icon-th"></i>Reportes</a></li>
-                                             <li><a href="<?php echo site_url()."dashboard/academy_blog";?>"><i class="icon-large icon-th"></i>Academia</a></li>
-                                             <li><a href="<?php echo site_url()."dashboard/recurses";?>"><i class="icon-large icon-th"></i>Recursos</a></li>
-                                             <li><a href="<?php echo site_url()."dashboard/webinar";?>"><i class="icon-large icon-th"></i>Webinar</a></li>
-                                        </ul>
-                                        </div>
-                                    </div>
-                            </div>
-                        <div class="accordion-group">
-                                    <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#correo">
-                                        Correos Masivos
-                                        </a>
-                                    </div>
-                                    <div id="correo" class="accordion-body collapse">
-                                      <div class="accordion-inner">
-                                        <ul class="nav nav-list">
-                                             <li><a href="<?php echo site_url()."dashboard/blog";?>"><i class="icon-large icon-th"></i>Cursos Online</a></li>
-                                             <li><a href="<?php echo site_url()."dashboard/report_blog";?>"><i class="icon-large icon-th"></i>Cursos Presencial</a></li>
-                                             <li><a href="<?php echo site_url()."dashboard/academy_blog";?>"><i class="icon-large icon-th"></i>Masivos</a></li>
-                                        </ul>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#reportes">
-                                    Reportes
-                                    </a>
-                                </div>
-                                <div id="reportes" class="accordion-body collapse">
-                                    <div class="accordion-inner">
-                                        <ul class="nav nav-list">
-                                            <li>
-                                                <a href="<?php echo site_url()."dashboard/reportes/asociados";?>"><i class="icon-large icon-th"></i>Asociados</a>
-                                            </li>
-                                            <li>                                        
-                                                <a href="<?php echo site_url()."dashboard/reportes/ingresos";?>"><i class="icon-large icon-th"></i>Ingresos</a>
-                                            </li>
-                                            </ul>                                     
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            
                     </div>
             </div>
             <!-- sidebar 

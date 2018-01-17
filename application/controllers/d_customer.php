@@ -21,11 +21,7 @@ class D_customer extends CI_Controller{
                                     customer.last_name,
                                     customer.created_at,
                                     customer.active,
-                                    franchise.name as franchise,
                                     customer.status_value",
-                        "join" => array('franchise, franchise.franchise_id = customer.franchise_id'),
-                        "group" => "customer.customer_id"
-               
                );
            //GET DATA FROM CUSTOMER
            $obj_customer= $this->obj_customer->search($params);

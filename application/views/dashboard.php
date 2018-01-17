@@ -52,7 +52,7 @@
                     <div class="navbar navbar-static navbar_as_heading">
                         <div class="navbar-inner">
                             <div class="container" style="width: auto;">
-                                <a class="brand">Empire - CMS Admin</a>
+                                <a class="brand">EtherWhiteGold - CMS Admin</a>
                                 
                             </div>
                         </div>
