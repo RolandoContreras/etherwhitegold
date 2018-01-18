@@ -42,6 +42,7 @@ $route['default_controller'] = "home";
 $route['404_override'] = 'errors/error_404';
 
 $route['home'] = 'home';
+$route['contact'] = "contact";
 $route['membership'] = 'membership';
 $route['academy'] = 'academy';
 $route['report'] = 'report';

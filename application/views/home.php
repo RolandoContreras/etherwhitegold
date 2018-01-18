@@ -492,7 +492,7 @@ With ether white gold we will make possible an absolute transparency between the
                 </div>
                 <div class="col-md-6">
                     <!-- Form Start-->
-                        <form action="#" method="post">
+                    <form action="<?php echo site_url().'contact/send_messages' ?>" method="post">
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">
