@@ -46,6 +46,8 @@ $route['membership'] = 'membership';
 $route['academy'] = 'academy';
 $route['report'] = 'report';
 $route['login'] = 'login';
+$route['login/user'] = 'login'; 
+$route['login/inactive'] = 'login';
 $route['blog/([0-9]+)/([0-9a-z_-]+)'] = 'blog/internal';
 $route['plan/([0-9a-z_-]+)'] = "plan/packages";
 

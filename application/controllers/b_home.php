@@ -25,112 +25,23 @@ class B_home extends CI_Controller {
         $obj_message = $this->get_messages($customer_id);
         
         $params = array(
-                        "select" =>"(select count(customer_id) from customer where parents_id = $customer_id) as direct,
-                                    customer.customer_id,
-                                    customer.parents_id,
+                        "select" =>"customer.customer_id,
                                     customer.username,
                                     customer.email,
                                     customer.password,
                                     customer.first_name,
                                     customer.last_name,
                                     customer.active,
-                                    customer.dni,
-                                    customer.birth_date,
-                                    customer.calification,
-                                    customer.point_calification_left,
-                                    customer.point_calification_rigth,
-                                    customer.point_left,
-                                    customer.point_rigth,
-                                    customer.date_start,
-                                    customer.date_stand_by,
-                                    customer.date_end,
                                     customer.created_at,
-                                    customer.address,
-                                    customer.status_value,
-                                    customer.franchise_id,
-                                    franchise.price,
-                                    franchise.name as franchise,
+                                    customer.ether_address,
+                                    customer.status_value
                                     ",
-                         "where" => "customer.customer_id = $customer_id",
-                         "join" => array('franchise, customer.franchise_id = franchise.franchise_id',)
-                                        );
+                         "where" => "customer.customer_id = $customer_id");
             $obj_customer = $this->obj_customer->get_search_row($params);
             
-            $points_left = $obj_customer->point_left / 0.12;
-            $points_rigth = $obj_customer->point_rigth / 0.12;
-           
-                //GET TOTAL AMOUNT
-                $params_total = array(
-                        "select" =>"sum(amount) as total,
-                                    (select sum(amount) FROM commissions WHERE status_value <= 2 and customer_id = $customer_id) as balance",
-                         "where" => "commissions.customer_id = $customer_id",
-                    );
-             $obj_commissions = $this->obj_commissions->get_search_row($params_total); 
-             
-             
-              //GET POST (NEWS)
-            $params_post = array(
-                                    "select" =>"*",
-                                     "where" => "status_value = 1",
-                                     "order" => "date DESC",
-                                     "limit" => "3");
-                
-           $obj_post = $this->obj_post->search($params_post);
-             
-            //GET PRICE BTC
-            $params_price_btc = array(
-                                    "select" =>"",
-                                     "where" => "otros_id = 1");
-                
-           $obj_otros = $this->obj_otros->get_search_row($params_price_btc); 
-           $price_btc = "$".number_format($obj_otros->precio_btc,2);
-           
-           $obj_total = $obj_commissions->total;
-           $obj_balance = $obj_commissions->balance;
-           
-           //GET DATE END CONTRACT
-             $date_end_contract = $obj_customer->date_end;
-             
-              //SELECT FRANCHISE_ID 
-              
-                switch ($obj_customer->franchise_id) {
-                    case 1:
-                        $images_franchise = "basic.png";
-                        $text_franchise = "BASIC";
-                        break;
-                    case 2:
-                        $images_franchise = "executive.png";
-                        $text_franchise = "EXECUTIVE";
-                        break;
-                    case 3:
-                        $images_franchise = "investor.png";
-                        $text_franchise = "INVESTOR";
-                        break;
-                    case 4:
-                        $images_franchise = "business.png";
-                        $text_franchise = "BUSINESS";
-                        break;
-                    case 5:
-                        $images_franchise = "master.png";
-                        $text_franchise = "MASTER";
-                        break;
-                    case 6:
-                        $images_franchise = "membership.png";
-                        $text_franchise = "MEMBERSHIP";
-                        break;
-                }
                 
                 $this->tmp_backoffice->set("obj_message",$obj_message);
                 $this->tmp_backoffice->set("all_message",$all_message);
-                $this->tmp_backoffice->set("obj_post",$obj_post);
-                $this->tmp_backoffice->set("text_franchise",$text_franchise);
-                $this->tmp_backoffice->set("images_franchise",$images_franchise);
-                $this->tmp_backoffice->set("price_btc",$price_btc);
-                $this->tmp_backoffice->set("date_end_contract",$date_end_contract);
-                $this->tmp_backoffice->set("obj_total",$obj_total);
-                $this->tmp_backoffice->set("obj_balance",$obj_balance);
-                $this->tmp_backoffice->set("points_left",$points_left);
-                $this->tmp_backoffice->set("points_rigth",$points_rigth);
                 $this->tmp_backoffice->set("obj_customer",$obj_customer);
                 $this->tmp_backoffice->render("backoffice/b_home");
     }

@@ -1190,12 +1190,36 @@ p {
     padding: 15px 15px;
     border-radius: 25px 25px 25px 0;
 }
+#password {
+    font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px 25px 25px 0;
+}
 
 #email {
     font-size: 18px;
     padding: 15px 15px;
     border-radius: 25px 25px 25px 0;
 }
+
+#username {
+    font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px 25px 25px 0;
+}
+
+#ether {
+    font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px 25px 25px 0;
+}
+
+#confirm_password {
+    font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px 25px 25px 0;
+}
+
 
 #message {
     border-radius: 25px 25px 25px 0;

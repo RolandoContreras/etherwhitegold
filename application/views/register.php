@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="password" class="form-control" name="email" id="email" placeholder="Repeat Password" required>
+                                            <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Repeat Password" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -88,7 +88,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="email" id="email" placeholder="Ether Address" required>
+                                            <input type="text" class="form-control" name="ether" id="ether" placeholder="Ether Address" required>
                                         </div>
                                     </div>
                                     <div class="col-12">

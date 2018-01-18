@@ -39,55 +39,23 @@ class B_data extends CI_Controller {
         
         $params = array(
                         "select" =>"customer.customer_id,
-                                    customer.parents_id,
                                     customer.username,
                                     customer.email,
                                     customer.created_at,
-                                    customer.position_temporal,
-                                    customer.phone,
                                     customer.password,
                                     customer.first_name,
                                     customer.last_name,
-                                    customer.dni,
-                                    customer.birth_date,
-                                    customer.address,
-                                    customer.date_start,
-                                    customer.date_end,
-                                    customer.btc_address,
-                                    customer.city,
+                                    customer.ether_address,
                                     customer.status_value,
-                                    paises.nombre as pais,
-                                    regiones.nombre as region
                                     ",
-                        "where" => "customer.customer_id = $customer_id and paises.id_idioma = 7 and regiones.id_idioma = 7",
-                        "join" => array('paises, customer.country = paises.id',
-                                        'regiones, customer.region = regiones.id')
-                                        );
+                        "where" => "customer.customer_id = $customer_id");
 
          $obj_customer = $this->obj_customer->get_search_row($params);  
-         
-         //GET SPONSOR
-         $parent = $obj_customer->parents_id;
-         $params = array(
-                        "select" =>"customer.username,customer.first_name,customer.last_name",
-                        "where" => "customer.customer_id = $parent");
-
-         $obj_sponsor = $this->obj_customer->get_search_row($params);
-         
-         //GET PRICE BTC
-            $params_price_btc = array(
-                                    "select" =>"",
-                                     "where" => "otros_id = 1");
-                
-           $obj_otros = $this->obj_otros->get_search_row($params_price_btc); 
-           $price_btc = "$".number_format($obj_otros->precio_btc,2);
          
          //SEND DATA TO VIEW  
          $this->tmp_backoffice->set("obj_message",$obj_message);
          $this->tmp_backoffice->set("all_message",$all_message);
-         $this->tmp_backoffice->set("price_btc",$price_btc);
          $this->tmp_backoffice->set("obj_customer",$obj_customer);
-         $this->tmp_backoffice->set("obj_sponsor",$obj_sponsor);
          $this->tmp_backoffice->render("backoffice/b_data");
 	}
         

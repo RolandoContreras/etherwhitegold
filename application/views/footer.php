@@ -30,7 +30,7 @@
     <!-- ***** Footer Area Start ***** -->
 
     <!-- Jquery-2.2.4 JS -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script>
+<!--    <script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script>-->
     <script src="<?php echo site_url().'static/page_front/js/jquery-2.2.4.min.js';?>"></script>
     <!-- Popper js -->
     <script src="<?php echo site_url().'static/page_front/js/popper.min.js';?>"></script>
@@ -40,11 +40,9 @@
     <script src="<?php echo site_url().'static/page_front/js/plugins.js';?>"></script>
     <!-- Slick Slider Js-->
     <script src="<?php echo site_url().'static/page_front/js/slick.min.js';?>"></script>
-    <!-- Footer Reveal JS -->
-    <script src="<?php echo site_url().'static/page_front/js/slick.min.js';?>"></script>
     <!-- Active JS -->
     <script src="<?php echo site_url().'static/page_front/js/active.js';?>"></script>
     <!--Jquery Validate-->
-    <script src="<?php echo site_url().'static/page_front/jquery.validate/jquery.validate.min.js';?>"></script>
+    <script src="<?php // echo site_url().'static/page_front/jquery.validate/jquery.validate.min.js';?>"></script>
     <!--Validate Scritp-->
-    <script src="<?php echo site_url().'static/page_front/jquery.validate/script_form.js';?>"></script>
+    <script src="<?php // echo site_url().'static/page_front/jquery.validate/script_form.js';?>"></script>

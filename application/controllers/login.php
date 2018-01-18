@@ -54,12 +54,9 @@ class Login extends CI_Controller {
     public function validar_customer(){
         $username = $this->input->post('username');  
         $password = $this->input->post('password');  
-        $params = array("select" =>"customer.customer_id,customer.first_name,customer.last_name,customer.username,customer.email,customer.country,customer.active,franchise.franchise_id,customer.status_value",
-                         "where" => "username = '$username' and password = '$password'",
-                         "join" => array('franchise, customer.franchise_id = franchise.franchise_id'));
-                        
+        $params = array("select" =>"customer.customer_id,customer.first_name,customer.last_name,customer.username,customer.email,customer.active,customer.status_value",
+                         "where" => "username = '$username' and password = '$password'");
         $obj_customer = $this->obj_customer->get_search_row($params);
-        
         if (count($obj_customer)>0){
             if ($obj_customer->status_value == 1){                
                 $data_customer_session['customer_id'] = $obj_customer->customer_id;
@@ -72,14 +69,14 @@ class Login extends CI_Controller {
                 $data_customer_session['logged_customer'] = "TRUE";
                 $data_customer_session['status'] = $obj_customer->status_value;
                 $_SESSION['customer'] = $data_customer_session;                
-                return true;    
+                redirect('backoffice'); 
             }else{
                 $this->form_validation->set_message('validar_user', "Usuario Inactivo");
-                return false;
+                redirect('login/inactive'); 
             }
         }else{
             $this->form_validation->set_message('validar_user', "El usuario y/o la contraseña no son correctas");
-            return false;
+            redirect('login/user'); 
         }
     }
     

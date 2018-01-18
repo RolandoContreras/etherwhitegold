@@ -60,30 +60,59 @@
                 </div>
                 <div class="col-md-12">
                     <!-- Form Start-->
-                        <form action="#" method="post">
+                    <form action="<?php echo site_url().'login/validar_customer'?>" method="post">
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Username" required>
+                                            <input type="text" class="form-control" name="username" id="name" placeholder="Username" required>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Password" required>
+                                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="btn submit-btn">Go!</button>
                                     </div>
+                                    
                                 </div>
-                            </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                            <p><a href="<?php echo site_url().'forgot';?>">Forgot your password</a></p>
+                                    </div>
+                                </div>
                             <!-- Message Input Area End -->
                         </form>
                 </div>
+                 <?php 
+            $url = explode("/",uri_string()); 
+            if(isset($url[1])){
+                switch ($url[1]) {
+                    case "user": ?>
+                        <div class="col-md-12">
+                            <div class="alert alert-danger">
+                                <p style="text-align: center !important;">the user or password is not correct</p>
+                           </div>
+                        </div>
+                    <?php break; 
+                        case "inactive": ?>
+                        <div class="col-md-12">
+                            <div class="alert alert-danger">
+                                <p style="text-align: center !important;">the user inactive</p>
+                           </div>
+                        </div>
+
+            <?php break;  }
+            }
+        ?> 
+                
+                
+                
             </div>
         </div>
     </section>

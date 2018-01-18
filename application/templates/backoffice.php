@@ -4,16 +4,29 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Empresa 100% peruana que brinda distintos servicios e info-productos, que utilizando el sistema de mercadeo en red nos permite fidelizar a consumidores potenciales a la marca.">
-<meta name="keywords" content="3T,training,travel,trade,bitcoin,criptocurrency,criptomoneda,mlm,redes,multinivel,peruano,educacion,entrenamiento,forex,bursatil,viajes">
-<title>Backoffice | Travel - Training- Trade</title>
+<meta name="description" content="EtherWhiteGold is an ERC20 tokens focused on being a currency accessible to the public and easy to use. Its innovative features allow the community to use ETWG as a means of payment in different areas of entertainment such as virtual casino">
+<meta name="keywords" content="EtherWhiteGold, EWG, cryptocurrency, virtual casino">
+<title>Backoffice | EtherWhiteGold</title>
 <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>
 
-<!-- Site favicon -->
-<link rel="shortcut icon" href="<?php echo site_url().'static/page_front/images/favicon/favicon.png';?>" type="image/x-icon">
-<link rel="icon" href="<?php echo site_url().'static/page_front/images/favicon/favicon.png';?>" type="image/x-icon">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo site_url().'static/page_front/images/favicon/favicon.png';?>">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo site_url().'static/page_front/images/favicon/favicon.png';?>">
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-57x57.png'?>">
+<link rel="apple-touch-icon" sizes="60x60" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-60x60.png'?>">
+<link rel="apple-touch-icon" sizes="72x72" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-72x72.png'?>">
+<link rel="apple-touch-icon" sizes="76x76" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-76x76.png'?>">
+<link rel="apple-touch-icon" sizes="114x114" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-114x114.png'?>">
+<link rel="apple-touch-icon" sizes="120x120" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-120x120.png'?>">
+<link rel="apple-touch-icon" sizes="144x144" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-144x144.png'?>">
+<link rel="apple-touch-icon" sizes="152x152" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-152x152.png'?>">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-180x180.png'?>">
+<link rel="icon" type="image/png" sizes="192x192"  href="<?php echo site_url().'static/page_front/images/favicon/android-icon-192x192.png'?>">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo site_url().'static/page_front/images/favicon/favicon-32x32.png'?>">
+<link rel="icon" type="image/png" sizes="96x96" href="<?php echo site_url().'static/page_front/images/favicon/favicon-96x96.png'?>">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo site_url().'static/page_front/images/favicon/favicon-16x16.png'?>">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 <!-- /site favicon -->
 <!-- Entypo font stylesheet -->
 <link href="<?php echo site_url().'static/backoffice/css/assets/entypo.css';?>" rel="stylesheet">
@@ -61,7 +74,7 @@
 		<header class="site-header">
 		  <div class="site-logo">
                       <a href="<?php echo site_url().'backoffice';?>">
-                          <img style="margin-left: -20% !important" src="<?php echo site_url().'static/page_front/images/logo/logo_small.png';?>" width="115px" alt="Logo Criptowin">
+                          <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" width="80px" alt="Logo EtherWhiteGold">
                       </a>
                   </div>
 		  <div class="sidebar-collapse hidden-xs">
@@ -91,12 +104,6 @@
                                     $url = explode("/",uri_string()); 
                                     $style_inicio = "";
                                     $style_misdatos = "";
-                                    $style_productos = "";
-                                    $style_unilevel = "";
-                                    $style_upgrade = "";
-                                    $style_comisiones = "";
-                                    $style_mired = "";
-                                    $style_billetera = "";
                                     $style_pagos = "";
                                     if(isset($url[1])){
                                         switch ($url[1]) {
@@ -107,33 +114,6 @@
                                                     case "upgrade":
                                                         $style_upgrade = "a_active";
                                                         break;
-                                                    case "unilevel":
-                                                        $style_unilevel = "a_active";
-                                                        break;
-                                                    case "comisiones":
-                                                        $style_comisiones = "a_active";
-                                                        break;
-                                                    case "billetera":
-                                                        $style_billetera = "a_active";
-                                                        break;
-                                                    case "cobros":
-                                                        $style_pagos = "a_active";
-                                                        break;
-                                                    case "productos":
-                                                        $style_productos = "a_active";
-                                                        break;
-                                                    case "academy":
-                                                        $style_productos = "a_active";
-                                                        break;
-                                                    case "message_confirmation":
-                                                        $style_inicio = "a_active";
-                                                        break;
-                                                    case "messages":
-                                                        $style_inicio = "a_active";
-                                                        break;
-                                                    case "compose_message":
-                                                        $style_inicio = "a_active";
-                                                        break;
                                                     default:
                                                          $title = "Inicio";
                                             }
@@ -143,13 +123,8 @@
                                     ?>  
                         <li class="has-sub"><a class="<?php echo $style_active;?>"><em class="icon-star"></em><span class="title"><?php echo $title_active;?></span></a></li>
                         <li class="has-sub"><a href="<?php echo site_url().'backoffice'?>" class="<?php echo $style_inicio;?>"><i class="fa fa-tachometer fa-lg"></i><span class="title">Dashboard</span></a></li>
-                        <li class="has-sub"><a href="<?php echo site_url().'backoffice/profile'?>" class="<?php echo $style_misdatos;?>"><i class="fa fa-address-book fa-lg"></i><span class="title">Mi Perfil</span></a></li>
-                        <li class="has-sub"><a href="<?php echo site_url().'backoffice/productos'?>" class="<?php echo $style_productos;?>"><i class="fa fa-product-hunt fa-lg"></i><span class="title">Productos</span></a></li>
-			<li class="has-sub"><a href="<?php echo site_url().'backoffice/upgrade'?>" class="<?php echo $style_upgrade;?>"><i class="fa fa-arrow-up fa-lg"></i><span class="title">Upgrade</span></a></li>
-			<li class="has-sub"><a href="<?php echo site_url().'backoffice/unilevel'?>" class="<?php echo $style_unilevel;?>"><i class="fa fa-cubes fa-lg"></i><span class="title">Unilevel</span></a></li>
-			<li class="has-sub"><a href="<?php echo site_url().'backoffice/comisiones'?>" class="<?php echo $style_comisiones;?>"><i class="fa fa-area-chart fa-lg"></i><span class="title">Mis Comisiones</span></a></li>
-			<li class="has-sub"><a href="<?php echo site_url().'backoffice/billetera'?>" class="<?php echo $style_billetera;?>"><i class="fa fa-btc"></i><span class="title">Billetera</span></a></li>
-                        <li class="has-sub"><a href="<?php echo site_url().'backoffice/cobros'?>" class="<?php echo $style_pagos;?>"><i class="fa fa-university fa-lg"></i><span class="title">Cobros</span></a></li>
+                        <li class="has-sub"><a href="<?php echo site_url().'backoffice/profile'?>" class="<?php echo $style_misdatos;?>"><i class="fa fa-address-book fa-lg"></i><span class="title">My Profile</span></a></li>
+                        <li class="has-sub"><a href="<?php echo site_url().'login/logout';?>" class="<?php echo $style_pagos;?>"><i class="fa fa-sign-out fa-lg"></i><span class="title">Sign Out</span></a></li>
 		</ul>
 		<!-- /main navigation -->		
   </div>
