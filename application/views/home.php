@@ -24,7 +24,7 @@
                 <!-- Signup btn -->
                 <div class="col-12 col-lg-2">
                     <div class="sing-up-button d-none d-lg-block">
-                        <a href="#">Sign Up Free</a>
+                        <a href="<?php echo site_url().'register';?>">Sign Up Free</a>
                     </div>
                 </div>
             </div>
@@ -264,121 +264,6 @@ With ether white gold we will make possible an absolute transparency between the
         <!--</div>-->
     </section>
     <!-- ***** Cool Facts Area End ***** -->
-    <!-- ***** Pricing Plane Area Start *****==== -->
-    <section class="pricing-plane-area section_padding_100_70 clearfix" id="pricing">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Heading Text  -->
-                    <div class="section-heading text-center">
-                        <h2>Pricing Plan</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row no-gutters">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan text-center">
-                        <!-- Package Text  -->
-                        <div class="package-plan">
-                            <h5>Starter Plan</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>$</span>
-                                <h4>29</h4>
-                            </div>
-                        </div>
-                        <div class="package-description">
-                            <p>Up to 10 users monthly</p>
-                            <p>Unlimited updates</p>
-                            <p>Free host &amp; domain</p>
-                            <p>24/7 Support</p>
-                            <p>10 Unique Users</p>
-                        </div>
-                        <!-- Plan Button  -->
-                        <div class="plan-button">
-                            <a href="#">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan text-center">
-                        <!-- Package Text  -->
-                        <div class="package-plan">
-                            <h5>Basic Plan</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>$</span>
-                                <h4>49</h4>
-                            </div>
-                        </div>
-                        <div class="package-description">
-                            <p>Up to 10 users monthly</p>
-                            <p>Unlimited updates</p>
-                            <p>Free host &amp; domain</p>
-                            <p>24/7 Support</p>
-                            <p>10 Unique Users</p>
-                        </div>
-                        <!-- Plan Button  -->
-                        <div class="plan-button">
-                            <a href="#">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan active text-center">
-                        <!-- Package Text  -->
-                        <div class="package-plan">
-                            <h5>Advenced Plan</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>$</span>
-                                <h4>69</h4>
-                            </div>
-                        </div>
-                        <div class="package-description">
-                            <p>Up to 10 users monthly</p>
-                            <p>Unlimited updates</p>
-                            <p>Free host &amp; domain</p>
-                            <p>24/7 Support</p>
-                            <p>10 Unique Users</p>
-                        </div>
-                        <!-- Plan Button  -->
-                        <div class="plan-button">
-                            <a href="#">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan text-center">
-                        <!-- Package Text  -->
-                        <div class="package-plan">
-                            <h5>Community Plan</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>$</span>
-                                <h4>99</h4>
-                            </div>
-                        </div>
-                        <div class="package-description">
-                            <p>Up to 10 users monthly</p>
-                            <p>Unlimited updates</p>
-                            <p>Free host &amp; domain</p>
-                            <p>24/7 Support</p>
-                            <p>10 Unique Users</p>
-                        </div>
-                        <!-- Plan Button  -->
-                        <div class="plan-button">
-                            <a href="#">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Pricing Plane Area End ***** -->
-
     <!-- ***** Client Feedback Area Start ***** -->
 <!--    <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="testimonials">
         <div class="container">
@@ -607,7 +492,6 @@ With ether white gold we will make possible an absolute transparency between the
                 </div>
                 <div class="col-md-6">
                     <!-- Form Start-->
-                    <div class="contact_from">
                         <form action="#" method="post">
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
@@ -632,13 +516,12 @@ With ether white gold we will make possible an absolute transparency between the
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
-                                        <button type="submit" class="btn submit-btn">Send Now</button>
+                                        <button type="submit" class="btn submit-btn">Send</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- Message Input Area End -->
                         </form>
-                    </div>
                 </div>
             </div>
         </div>

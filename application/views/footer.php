@@ -44,3 +44,7 @@
     <script src="<?php echo site_url().'static/page_front/js/slick.min.js';?>"></script>
     <!-- Active JS -->
     <script src="<?php echo site_url().'static/page_front/js/active.js';?>"></script>
+    <!--Jquery Validate-->
+    <script src="<?php echo site_url().'static/page_front/jquery.validate/jquery.validate.min.js';?>"></script>
+    <!--Validate Scritp-->
+    <script src="<?php echo site_url().'static/page_front/jquery.validate/script_form.js';?>"></script>

@@ -4,9 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Register extends CI_Controller {
     function __construct() { 
         parent::__construct();
-        $this->load->model("customer_model", "obj_customer");
-        $this->load->model("paises_model", "obj_paises");
-        $this->load->model("regiones_model", "obj_regiones");
     }
 
 	/**
@@ -28,42 +25,10 @@ class Register extends CI_Controller {
 	{
 		//SELECT URL IF ISSET USERNAME
             $url = explode("/", uri_string());
-            if (isset($url[2])) {
-                $username = $url[2];
-                //Select params
-                $params = array(
-                    "select" => "customer_id,first_name, position_temporal,username",
-                    "where" => "username = '$username'");
-                $obj_paises['obj_customer'] = $this->obj_customer->get_search_row($params);
-            }
-            //Select params
-            $params = array(
-                "select" => "id, nombre",
-                "where" => "id_idioma = 7");
-            $obj_paises['obj_paises'] = $this->obj_paises->search($params);
             /// VIEW
-            $this->load->view("register", $obj_paises);
+            $this->load->view("register");
 	}
-        public function validate_region() {
-        if ($this->input->is_ajax_request()) {
-        $id_pais = trim($this->input->post('id'));
-        //SELECT ID FROM CUSTOMER
-        $param_regiones = array(
-            "select" => "id,nombre",
-            "where" => "id_pais = $id_pais and id_idioma = 7");
-        $region['region'] = $this->obj_regiones->search($param_regiones);
-
-        if (count($region) > 0) {
-            $data['message'] = "true";
-            $data['print'] = $region['region'];
-        } else {
-            $data['message'] = "false";
-            $data['print'] = "Seleccionar un país";
-        }
-        echo json_encode($data);
-        }
-    }
-
+        
         public function validate_username() {
             if ($this->input->is_ajax_request()) {
                 //SELECT ID FROM CUSTOMER

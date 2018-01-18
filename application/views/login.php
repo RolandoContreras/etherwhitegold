@@ -1,108 +1,96 @@
-<!--START LOGIN-->
-<div class="eltdf-login-holder eltdf-modal-holder" data-modal="login">
-    <div class="eltdf-login-content eltdf-modal-content">
-      <div class="eltdf-login-content-inner eltdf-modal-content-inner">
-        <h3>User Login</h3>
-        <div class="eltdf-wp-login-holder">
-          <div class="eltdf-wp-login-holder">
-            <div class="eltdf-social-login-holder">
-              <div class="eltdf-social-login-holder-outer">
-                <div class="eltdf-social-login-holder-inner">
-                  <form method="post" class="eltdf-login-form">
-                    <fieldset>
-                      <div> <label class="eltdf-username-label">Username*</label> <input type="text" name="user_login_name" id="user_login_name" value="" required
-                          pattern=".{3,}" title="Three or more characters" /> </div>
-                      <div> <label class="eltdf-password-label">Password*</label> <input type="password" name="user_login_password" id="user_login_password"
-                          value="" required/> </div>
-                      <div class="eltdf-lost-pass-remember-holder clearfix">
-                        <div class="eltdf-remember-holder"> <span class="eltdf-login-remember"> <input name="rememberme" value="forever" id="rememberme" type="checkbox"/> <label for="rememberme" class="eltdf-checbox-label">Remember me</label> </span>                          </div>
-                        <div class="eltdf-lost-pass-holder"> <a href="#" class="eltdf-modal-opener" data-modal="password">Lost your password?</a> </div>
-                      </div> <input type="hidden" name="redirect" id="redirect" value="">
-                      <div class="eltdf-login-button-holder"> <button type="submit" class="eltdf-btn eltdf-btn-large eltdf-btn-solid eltdf-btn-default eltdf-hover-animation"> <span class="eltdf-btn-text">Login</span> <span class="eltdf-btn-hover-item"></span> </button>                        <input type="hidden" id="eltdf-login-security" name="eltdf-login-security" value="eced90d513" /><input type="hidden" name="_wp_http_referer"
-                          value="/" /> 
-                      </div>
-                      <div class="eltdf-register-link-holder"> <span class="eltdf-register-label"> Not a member yet? </span> <a href="#" class="eltdf-modal-opener" data-modal="register">Register Now</a>                        </div>
-                    </fieldset>
-                  </form>
+<!DOCTYPE html>
+<html lang="en">
+<!-- ***** Head Area Start ***** -->
+<?php $this->load->view("head");?>
+<!-- ***** Head Area End ***** -->
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="colorlib-load"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area animated">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Menu Area Start -->
+                <div class="col-12 col-lg-10">
+                    <div class="menu_area">
+                        <!-- Nav Area Start -->
+                        <?php $this->load->view("nav_2");?>
+                        <!-- Nav Area End -->
+                    </div>
                 </div>
-              </div>
-              <div class="eltdf-membership-response-holder clearfix"></div>
-              <script type="text/template" class="eltdf-membership-response-template">
-                <div class="eltdf-membership-response <%= messageClass %> ">
-                  <div class="eltdf-membership-response-message">
-                    <p>
-                      <%=message %>
-                    </p>
-                  </div>
+                <!-- Signup btn -->
+                <div class="col-12 col-lg-2">
+                    <div class="sing-up-button d-none d-lg-block">
+                        <a href="<?php echo site_url().'register';?>">Sign Up Free</a>
+                    </div>
                 </div>
-              </script>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-<!--START REGISTER-->
-<div class="eltdf-register-holder eltdf-modal-holder" data-modal="register">
-    <div class="eltdf-register-content eltdf-modal-content">
-      <div class="eltdf-register-content-inner eltdf-modal-content-inner" id="eltdf-register-content"> 
-        <h3>User Registration</h3>
-        <div class="eltdf-wp-register-holder">
-          <div class="eltdf-social-register-holder">
-            <form method="post" class="eltdf-register-form">
-              <fieldset>
-                <div><label class="eltdf-username-label">User Name</label><input type="text" name="user_register_name" id="user_register_name" value="" required
-                    pattern=".{3,}" title="Three or more characters" /></div>
-                <div><label class="eltdf-username-label">Email</label><input type="email" name="user_register_email" id="user_register_email" value="" required
-                  /></div>
-                <div> <label class="eltdf-username-label">Password</label> <input type="password" name="user_register_password" id="user_register_password" value=""
-                    required /> </div>
-                <div> <label class="eltdf-username-label">Repeat Password</label> <input type="password" name="user_register_confirm_password" id="user_register_confirm_password"
-                    value="" required /> </div>
-                <div class="eltdf-register-button-holder"><button type="submit" class="eltdf-btn eltdf-btn-large eltdf-btn-solid eltdf-btn-light eltdf-hover-animation"> <span class="eltdf-btn-text">REGISTER</span> <span class="eltdf-btn-hover-item"></span> </button><input
-                    type="hidden" id="eltdf-register-security" name="eltdf-register-security" value="c2927019de" /><input type="hidden" name="_wp_http_referer"
-                    value="/" /></div>
-              </fieldset>
-            </form>
-            <div class="eltdf-membership-response-holder clearfix"></div>
-            <script type="text/template" class="eltdf-membership-response-template">
-              <div class="eltdf-membership-response <%= messageClass %> ">
-                <div class="eltdf-membership-response-message">
-                  <p>
-                    <%=message %>
-                  </p>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="our-monthly-membership section_padding_50 clearfix">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
                 </div>
-              </div>
-            </script>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-<!--START RESET PASSWORD-->
-<div class="eltdf-password-holder eltdf-modal-holder" data-modal="password">
-    <div class="eltdf-password-content eltdf-modal-content">
-      <div class="eltdf-reset-pass-content-inner eltdf-modal-content-inner" id="eltdf-reset-pass-content"> <span class="eltdf-wp-login-icon lnr lnr-lock"></span>
-        <h3>Reset Password</h3>
-        <div class="eltdf-wp-reset-pass-holder">
-          <div class="eltdf-social-reset-password-holder">
-            <form action="http://esmarts.elated-themes.com/wp-login.php?action=lostpassword" method="post" id="eltdf-lost-password-form" class="eltdf-reset-pass-form">
-              <div><input type="text" name="user_reset_password_login" class="eltdf-input-field" id="user_reset_password_login" placeholder="Enter username or email"
-                  value="" size="20" required></div>
-              <div class="eltdf-reset-password-button-holder"><button type="submit" class="eltdf-btn eltdf-btn-large eltdf-btn-solid eltdf-btn-default eltdf-hover-animation"> <span class="eltdf-btn-text">NEW PASSWORD</span> <span class="eltdf-btn-hover-item"></span> </button></div>
-            </form>
-            <div class="eltdf-membership-response-holder clearfix"></div>
-            <script type="text/template" class="eltdf-membership-response-template">
-              <div class="eltdf-membership-response <%= messageClass %> ">
-                <div class="eltdf-membership-response-message">
-                  <p>
-                    <%=message %>
-                  </p>
+    </section>
+    
+<!--    <section class="wellcome_area clearfix">
+    </section>-->
+    <!-- ***** Wellcome Area End ***** -->
+
+    <!-- ***** Contact Us Area Start ***** -->
+    <section class="footer-contact-area section_padding_100 clearfix" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Heading Text  -->
+                    <div class="section-heading">
+                        <h2>Login</h2>
+                        <div class="line-shape"></div>
+                    </div>
+
                 </div>
-              </div>
-            </script>
-          </div>
+                <div class="col-md-12">
+                    <!-- Form Start-->
+                        <form action="#" method="post">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Username" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Go!</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </section>
+    <!-- ***** Contact Us Area End ***** -->
+    <!-- ***** Footer Area Start ***** -->
+   <?php $this->load->view("footer")?>
+    <!-- ***** Footer Area Start ***** -->
+</body>
+
+</html>
