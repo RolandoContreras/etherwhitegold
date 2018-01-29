@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-md-12">
                     <!-- Form Start-->
-                    <form action="<?php echo site_url().'login/validar_customer'?>" method="post">
+                    <form action="<?php echo site_url().'forgot/send_password'?>" method="post">
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">

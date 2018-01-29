@@ -4,11 +4,8 @@ class B_home extends CI_Controller {
      function __construct() {
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
-        $this->load->model("commissions_model","obj_commissions");
         $this->load->model("otros_model","obj_otros");
-        $this->load->model("franchise_model","obj_franchise");
         $this->load->model("post_model","obj_post");
-        $this->load->model("messages_model","obj_messages");
     }
 
     public function index()
@@ -18,11 +15,6 @@ class B_home extends CI_Controller {
         
         /// VISTA
         $customer_id = $_SESSION['customer']['customer_id'];
-        
-        //GET TOTAL MESSAGE
-        $all_message = $this->get_total_messages($customer_id);
-        //GET TOTAL MESSAGE
-        $obj_message = $this->get_messages($customer_id);
         
         $params = array(
                         "select" =>"customer.customer_id,
@@ -39,9 +31,6 @@ class B_home extends CI_Controller {
                          "where" => "customer.customer_id = $customer_id");
             $obj_customer = $this->obj_customer->get_search_row($params);
             
-                
-                $this->tmp_backoffice->set("obj_message",$obj_message);
-                $this->tmp_backoffice->set("all_message",$all_message);
                 $this->tmp_backoffice->set("obj_customer",$obj_customer);
                 $this->tmp_backoffice->render("backoffice/b_home");
     }

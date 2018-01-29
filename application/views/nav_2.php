@@ -10,9 +10,8 @@
             <li class="nav-item"><a class="nav-link" href="<?php echo site_url().'#home';?>">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo site_url().'#about';?>">About</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo site_url().'#services';?>">Services</a></li>
-            <!--<li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>-->
-            <li class="nav-item"><a class="nav-link" href="<?php echo site_url().'#team';?>#team">Team</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo site_url().'#contact';?>#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo site_url().'#team';?>">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo site_url().'#contact';?>">Contact</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo site_url().'login';?>">Login</a></li>
         </ul>
         <div class="sing-up-button d-lg-none">

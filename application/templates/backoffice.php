@@ -92,19 +92,9 @@
 		<!-- Main navigation -->
 		<ul id="side-nav" class="main-menu navbar-collapse collapse">
                      <?php 
-                            if($_SESSION['customer']['active']==1){
-                                $title_active='Activo';
-                                $style_active='label-success';
-                            }else{
-                                $title_active='Inactivo';
-                                $style_active='label-danger';
-                            }
-                            ?>
-                     <?php 
                                     $url = explode("/",uri_string()); 
                                     $style_inicio = "";
                                     $style_misdatos = "";
-                                    $style_pagos = "";
                                     if(isset($url[1])){
                                         switch ($url[1]) {
                                             ////////
@@ -121,7 +111,6 @@
                                         $style_inicio = "a_active";
                                     }
                                     ?>  
-                        <li class="has-sub"><a class="<?php echo $style_active;?>"><em class="icon-star"></em><span class="title"><?php echo $title_active;?></span></a></li>
                         <li class="has-sub"><a href="<?php echo site_url().'backoffice'?>" class="<?php echo $style_inicio;?>"><i class="fa fa-tachometer fa-lg"></i><span class="title">Dashboard</span></a></li>
                         <li class="has-sub"><a href="<?php echo site_url().'backoffice/profile'?>" class="<?php echo $style_misdatos;?>"><i class="fa fa-address-book fa-lg"></i><span class="title">My Profile</span></a></li>
                         <li class="has-sub"><a href="<?php echo site_url().'login/logout';?>" class="<?php echo $style_pagos;?>"><i class="fa fa-sign-out fa-lg"></i><span class="title">Sign Out</span></a></li>
@@ -157,60 +146,6 @@
                             </li>
                           </ul>
 			<!-- /user info -->
-			
-		  </div>
-		  
-		  <div class="col-sm-6 col-xs-5">
-			<div class="pull-right">
-				<!-- User alerts -->
-				<ul class="user-info pull-left">
-				
-				  <!-- /notifications -->
-				  
-				  <!-- Messages -->
-				  <li class="notifications dropdown">
-					<a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                            <i class="icon-mail"></i><span class="badge badge-secondary"><?php echo $all_message;?></span></a>
-					<ul class="dropdown-menu pull-right">
-						<li class="first">
-							<div class="dropdown-content-header">Mensajes</div>
-						</li>
-						<li>
-                                                    <ul class="media-list">
-                                                        <?php 
-                                                            if($all_message == 0){ ?>
-                                                                <li>
-                                                                    <div class="media-body">
-                                                                            <span class="text-muted">No hay nuevos mensajes</span>
-                                                                        </div>
-                                                                </li>
-                                                            <?php }else{
-                                                                foreach ($obj_message as $value) { ?>
-                                                                <li class="media">
-                                                                        <div class="media-left">
-                                                                            <i class="fa fa-comments" aria-hidden="true"></i>
-                                                                        </div>
-                                                                        <div class="media-body">
-                                                                                <a class="media-heading" href="#">
-                                                                                    <span class="text-semibold"><?php $subject = replace_vocales_voculeshtml("$value->subject"); echo corta_texto($subject,40);?></span>
-                                                                                        <span class="media-annotation pull-right">Tue</span>
-                                                                                </a>
-                                                                            <span class="text-muted"><?php $message = replace_vocales_voculeshtml("$value->messages"); echo corta_texto($message,40);?></span>
-                                                                        </div>
-                                                                </li>
-                                                                <?php } ?>
-                                                           <?php } ?>
-                                                    </ul>
-						</li>
-                                                <li class="external-last"> <a class="danger" href="<?php echo site_url().'backoffice/messages';?>"><i class="fa fa-comments" aria-hidden="true"></i> Todos los Mensajes</a> </li>
-					</ul>
-				  </li>
-				  <!-- /messages -->
-				  
-				</ul>
-				<!-- /user alerts -->
-				
-			</div>
 		  </div>
 		</div>
 		<!-- /main header -->
@@ -219,7 +154,7 @@
             <?php echo $body;?> 
       <!--START FOOTER-->
       <footer class="footer-main"> 
-			© Copyright 2017. All Rights Reserved  -<strong> 3T Company</strong>
+			© Copyright 2017. All Rights Reserved  -<strong> EtherWhiteGold</strong>
       </footer>	
   <!-- /main container -->
   

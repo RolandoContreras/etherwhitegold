@@ -53,42 +53,34 @@
                 <div class="col-md-12">
                     <!-- Heading Text  -->
                     <div class="section-heading">
-                        <h2>Login</h2>
+                        <h2>Recover Password</h2>
                         <div class="line-shape"></div>
                     </div>
 
                 </div>
                 <div class="col-md-12">
                     <!-- Form Start-->
-                    <form action="<?php echo site_url().'login/validar_customer'?>" method="post">
+                    <form action="<?php echo site_url().'login/send_password'?>" method="post">
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="username" id="name" placeholder="Username" required>
-                                        </div>
-                                    </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your E-mail" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn submit-btn">Go!</button>
+                                        <button type="submit" class="btn submit-btn">Send!</button>
                                     </div>
-                                    
-                                </div>
-                                <div class="row">
                                     <div class="col-md-12">
-                                            <p><a href="<?php echo site_url().'forgot';?>">Forgot your password</a></p>
-                                    </div>
+                                    <div class="alert alert-success">
+                                        <p style="text-align: center !important;">E-mail send successfully</p>
+                                   </div>
                                 </div>
-                            <!-- Message Input Area End -->
-                        </form>
+                                </div>
                 </div>
+                            </form>
             </div>
         </div>
     </section>
