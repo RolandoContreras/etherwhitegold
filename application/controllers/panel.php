@@ -14,7 +14,8 @@ class Panel extends CI_Controller{
 
         //GET TOTAL ROWS
         $params = array("select" =>"count(comment_id) as total_comments,
-                                    (select count(*) from customer) as total_customer");
+                                    (select count(*) from customer) as total_customer,
+                                    (select count(*) from users) as total_users");
         $obj_total = $this->obj_comments->get_search_row($params);
         
          //GET PENDING ROWS

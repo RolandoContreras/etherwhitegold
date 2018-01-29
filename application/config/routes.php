@@ -94,7 +94,9 @@ $route['backoffice/message_confirmation/upload'] = "b_message_confirmation/uploa
 $route['logout'] = "b_home/logout";
 $route['backoffice/misdatos'] = "b_data";
 
-$route['register/afiliate/([0-9a-z_-]+)'] = "register/index/$1";
+$route['register/username'] = "register/username";
+//$route['register/validate_username'] = "register/username";
+
 
 $route['dashboard'] = "dashboard";
 $route['dashboard/panel'] = "panel";

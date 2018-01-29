@@ -102,6 +102,14 @@
                                     <div class="col-12">
                                         <button type="submit" class="btn submit-btn">Send!</button>
                                     </div>
+                                    <div class="col-md-12">
+                                        <div class="alert alert-danger">
+                                            <p style="text-align: center !important;">Username Not Available</p>
+                                       </div>
+                                    </div>
+                                    
+
+                                    
                                 </div>
                             </div>
                             <!-- Message Input Area End -->
@@ -110,6 +118,7 @@
             </div>
         </div>
     </section>
+    <!--<script type='text/javascript' src='<?php echo site_url().'static/page_front/js/jquery.js';?>'></script>-->
     <script>
     function validate_username(username){
         $.ajax({

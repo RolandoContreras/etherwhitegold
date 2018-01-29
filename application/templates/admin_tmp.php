@@ -22,6 +22,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="robots" content="noindex, nofollow" />
+        <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>
         <!-- CSS -->
         <link href="static/cms/css/core/bootstrap.css" rel="stylesheet">	
         <link href="static/cms/css/core/combine_fonts.css" rel="stylesheet">	

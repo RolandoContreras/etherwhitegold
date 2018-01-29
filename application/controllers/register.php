@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class Register extends CI_Controller {
     function __construct() { 
         parent::__construct();
+        $this->load->model('customer_model','obj_customer');
     }
 
 	/**
@@ -23,255 +23,112 @@ class Register extends CI_Controller {
 	 */
 	public function index()
 	{
-		//SELECT URL IF ISSET USERNAME
-            $url = explode("/", uri_string());
             /// VIEW
             $this->load->view("register");
 	}
         
-        public function validate_username() {
+        public function username()
+	{
+            /// VIEW
+            $this->load->view("register_username");
+	}
+        
+        public function validate_username($username) {
             if ($this->input->is_ajax_request()) {
                 //SELECT ID FROM CUSTOMER
-            $username = str_to_minuscula(trim($this->input->post('username')));
-            $param_customer = array(
-                "select" => "customer_id",
-                "where" => "username = '$username'");
-            $customer = count($this->obj_customer->get_search_row($param_customer));
-            if ($customer > 0) {
-                $data['message'] = "true";
-                $data['print'] = "No esta disponible! <i class='fa fa-times-circle-o' aria-hidden='true'></i>";
-            } else {
-                $data['message'] = "false";
-                $data['print'] = "Usuario Disponible! <i class='fa fa-check-square-o' aria-hidden='true'></i>";
-            }
-            echo json_encode($data);
+                $username = str_to_minuscula(trim($this->input->post('username')));
+                $param_customer = array(
+                    "select" => "customer_id",
+                    "where" => "username = '$username'");
+                $customer = count($this->obj_customer->get_search_row($param_customer));
+
+                if ($customer > 0) {
+                    $data['message'] = "true";
+                    $data['print'] = "Not available! <i class='fa fa-times-circle-o' aria-hidden='true'></i>";
+                } else {
+                    $data['message'] = "false";
+                    $data['print'] = "Available! <i class='fa fa-check-square-o' aria-hidden='true'></i>";
+                }
+                echo json_encode($data);
+            }else{
+                $param_customer = array(
+                    "select" => "customer_id",
+                    "where" => "username = '$username'");
+                $customer = count($this->obj_customer->get_search_row($param_customer));
+                return $customer;
             }
         }
 
         public function crear_registro() {
-            if ($this->input->is_ajax_request()) {
-
                 //SET TIMEZONE AMERICA
                 date_default_timezone_set('America/Lima');
-
-                $customer_id = trim($this->input->post('customer_id'));
-
-                $pierna_customer = trim($this->input->post('pierna_customer'));
-
-                //PUT CUSTOMER_ID LIKE PAREND
-                $parent_id = $customer_id;
-
-                $position = $pierna_customer;
-                if ($position == 1) {
-                    $pos = 'z';
-                } else {
-                    $pos = 'd';
-                }
-
-                $params = array("select" => "identificador",
-                    "where" => "customer_id = $customer_id");
-                $obj_customer_principal = $this->obj_customer->get_search_row($params);
-                $identificator_param = $obj_customer_principal->identificador;
-
-                if ($position == 1) {
-                    //SELECT IDENTIFICATOR BY DEFOULT IF IT CUSTOMER_ID =1 
-                    if ($customer_id == 1) {
-                        $identificator_param = '1z';
-                    }
-                    $last_id = 'z';
-                    //GET TO VERIFY UN ATUTHENTICATOR STRING
-                    $verify = 'd';
-                    $not_like = "d,$identificator_param";
-                } else {
-                    //SELECT IDENTIFICATOR BY DEFOULT IF IT CUSTOMER_ID =1 
-                    if ($customer_id == 1) {
-                        $identificator_param = '1d';
-                    }
-                    $last_id = 'd';
-                    //GET TO VERIFY UN ATUTHENTICATOR STRING
-                    $verify = 'z';
-                    $not_like = "z,$identificator_param";
-                }
-
-                $params = array("select" => "identificador,customer_id,first_name",
-                    "where" => "identificador like '%$identificator_param'  and position = $position",
-                    "order" => "customer.identificador DESC");
-                $obj_identificator = $this->obj_customer->search($params);
-
-                //COUNT $identificator_param y quitar ,
-                $count_identificator = strlen($identificator_param) + 1;
-
-                //Get identificator last register
-                if (count($obj_identificator) > 0) {
-
-                    $key = 1;
-                    $str = "";
-                    $str_number = "";
-                    foreach ($obj_identificator as $key => $value) {
-                        //GET IDENTIFICATOR TREE 
-                        $identificador = $value->identificador;
-                        //QUITAR IDENTIFICADOR DEL PADRE
-                        $identificador_2 = substr($identificador, 0, -$count_identificator);
-
-                        //CONSULT IF CONTAINT Z O D
-                        $find = strpos($identificador_2, "$verify");
-
-                        if ($find == false) {
-                            $str .= "$identificador|";
-                        }
-                    }
-
-                    $array_identificator = explode("|", $str);
-
-                    $count = 0;
-                    foreach ($array_identificator as $value) {
-
-                        $count_str = strlen($value);
-
-                        if($count_str > $count){
-                            $idetificator = $value;
-                            $count = $count_str;
-                        }
-                    }
-
-                    $idetificator =  $idetificator;             
-                } else {
-                    $idetificator = $identificator_param;
-                }
-
-                if($idetificator == ""){
-                     $idetificator = $obj_customer_principal->identificador;
-                }
-
-                $explo_identificator = explode(",", $idetificator);
-                $ultimo = $explo_identificator[0] + 1;
-                $identificator = $ultimo . $last_id . ',' . $idetificator;
-
-                $this->form_validation->set_rules('usuario', 'usuario', "required|trim");
-                $this->form_validation->set_rules('name', 'name', 'required|trim');
-                $this->form_validation->set_rules('last_name', 'last_name', "required|trim");
-                $this->form_validation->set_rules('address', 'address', 'required|trim');
-                $this->form_validation->set_rules('telefono', 'telefono', "required|trim");
-                $this->form_validation->set_rules('dni', 'dni', 'required|trim');
-                $this->form_validation->set_rules('email', 'email', "required|trim");
-                $this->form_validation->set_rules('city', 'city', 'required|trim');
-                $this->form_validation->set_rules('dia', 'dia', 'required|trim');
-                $this->form_validation->set_rules('mes', 'mes', "required|trim");
-                $this->form_validation->set_rules('ano', 'ano', 'required|trim');
+                //VALIDATION BACKEND
+                $this->form_validation->set_rules('name', 'usuario', "required|trim");
+                $this->form_validation->set_rules('password', 'name', 'required|trim');
+                $this->form_validation->set_rules('email', 'address', 'required|trim');
+                $this->form_validation->set_rules('ether', 'telefono', "required|trim");
                 $this->form_validation->set_message('required', 'Campo requerido %s');
 
                 if ($this->form_validation->run($this) == false) {
                     $data['print'] = "Debe llenar todos los campos";
                     $data['message'] = "false";
-                } else {
-                    $usuario = trim($this->input->post('usuario'));
-                    $clave = trim($this->input->post('clave'));
-                    $name = trim($this->input->post('name'));
-                    $last_name = trim($this->input->post('last_name'));
-                    $address = trim($this->input->post('address'));
-                    $telefono = trim($this->input->post('telefono'));
-                    $dni = trim($this->input->post('dni'));
-                    $email = trim($this->input->post('email'));
-                    $dia = trim($this->input->post('dia'));
-                    $mes = trim($this->input->post('mes'));
-                    $ano = trim($this->input->post('ano'));
-                    $pais = trim($this->input->post('pais'));
-                    $region = trim($this->input->post('region'));
-                    $city = trim($this->input->post('city'));
-                    //create date to DB
-                    $birth_date = "$ano-$mes-$dia";
-
+                }else{
+                    //GET DATA $_POST
+                    $username = $this->input->post('username');  
+                    $password = $this->input->post('password');  
+                    $name = $this->input->post('name');  
+                    $last_name = $this->input->post('last_name');  
+                    $email = $this->input->post('email');   
+                    $ether = $this->input->post('ether');
+                    
+                    $value = $this->validate_username($username);
+                    if($value == 1){
+                        redirect('register/username'); 
+                    }else{
+                    
+                    //INSERT INTO TABLE CUSTOMER
                     $data = array(
-                        'parents_id' => $parent_id,
-                        'franchise_id' => 6,
-                        'username' => $usuario,
-                        'email' => $email,
-                        'position' => $position,
-                        'point_left' => 0,
-                        'point_rigth' => 0,
-                        'calification' => 0,
-                        'date_start' => "0000/00/00",
-                        'date_end' => "0000/00/00",
-                        'identificador' => $identificator,
-                        'position_temporal' => 1,
-                        'password' => $clave,
+                        'username' => $username,
+                        'password' => $password,
                         'first_name' => $name,
                         'last_name' => $last_name,
-                        'address' => $address,
-                        'phone' => $telefono,
-                        'city' => $city,
-                        'dni' => $dni,
-                        'birth_date' => $birth_date,
-                        'country' => $pais,
-                        'region' => $region,
+                        'email' => $email,
+                        'ether_address' => $ether,
                         'active' => 0,
-                        'calification' => 0,
                         'status_value' => 1,
                         'created_at' => date("Y-m-d H:i:s"),
                     );
-
                     $customer_id = $this->obj_customer->insert($data);
-
+                    
                     //ACTIVE SESSION
                     $data_customer_session['customer_id'] = $customer_id;
                     $data_customer_session['name'] = $name;
-                    $data_customer_session['franchise_id'] = 6;
-                    $data_customer_session['username'] = $usuario;
+                    $data_customer_session['username'] = $username;
                     $data_customer_session['email'] = $email;
                     $data_customer_session['active'] = 0;
                     $data_customer_session['logged_customer'] = "TRUE";
                     $data_customer_session['status'] = 1;
                     $_SESSION['customer'] = $data_customer_session;
+                    
+                    //SEND MESSAGE BY EMAIL
+                    $this->mensaje($email, $username, $password);
+                    }
+                }
+       }
 
-    //                SEND MESSAGES
-                    $images = "static/page_front/images/bienvenido.jpg";
-//                    $img_path = "<img src='".site_url().$images."' alt='Bienvenido' height='800' width='800'/>";
-
-                    // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
-                    $mensaje = wordwrap("<html><body><h1>Bienvenido a 3T Company</h1><p>Bienvenido ahora eres parte de la revolución 3T estamos muy contentos de que hayas tomado la mejor decisión en este tiempo.</p><p>Estamos para apoyarte en todo lo que necesites. Te dejamos tus datos de ingreso.</p><h3>Usuario: $usuario</h3><h3>Contraseña: $clave</h3><p>$img_path</p></body></html>", 70, "\n", true);
+        public function mensaje($email,$username,$password){
+        // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
+                    $mensaje = wordwrap("<html><body><h1>Welcome to EtherWhiteGold</h1><p>Welcome now you are part of 3T we are very happy that you have made the best decision at this time. </p><p>We are here to support you in everything you need. We leave your login information.</p><h3>Username: $username</h3><h3>Password: $password</h3></body></html>", 70, "\n", true);
                     //Titulo
-                    $titulo = "Bienvenido a 3T Company";
+                    $titulo = "Welcome to EtherWhiteGold";
                     //cabecera
                     $headers = "MIME-Version: 1.0\r\n"; 
                     $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-                    $headers .= "From: 3T Company: Travel - Training - Trade < noreplay@my3t.club >\r\n";
+                    $headers .= "From: EtherWhiteGold:  < noreplay@etherwhitegold.io >\r\n";
                     //Enviamos el mensaje a tu_dirección_email 
                     $bool = mail("$email",$titulo,$mensaje,$headers);
-
-                    $data['message'] = "true";
-                    $data['print'] = "Registrado con éxito";
-                    $data['url'] = site_url() . "backoffice";
-                }
-                echo json_encode($data);
-                exit();
-        }
-       }
-
-        public function mensaje(){
-        //ACTIVE CUSTOMER
-        
-                $images = "static/page_front/images/bienvenido.jpg";
-                $img_path = "<img src='".site_url().'/'.$images."' alt='Bievenido' height='800' width='800'/>";
-                
-                // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
-                $mensaje = wordwrap("<html><body><h1>Bienvenido a CRIPTOWIN</h1><h3>Usuario: lidermillon</h3><h3>Usuario: lidermillon</h3><p>$img_path</p></body></html>", 70, "\n", true);
-                //Titulo
-                $titulo = "Bienvenido a Criptowin";
-                //cabecera
-                $headers = "MIME-Version: 1.0\r\n"; 
-                $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-                $headers .= "From: CRIPTOWIN - The best Investment < noreplay@criptowin.com >\r\n";
-                //Enviamos el mensaje a tu_dirección_email 
-                $bool = mail("software.contreras@gmail.com",$titulo,$mensaje,$headers);
-                
-                if($bool){
-                    echo "Mensaje Eviado";
-                }else{
-                    echo "Mensaje no enviado";
-                }
-                echo json_encode($data); 
-        exit();
+                    redirect('backoffice');         
             
-    }
+        }
 
 }
