@@ -28,11 +28,11 @@ class Forgot extends CI_Controller {
 	}
         public function send()
 	{
-		$this->load->view('forgot');
+		$this->load->view('forgot_send');
 	}
         public function notsend()
 	{
-		$this->load->view('forgot');
+		$this->load->view('forgot_notsend');
 	}
         public function send_password(){
         $email = $this->input->post('email');  
