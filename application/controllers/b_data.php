@@ -32,11 +32,6 @@ class B_data extends CI_Controller {
         /// VISTA
         $customer_id = $_SESSION['customer']['customer_id'];
         
-        //GET TOTAL MESSAGE
-        $all_message = $this->get_total_messages($customer_id);
-        //GET TOTAL MESSAGE
-        $obj_message = $this->get_messages($customer_id);
-        
         $params = array(
                         "select" =>"customer.customer_id,
                                     customer.username,
