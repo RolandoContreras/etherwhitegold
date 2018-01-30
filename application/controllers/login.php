@@ -25,6 +25,14 @@ class Login extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+        public function user()
+	{
+		$this->load->view('login_user');
+	}
+        public function inactive()
+	{
+		$this->load->view('login_inactive');
+	}
         public function validate(){
         if($this->input->is_ajax_request()){
             
@@ -71,12 +79,10 @@ class Login extends CI_Controller {
                 $_SESSION['customer'] = $data_customer_session;                
                 redirect('backoffice'); 
             }else{
-                $this->form_validation->set_message('validar_user', "Usuario Inactivo");
-                redirect('login/inactive'); 
+                redirect('login_inactive'); 
             }
         }else{
-            $this->form_validation->set_message('validar_user', "El usuario y/o la contraseña no son correctas");
-            redirect('login/user'); 
+            redirect('login_user'); 
         }
     }
     
