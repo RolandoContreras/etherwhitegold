@@ -47,7 +47,7 @@
     <!-- ***** Wellcome Area End ***** -->
 
     <!-- ***** Contact Us Area Start ***** -->
-    <section class="footer-contact-area section_padding_100 clearfix" id="contact">
+    <section class="footer-contact-area section_padding_100 clearfix">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
