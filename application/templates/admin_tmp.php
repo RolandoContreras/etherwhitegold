@@ -58,7 +58,7 @@
         <div class="navbar-inner">
             <div class="container-fluid">
                 <a class="brand" href="<?php echo site_url();?>dashboard/panel">
-                    <img src="<?php echo site_url().'static/page_front/images/logo/logo.png'?>" alt="logo" width="60"></a>
+                    <img src="<?php echo site_url().'static/page_front/images/logo/logo.png'?>" alt="logo" width="220"></a>
                 <div class="btn-toolbar pull-right">                        
                 <!-- /btn-group -->
                     <div class="btn-group">

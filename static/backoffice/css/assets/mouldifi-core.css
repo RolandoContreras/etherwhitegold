@@ -269,7 +269,7 @@ a.text-purple:hover, a.text-purple:focus {
 /* Sidebar
    ========================================================================== */
 .page-sidebar {
-	background-color: #1D1D1D;
+	background-color: #342f28;
 	color: #b4b5b8;
 	display: table-cell;
 	height: 100%;
@@ -360,7 +360,7 @@ ul.main-menu li a {
 	text-decoration: none;
 }
 ul.main-menu > li.active > a, ul.main-menu > li > a:hover, ul.main-menu > li > a:focus {
-	background-color: #00b8ce;
+	background-color: #d99800;
 	color: #FFFFFF;
 }
 ul.main-menu .nav > li > a:hover, ul.main-menu .nav > li > a:focus, ul.main-menu .nav > li.has-sub.active > a {
@@ -375,7 +375,7 @@ ul.main-menu li i {
 	font-size: 15px;
 }
 .a_active{
-    background-color: #00b8ce !important; 
+    background-color: #d99800 !important; 
     color: #FFFFFF;
 }
 ul.main-menu li ul {

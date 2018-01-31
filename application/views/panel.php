@@ -1,12 +1,3 @@
-<?php 
-//echo $obj_total->total_customer;
-var_dump($obj_total);
-
-die();
-        
-
-?>
-
 <script src="static/cms/js/core/bootstrap-modal.js"></script>
 <script src="static/cms/js/core/bootbox.min.js"></script>
 <script src="static/cms/js/core/jquery-1.11.1.min.js"></script>

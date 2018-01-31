@@ -5,7 +5,7 @@
 <link href="static/cms/css/core/jquery.dataTables.css" rel="stylesheet"/>
 
 <!-- main content -->
-<div id="main_content" class="span9">
+<div id="main_content" class="span11">
     <div class="row-fluid">
         <div class="widget_container">
             <div class="well">

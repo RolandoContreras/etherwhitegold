@@ -74,7 +74,7 @@
 		<header class="site-header">
 		  <div class="site-logo">
                       <a href="<?php echo site_url().'backoffice';?>">
-                          <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" width="80px" alt="Logo EtherWhiteGold">
+                          <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" width="200px" alt="Logo EtherWhiteGold">
                       </a>
                   </div>
 		  <div class="sidebar-collapse hidden-xs">
