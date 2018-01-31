@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <!-- Logo -->
     <a class="navbar-brand" href="<?php echo site_url();?>">
-        <img width="40" src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="logo"/>
+        <img width="185" src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="logo"/>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <!-- Menu Area -->
