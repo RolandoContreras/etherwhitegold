@@ -24,7 +24,7 @@
                 <!-- Signup btn -->
                 <div class="col-12 col-lg-2">
                     <div class="sing-up-button d-none d-lg-block">
-                        <a href="<?php echo site_url().'register';?>">Sign Up Free</a>
+                        <a href="<?php echo site_url().'register';?>">Buy!</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
     <section class="wellcome_area clearfix" id="home">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-12 col-md">
+                <div class="col-4 col-md">
                     <div class="wellcome-heading">
                         <h2>EWG</h2>
                         <h3>EWG</h3>
@@ -44,10 +44,20 @@
                     </div>
                     <div class="get-start-area">
                         <!-- Form Start -->
-                        <form action="#" method="post" class="form-inline">
-                            <input type="submit" class="submit" value="White Paper">
-                        </form>
+                        <a href="/images/myw3schoolsimage.jpg" download><button class="submit"><i class="fa fa-download"></i> White Paper es</button></a>
                         <!-- Form End -->
+                    </div>
+                </div>
+                <div class="col-4 col-md"></div>
+                <div class="col-4 col-md-4">
+                    <div class="wellcome-heading" style="text-align: right !important">
+                        <h3>S</h3>
+                        <h2>Specifications</h2>
+                        <p><b>Name:</b> Etherwhitegold<br/>
+<b>Symbol:</b> EWG <br/>
+<b>Decimal:</b> 18 <br/>
+<b>Amount:</b> 13,000,000<br/>
+<b>Contract:</b> 0x4380fe4B02844a4e4afC3e8E51491587c214df55</p>
                     </div>
                 </div>
             </div>
@@ -63,6 +73,7 @@
                     <!-- Section Heading Area -->
                     <div class="section-heading text-center">
                         <h2>Why Is It Special</h2>
+                        <p>Etherwhitegold will have different characteristics such as:</p>
                         <div class="line-shape"></div>
                     </div>
                 </div>
@@ -75,8 +86,8 @@
                         <div class="single-icon">
                             <i class="fa fa-tachometer" aria-hidden="true"></i>
                         </div>
-                        <h4>Casino Virtual</h4>
-                        <p>Tendremos variadades de juegos tanto de casinos como apuestas deportivas. Al implementar nuestra monedas podremos lograr que nuestro casino tenga la capacidad de ser un casino mas justo para los jugadores y mucho mas rapido al momento de hacer apuestas.</p>
+                        <h4>Virtual Casino</h4>
+                        <p>We will have variations of both casinos and sports betting games. By implementing our coins we can make our casino have the ability to be a fair casino for players and much faster when placing bets.</p>
                     </div>
                 </div>
                 <!-- Single Special Area -->
@@ -86,7 +97,7 @@
                             <i class="fa fa-university" aria-hidden="true"></i>
                         </div>
                         <h4>Wallet</h4>
-                        <p>Etherwhitegold contara con su wallet exclusiva la cual procesara pagos en tiempo real y podra sustuir fichas en casinos fisicos o cualquier otro material que pudiera ser ultilizado con fines fradulentos. </p>
+                        <p>Etherwhitegold will have your exclusive wallet which processes payments in real time and can be purchased at physical casinos and any material that can be used with fraudulent fines.</p>
                     </div>
                 </div>
                 <!-- Single Special Area -->
@@ -95,8 +106,8 @@
                         <div class="single-icon">
                             <i class="fa fa-mobile" aria-hidden="true"></i>
                         </div>
-                        <h4>App Movil</h4>
-                        <p>Con nuestra aplicacion movil usted podra jugar en nuestro casino virtual desde donde quiera que este. Sera una aplicacion sencilla y muy intuitiva para nuestros usuario de la cual tambien podra retirar sus ganacias directo su wallet. </p>
+                        <h4>Mobile App</h4>
+                        <p>With our mobile application you can play in our virtual casino from wherever you are. It will be a simple and very intuitive application for our user from which you can also withdraw your earnings directly from your wallet.</p>
                     </div>
                 </div>
             </div>
@@ -113,8 +124,7 @@
                     <div class="col-lg-6 col-xl-5 ml-xl-auto">
                         <div class="special_description_content">
                             <h2>EtherWhiteGold</h2>
-                            <p>EtherWhiteGold is an ERC20 tokens focused on being a currency accessible to the public and easy to use. Its innovative features allow the community to use ETWG as a means of payment in different areas of entertainment such as virtual casino. The online gaming industry is valued at 46 million dollars, and is expected to grow to 56 billion dollars in 2018. In our point of view, the cryptocurrency market is relatively dense and full of people, which is feasible for the growth of this industry.
-With ether white gold we will make possible an absolute transparency between the player and the house since the Blockchain technology is quite robust and unalterable avoiding frauds that can be provoked for any of the parties.</p>
+                            <p>Etherwhitegold is an er20 token focused on being a currency accessible to the public and easy to use. Its innovative features allow the community to use ETWG as a means of payment in different areas of entertainment such as virtual casinos. The online gaming industry is valued at $ 46 billion, and is expected to grow to $ 56 billion in 2018. In our view, the market for cryptocurrency games is relatively dense and full of people, which is feasible for the growth of this industry. With EtherwhiteGold we will make possible an absolute transparency between the player and the house since the Blockchain technology is quite robust and unalterable avoiding frauds that can be provoked by any of the parties.</p>
                         </div>
                     </div>
                 </div>
@@ -169,15 +179,6 @@ With ether white gold we will make possible an absolute transparency between the
                         <p>El origen de la transacción es completamente anónimo a menos que el propietario quierarevelar su identidad.</p>
                     </div>
                 </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="fa fa-area-chart" aria-hidden="true"></i>
-                        <h5>Minería</h5>
-                        <p>Apuesta a EtherWhiteGold en tus billeteras y recibe nuestras bonificaciones./ Nuestro grupo de minería planea ser lanzado en febrero de 2018 Entonces puede comenzar a extraer EtherWhiteGold fresco.</p>
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
                         <i class="fa fa-exchange" aria-hidden="true"></i>

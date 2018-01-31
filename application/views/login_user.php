@@ -24,7 +24,7 @@
                 <!-- Signup btn -->
                 <div class="col-12 col-lg-2">
                     <div class="sing-up-button d-none d-lg-block">
-                        <a href="<?php echo site_url().'register';?>">Sign Up Free</a>
+                        <a href="<?php echo site_url().'register';?>">Buy!</a>
                     </div>
                 </div>
             </div>

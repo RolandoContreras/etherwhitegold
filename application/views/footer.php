@@ -9,7 +9,7 @@
             <a href="https://www.facebook.com/etherwhitegold.io/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://twitter.com/@etherwhitegold" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://t.me/joinchat/Eh6B0051x7L1Hpxd0QXqTA" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-            <a href="https://bitcointalk.org/index.php?topic=2686927.msg27440431#msg27440431" target="_blank"><i class="fa fa-btc" aria-hidden="true"></i></a>
+            <a href="https://bitcointalk.org/index.php?topic=2825372.new#new" target="_blank"><i class="fa fa-btc" aria-hidden="true"></i></a>
         </div>
         <div class="footer-menu">
             <nav>
