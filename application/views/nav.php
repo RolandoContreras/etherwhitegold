@@ -16,7 +16,7 @@
             <li class="nav-item"><a class="nav-link" href="<?php echo site_url().'login';?>">Login</a></li>
         </ul>
         <div class="sing-up-button d-lg-none">
-            <a href="<?php echo site_url().'register';?>">Buy!</a>
+            <a href="<?php echo site_url().'register';?>">Participe ICO</a>
         </div>
     </div>
 </nav>

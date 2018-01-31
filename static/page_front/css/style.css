@@ -464,6 +464,18 @@ p {
     z-index: 3;
 }
 
+.wellcome-heading > h4 {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+}
+.wellcome-heading > p {
+    margin: 0px !important;
+}
+
+
 .get-start-area .email {
     background: #9572e8;
     height: 50px;
@@ -510,7 +522,6 @@ p {
     line-height: 46px;
     text-align: center;
     border-radius: 24px 24px 24px 0px;
-    margin-left: 10px;
 }
 
 .get-start-area .submit:hover {

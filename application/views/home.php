@@ -24,7 +24,7 @@
                 <!-- Signup btn -->
                 <div class="col-12 col-lg-2">
                     <div class="sing-up-button d-none d-lg-block">
-                        <a href="<?php echo site_url().'register';?>">Buy!</a>
+                        <a href="<?php echo site_url().'register';?>">Participe ICO</a>
                     </div>
                 </div>
             </div>
@@ -39,25 +39,30 @@
                 <div class="col-4 col-md">
                     <div class="wellcome-heading">
                         <h2>EWG</h2>
-                        <h3>EWG</h3>
                         <p>The cryptocurrency of your luck</p>
                     </div>
                     <div class="get-start-area">
                         <!-- Form Start -->
-                        <a href="/images/myw3schoolsimage.jpg" download><button class="submit"><i class="fa fa-download"></i> White Paper es</button></a>
+                        <!--<a class="submit" href="<?php echo site_url().'static/page_front/whitepaper/whitepaper.pdf';?>" download><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/es.png';?>" alt="Spanish" /></a>-->
+                        <a class="submit" href="#"><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/es.png';?>" alt="Spanish" /></a>
+                        <a class="submit" href="#"><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/en.png';?>" alt="English" /></a>
                         <!-- Form End -->
                     </div>
                 </div>
                 <div class="col-4 col-md"></div>
                 <div class="col-4 col-md-4">
-                    <div class="wellcome-heading" style="text-align: right !important">
-                        <h3>S</h3>
+                    <div class="wellcome-heading" style="text-align: right">
                         <h2>Specifications</h2>
-                        <p><b>Name:</b> Etherwhitegold<br/>
-<b>Symbol:</b> EWG <br/>
-<b>Decimal:</b> 18 <br/>
-<b>Amount:</b> 13,000,000<br/>
-<b>Contract:</b> 0x4380fe4B02844a4e4afC3e8E51491587c214df55</p>
+                        <p>Name:</p>
+                        <h4>Etherwhitegold</h4>
+                        <p>Symbol:</p>
+                        <h4>EWG</h4>
+                        <p>Decimal:</p>
+                        <h4>18</h4>
+                        <p>Amount:</p>
+                        <h4>13,000,000</h4>
+                        <p>Contract:</p>
+                        <h4>0x4380fe4B02844a4e4afC3e8E51491587c214df55</h4>
                     </div>
                 </div>
             </div>
