@@ -45,7 +45,7 @@
                     <div class="get-start-area">
                         <!-- Form Start -->
                         <form action="#" method="post" class="form-inline">
-                            <input type="submit" class="submit" value="Sign Up Free">
+                            <input type="submit" class="submit" value="White Paper">
                         </form>
                         <!-- Form End -->
                     </div>
@@ -107,7 +107,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="special_description_img">
-                            <img src="<?php echo site_url().'static/page_front/images/special_2.png';?>" alt="ether">
+                            <img src="<?php echo site_url().'static/page_front/images/etherwhitegold.jpg';?>" alt="EtherWhiteGold">
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-5 ml-xl-auto">
@@ -207,172 +207,6 @@ With ether white gold we will make possible an absolute transparency between the
         </div>
     </div>
     <!-- ***** Video Area End ***** -->
-
-    <!-- ***** Cool Facts Area Start ***** -->
-    <section class="cool_facts_area clearfix">
-        <!--<div class="container">-->
-<!--            <div class="row">
-                 Single Cool Fact
-                <div class="col-12 col-md-3 col-lg-3">
-                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="counter-area">
-                            <h3><span class="counter">90</span></h3>
-                        </div>
-                        <div class="cool-facts-content">
-                            <i class="ion-arrow-down-a"></i>
-                            <p>APP <br> DOWNLOADS</p>
-                        </div>
-                    </div>
-                </div>
-                 Single Cool Fact
-                <div class="col-12 col-md-3 col-lg-3">
-                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="counter-area">
-                            <h3><span class="counter">120</span></h3>
-                        </div>
-                        <div class="cool-facts-content">
-                            <i class="ion-happy-outline"></i>
-                            <p>Happy <br> Clients</p>
-                        </div>
-                    </div>
-                </div>
-                 Single Cool Fact
-                <div class="col-12 col-md-3 col-lg-3">
-                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="counter-area">
-                            <h3><span class="counter">40</span></h3>
-                        </div>
-                        <div class="cool-facts-content">
-                            <i class="ion-person"></i>
-                            <p>ACTIVE <br>ACCOUNTS</p>
-                        </div>
-                    </div>
-                </div>
-                 Single Cool Fact
-                <div class="col-12 col-md-3 col-lg-3">
-                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="counter-area">
-                            <h3><span class="counter">10</span></h3>
-                        </div>
-                        <div class="cool-facts-content">
-                            <i class="ion-ios-star-outline"></i>
-                            <p>TOTAL <br>APP RATES</p>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-        <!--</div>-->
-    </section>
-    <!-- ***** Cool Facts Area End ***** -->
-    <!-- ***** Client Feedback Area Start ***** -->
-<!--    <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="testimonials">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
-                    <div class="slider slider-for">
-                         Client Feedback Text  
-                        <div class="client-feedback-text text-center">
-                            <div class="client">
-                                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="client-description text-center">
-                                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
-                            </div>
-                            <div class="star-icon text-center">
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                            </div>
-                            <div class="client-name text-center">
-                                <h5>Aigars Silkalns</h5>
-                                <p>Ceo Colorlib</p>
-                            </div>
-                        </div>
-                         Client Feedback Text  
-                        <div class="client-feedback-text text-center">
-                            <div class="client">
-                                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="client-description text-center">
-                                <p>“ I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
-                            </div>
-                            <div class="star-icon text-center">
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                            </div>
-                            <div class="client-name text-center">
-                                <h5>Jennifer</h5>
-                                <p>Developer</p>
-                            </div>
-                        </div>
-                         Client Feedback Text  
-                        <div class="client-feedback-text text-center">
-                            <div class="client">
-                                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="client-description text-center">
-                                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job.”</p>
-                            </div>
-                            <div class="star-icon text-center">
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                            </div>
-                            <div class="client-name text-center">
-                                <h5>Helen</h5>
-                                <p>Marketer</p>
-                            </div>
-                        </div>
-                         Client Feedback Text  
-                        <div class="client-feedback-text text-center">
-                            <div class="client">
-                                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="client-description text-center">
-                                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
-                            </div>
-                            <div class="star-icon text-center">
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                            </div>
-                            <div class="client-name text-center">
-                                <h5>Henry smith</h5>
-                                <p>Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 Client Thumbnail Area 
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="slider slider-nav">
-                        <div class="client-thumbnail">
-                            <img src="https://colorlib.com/etc/ca/img/bg-img/client-3.jpg" alt="">
-                        </div>
-                        <div class="client-thumbnail">
-                            <img src="https://colorlib.com/etc/ca/img/bg-img/client-2.jpg" alt="">
-                        </div>
-                        <div class="client-thumbnail">
-                            <img src="https://colorlib.com/etc/ca/img/bg-img/client-1.jpg" alt="">
-                        </div>
-                        <div class="client-thumbnail">
-                            <img src="https://colorlib.com/etc/ca/img/bg-img/client-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- ***** Client Feedback Area End ***** -->
     <!-- ***** Our Team Area Start ***** -->
     <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
         <div class="container">
@@ -391,12 +225,12 @@ With ether white gold we will make possible an absolute transparency between the
                         <div class="member-image">
                             <img src="https://colorlib.com/etc/ca/img/team-img/team-1.jpg" alt="">
                             <div class="team-hover-effects">
-                                <div class="team-social-icon">
+<!--                                <div class="team-social-icon">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                     <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                         <div class="member-text">
@@ -410,12 +244,12 @@ With ether white gold we will make possible an absolute transparency between the
                         <div class="member-image">
                             <img src="https://colorlib.com/etc/ca/img/team-img/team-2.jpg" alt="">
                             <div class="team-hover-effects">
-                                <div class="team-social-icon">
+<!--                                <div class="team-social-icon">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                     <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                         <div class="member-text">
@@ -429,12 +263,12 @@ With ether white gold we will make possible an absolute transparency between the
                         <div class="member-image">
                             <img src="https://colorlib.com/etc/ca/img/team-img/team-3.jpg" alt="">
                             <div class="team-hover-effects">
-                                <div class="team-social-icon">
+<!--                                <div class="team-social-icon">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                     <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                         <div class="member-text">
@@ -448,12 +282,12 @@ With ether white gold we will make possible an absolute transparency between the
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/rolandoc.jpg';?>" alt="Rolando Contreras">
                             <div class="team-hover-effects">
-                                <div class="team-social-icon">
+<!--                                <div class="team-social-icon">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                     <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                         <div class="member-text">

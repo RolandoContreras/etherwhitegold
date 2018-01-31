@@ -2,14 +2,14 @@
     <footer class="footer-social-icon text-center section_padding_70 clearfix">
         <!-- footer logo -->
         <div class="footer-text">
-            <img width="90" src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="logo"/>
+            <img width="150" src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="logo"/>
         </div>
         <!-- social icon-->
         <div class="footer-social-icon">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/etherwhitegold.io/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/@etherwhitegold" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://t.me/joinchat/Eh6B0051x7L1Hpxd0QXqTA" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            <a href="https://bitcointalk.org/index.php?topic=2686927.msg27440431#msg27440431" target="_blank"><i class="fa fa-btc" aria-hidden="true"></i></a>
         </div>
         <div class="footer-menu">
             <nav>
@@ -30,7 +30,6 @@
     <!-- ***** Footer Area Start ***** -->
 
     <!-- Jquery-2.2.4 JS -->
-<!--    <script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script>-->
     <script src="<?php echo site_url().'static/page_front/js/jquery-2.2.4.min.js';?>"></script>
     <!-- Popper js -->
     <script src="<?php echo site_url().'static/page_front/js/popper.min.js';?>"></script>
@@ -42,7 +41,3 @@
     <script src="<?php echo site_url().'static/page_front/js/slick.min.js';?>"></script>
     <!-- Active JS -->
     <script src="<?php echo site_url().'static/page_front/js/active.js';?>"></script>
-    <!--Jquery Validate-->
-    <script src="<?php // echo site_url().'static/page_front/jquery.validate/jquery.validate.min.js';?>"></script>
-    <!--Validate Scritp-->
-    <script src="<?php // echo site_url().'static/page_front/jquery.validate/script_form.js';?>"></script>
