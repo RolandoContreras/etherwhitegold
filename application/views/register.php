@@ -24,7 +24,7 @@
                 <!-- Signup btn -->
                 <div class="col-12 col-lg-2">
                     <div class="sing-up-button d-none d-lg-block">
-                        <a href="#">Sign Up Free</a>
+                        <a href="#">Participe ICO</a>
                     </div>
                 </div>
             </div>

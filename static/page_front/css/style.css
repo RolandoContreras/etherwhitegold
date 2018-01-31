@@ -199,7 +199,7 @@ ol {
     font-size: 24px;
     right: 30px;
     width: 50px;
-    background-color: #fb397d;
+    background-color: #342f28;
     color: #fff;
     text-align: center;
     height: 50px;
@@ -233,7 +233,7 @@ p {
 
 .section-heading > h2 {
     font-weight: 300;
-    color: #5b32b4;
+    color: #d99800;
     font-size: 48px;
     margin: 0;
 }
@@ -247,7 +247,7 @@ p {
 .line-shape {
     width: 80px;
     height: 2px;
-    background-color: #fb397d;
+    background-color: #d99800;
     margin-top: 15px;
 }
 
@@ -378,7 +378,7 @@ p {
     color: #fff;
     font-weight: 500;
     display: inline-block;
-    border: 2px solid #a883e9;
+    border: 2px solid #d99800;
     height: 50px;
     min-width: 178px;
     line-height: 46px;
@@ -387,7 +387,7 @@ p {
 }
 
 .sing-up-button > a:hover {
-    background: #fb397d;
+    background: #d99800;
     color: #fff;
     border-color: transparent;
     -webkit-transition-duration: 500ms;
@@ -398,7 +398,7 @@ p {
 /* stcicky css */
 
 .header_area.sticky {
-    background-color: #884bdf;
+    background-color: #342f28;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 70px;
@@ -512,7 +512,7 @@ p {
 }
 
 .get-start-area .submit {
-    background-color: #fb397d;
+    background-color: #d99800;
     color: #fff;
     font-weight: 500;
     display: inline-block;
@@ -525,7 +525,7 @@ p {
 }
 
 .get-start-area .submit:hover {
-    background: #6f52e5;
+    background: #284885;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -558,7 +558,7 @@ p {
 
 .single-icon > i {
     font-size: 36px;
-    color: #fb397d;
+    color: #d99800;
 }
 
 .single-special > h4 {
@@ -572,7 +572,7 @@ p {
 
 .single-special > h4 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #284885;
     margin-bottom: 15px;
 }
 
@@ -587,7 +587,7 @@ p {
 }
 
 .special_description_content > h2 {
-    color: #5b32b4;
+    color: #d99800;
     font-size: 48px;
     margin-bottom: 30px;
 }
@@ -682,7 +682,7 @@ p {
 }
 
 .single-feature > i {
-    color: #fb397d;
+    color: #d99800;
     font-size: 30px;
     display: inline-block;
     float: left;
@@ -691,7 +691,7 @@ p {
 
 .single-feature > h5 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #284885;
 }
 
 .single-feature > p {
@@ -1045,12 +1045,12 @@ p {
 -------------------------- */
 
 .our-monthly-membership {
-    background: #a865e1;
-    background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
-    background: -webkit-linear-gradient(right, #7873ed, #a865e1);
-    background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
-    background: -o-linear-gradient(right, #7873ed, #a865e1);
-    background: linear-gradient(to left, #7873ed, #a865e1);
+    background: #342f28;
+    background: -webkit-linear-gradient(to left, #d99800, #342f28);
+    background: -webkit-linear-gradient(right, #d99800, #342f28);
+    background: -webkit-gradient(linear, right top, left top, from(#d99800), to(#342f28));
+    background: -o-linear-gradient(right, #d99800, #342f28);
+    background: linear-gradient(to left, #d99800, #342f28);
 }
 
 .membership-description > h2 {
@@ -1104,7 +1104,7 @@ p {
 
 .member-text > h4 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #284885;
 }
 
 .member-text > p {
@@ -1181,7 +1181,7 @@ p {
 .address-text > p > span,
 .phone-text > p > span,
 .email-text > p > span {
-    color: #5b32b4;
+    color: #284885;
 }
 
 .footer-contact-area .line-shape {
@@ -1242,7 +1242,7 @@ p {
 }
 
 .btn.submit-btn {
-    background: #fb397d;
+    background: #d99800;
     height: 48px;
     min-width: 185px;
     color: #ffffff;
@@ -1251,7 +1251,7 @@ p {
 }
 
 .btn.submit-btn:hover {
-    background: #5b32b4;
+    background: #284885;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -1277,7 +1277,7 @@ p {
 }
 
 .footer-social-icon > a > i {
-    background: #9b69e4;
+    background: #d99800;
     font-size: 14px;
     color: #ffffff;
     height: 40px;
@@ -1289,7 +1289,7 @@ p {
 }
 
 .footer-social-icon > a > i:hover {
-    background: #fb397d;
+    background: #284885;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
