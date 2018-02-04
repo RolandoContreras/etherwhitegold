@@ -1,3 +1,4 @@
+<!--<link rel="stylesheet" href="https://blockchain.info/es/wallet/css/wallet-0a7b9d4166fc49bbe5ef295bc17b5a7cd15138e7.css">-->
 <section>
     <div class="section-heading row">
         <div class=" col-lg-9 col-md-8 col-sm-7 col-xs-12">
@@ -25,7 +26,7 @@
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
                             <h5 class="media-heading text-uppercase title-small">BALANCE DE ETHERWHITEGOLD</h5>
-                            <p class="title"><?php if(count($obj_balance)>0){echo "$".number_format($obj_balance,'2','.',',');}else{echo "$0.00";}?></p>
+                            <p class="title"><?php if(count($obj_balance)>0){echo number_format($obj_balance,'2','.',',');}else{echo "$0.00";}?></p>
                             <div class="mt-10">
                             </div>
                             </div>
@@ -36,40 +37,79 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="well media media-badges box box-height">
-                <div class="row">
-                    <div class="col-sm-8">
-                        
+
+        <div class="col-md-12"> 
+            <div class="panel panel-default">
+                    <div class="panel-heading clearfix"> 
+                            <div class="panel-title">TO BUY</div> 
+                    </div>
+                <div class="col-sm-5">
+                        <div class="well media media-badges box-height">
                             <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">PAQUETE ACTUAL</h5>
-                            <p class="title"><?php echo $text_franchise;?></p>
+                            <input type="text" onkeyup="validate_eth(this.value);" class="form-control form-control" name="eth" id="eth"/> 
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
-                            <img style="max-width: 120px" src="<?php echo site_url()."static/backoffice/images/$images_franchise";?>" alt="<?php echo $text_franchise;?>"/>
+                                <label>ETH</label>
+                            </div>
                         </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="well">
+                        <img style="padding: 5px" src="<?php echo site_url().'static/backoffice/images/exchange.png';?>" alt="ether" width="90%"/>    
                         </div>
-                    
                 </div>
+                <div class="col-sm-5">
+                        <div class="well media media-badges box-height box">
+                            <div class="media-body media-middle">
+                                <h5 class="media-heading text-uppercase title-small"></h5>
+                            <input type="text" onkeyup="validate_ewg(this.value);" class="form-control form-control" name="ewg" id="ewg"/> 
+                            <div class="mt-10"></div>
+                            </div>
+                        <div class="media-right media-middle">
+                                <label>EWG</label>
+                            </div>
+                        </div>
                 </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-md-12"> 
-                                <div class="panel panel-success">
+                <div class="col-sm-12">
+                    <div class="bs-example">
+                        <a href="<?php echo site_url().'backoffice/message_confirmation';?>"><button type="button" class="btn btn-success btn-block"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">Send the order</span></button></a>     
+                        <br/>
+                    </div>
+                </div>
+            </div> 
+        </div>    
+
+            <!--PAKAGE SELECTED-->
+        <div class="col-md-12"> 
+            <div class="panel panel-info">
+                    <div class="col-md-3"> 
+                        <div class="panel panel-default">
+                                    <!-- panel body --> 
+                                    <div class="panel-body"> 
+                                            <p>
+                                                <img src="<?php echo site_url()."static/page_front/images/etherwhitegold.jpg";?>" alt="etherwhitegold"/>
+                                            </p>
+                                    </div> 
+                            </div> 
+                    </div>
+                        <div class="col-md-9"> 
+                                <div class="panel panel-default">
                                         <div class="panel-heading clearfix"> 
-                                            <div class="panel-title">Mensaje: <b>Inicio de Actividades</b></div> 
+                                            <div class="panel-title"><b>PURCHASING MODE</b></div> 
                                         </div> 
                                         <!-- panel body --> 
+                                        <div id="spinner"></div>
                                         <div class="panel-body"> 
-                                            <p><?php echo replace_vocales_voculeshtml("Del 24 de Octubre el 31 de Octubre del 2017 se considera tiempo de pre apertura, durante este periodo de tiempo pueden ir desarrollando el negocio con total normalidad hasta empezar las actividades el 1 de Noviembre. Las comisiones generadas durante el tiempo de pre apertura serán procesadas con normalidad. El día miércoles 01 de noviembre del 2017, empezamos actividades de 3T Company contando con los servicios de viajes, educación, forex y todas las áreas al 100%.");?></p> 
-                                            <p><?php echo replace_vocales_voculeshtml("Desde la fecha de inicio (1 Noviembre) ya se empezará a hacer los respectivos re consumos cada quince días para que se mantenga activa su respectiva cuenta.");?></p> 
+                                             <p>Send the amount you have requested from to the following address of Ethereum: <b>0x58FB4f49044266e0233121Ae8fF5589809c067C8</b><br/> Send a message by clicking on the button below indicating the user and the voucher or identification code of the transaction made.<br></p><br/>
+                                             <div class="bs-example">
+                                                 <a href="<?php echo site_url().'backoffice/message_confirmation';?>"><button type="button" class="btn btn-black btn-block"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Send Confirmation Message</span></button></a>
+                                            </div>
                                         </div> 
                                 </div> 
                         </div>
-                    </div>
-            </div>
+                </div> 
+        </div>
         </div>
     </div>
    </section>

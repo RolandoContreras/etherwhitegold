@@ -132,17 +132,11 @@
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> 
                                     <img width="44" class="img-circle avatar" alt="" src="<?php echo site_url().'static/backoffice/images/avatar/avatar.png';?>"><?php echo $_SESSION['customer']['name'];?> &nbsp;&nbsp;<i class="fa fa-arrow-down" aria-hidden="true"></i>
                                 </a>
-
                                           <!-- User action menu -->
                               <ul class="dropdown-menu">
-
                                   <li><a href="<?php echo site_url().'backoffice/profile';?>"><i class="fa fa-user-circle-o" aria-hidden="true"></i>My profile</a></li>
-                                  <li><a href="<?php echo site_url().'backoffice/messages'; ?>"><i class="fa fa-comment" aria-hidden="true"></i>Mensajes</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="<?php echo site_url().'login/logout';?>"><i class="fa fa-sign-out fa-lg"></i>Salir</a></li>
                               </ul>
                                           <!-- /user action menu -->
-
                             </li>
                           </ul>
 			<!-- /user info -->

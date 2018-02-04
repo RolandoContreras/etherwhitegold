@@ -130,6 +130,26 @@ class B_home extends CI_Controller {
         }
     }
     
+    public function validate_eth() {
+            if ($this->input->is_ajax_request()) {
+                //SELECT ID FROM CUSTOMER
+            $value = str_to_minuscula(trim($this->input->post('value')));
+            //MULTIPLE BY THE VALUE
+            $new_data =  $value * 600;
+            echo json_encode($new_data);
+            }
+        }
+        
+    public function validate_ewg() {
+            if ($this->input->is_ajax_request()) {
+                //SELECT ID FROM CUSTOMER
+            $value = str_to_minuscula(trim($this->input->post('value')));
+            //MULTIPLE BY THE VALUE
+            $new_data =  $value / 600;
+            echo json_encode($new_data);
+            }
+        }    
+    
     public function get_total_messages($customer_id){
         $params = array(
                         "select" =>"count(messages_id) as total",

@@ -205,7 +205,7 @@
                     <!-- Video Area Start -->
                     <div class="video-area" style="background-image: url(<?php echo site_url().'static/page_front/images/video.jpg';?>);">
                         <div class="video-play-btn">
-                            <a href="https://www.youtube.com/watch?v=V99Tj5xSXn4" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/watch?v=9C5Oh5_lcUk" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
