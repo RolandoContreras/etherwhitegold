@@ -94,7 +94,8 @@ class Register extends CI_Controller {
                         'last_name' => $last_name,
                         'email' => $email,
                         'ether_address' => $ether,
-                        'active' => 0,
+                        'active' => 0,                    
+                        'not_american' => 1,                    
                         'status_value' => 1,
                         'created_at' => date("Y-m-d H:i:s"),
                     );

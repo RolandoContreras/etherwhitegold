@@ -67,6 +67,13 @@
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
                                         <div class="form-group">
+                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;I am not American </label> <img src="<?php echo site_url().'static/page_front/images/language/not_en.png';?>" alt="not american" width="25px"/>
+                                                                                                                                                                      
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
                                             <input onblur="validate_username(this.value);" type="text" class="form-control" name="username" id="username" placeholder="Username" required>
                                             <span class="alert-0"></span>
                                         </div>
