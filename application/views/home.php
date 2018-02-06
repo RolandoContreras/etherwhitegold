@@ -43,8 +43,7 @@
                     </div>
                     <div class="get-start-area">
                         <!-- Form Start -->
-                        <!--<a class="submit" href="<?php echo site_url().'static/page_front/whitepaper/whitepaper.pdf';?>" download><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/es.png';?>" alt="Spanish" /></a>-->
-                        <a class="submit" href="#"><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/es.png';?>" alt="Spanish" /></a>
+                        <a class="submit" href="<?php echo site_url().'static/page_front/whitepaper/whitepaper_es.pdf';?>" download><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/es.png';?>" alt="Spanish" /></a>
                         <a class="submit" href="#"><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/en.png';?>" alt="English" /></a>
                         <!-- Form End -->
                     </div>
@@ -70,7 +69,8 @@
     </section>
     <!-- ***** Wellcome Area End ***** -->
 
-    <!-- ***** Special Area Start ***** -->
+    
+    <!-- ***** Aditional Information Start ***** -->
     <section class="special-area bg-white section_padding_100" id="about">
         <div class="container">
             <div class="row">
@@ -133,11 +133,51 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="special_description_img">
+                                 <img src="<?php echo site_url().'static/page_front/images/ico.png';?>" alt="Bonus Information"/>
+                            </div>
+                    </div>
+                    <!-- Single Special Area -->
+                    <div class="col-lg-6">
+                            <div class="special_description_img">
+                                 <img src="<?php echo site_url().'static/page_front/images/roart_map.png';?>" alt="Bonus Information"/>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- ***** Special Area End ***** -->
-
+    <!-- ***** Aditional Information Start ***** -->
+    <section class="bg-white section_padding_0_50">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Heading Text -->
+                        <div class="section-heading text-center">
+                            <h2>Bonus of  Purchase</h2>
+                            <div class="line-shape"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Special Area -->
+                        <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                            <div class="special_description_content">
+                                <p>We give you a series of benefits to be part of this great revolution. To buy EtherWhiteGold with up to 50% discount, you have to be aware of the pre purchase opening date given in 4 rounds. We start the purchase with 3 days of discounts at 50%, followed by 7 days with a discount of 25%, then 7 days with 10% discount and finally the normal price of the ICO. Be part of the ICO that will change the way you see cryptocurrencies, this is your opportunity.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="special_description_img">
+                                     <img src="<?php echo site_url().'static/page_front/images/bonus.png';?>" alt="Bonus Information"/>
+                                </div>
+                        </div>
+                    </div>          
+                </div>
+              </section>
+    
+    
     <!-- ***** Awesome Features Start ***** -->
     <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="services">
         <div class="container">

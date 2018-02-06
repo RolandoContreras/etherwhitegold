@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="bs-example">
-                        <a href="<?php echo site_url().'backoffice/message_confirmation';?>"><button type="button" class="btn btn-success btn-block" disabled><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">Send the order</span></button></a>     
+                        <a href="#"><button type="button" class="btn btn-success btn-block"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">Send the order</span></button></a>     
                         <br/>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                                         <div class="panel-body"> 
                                              <p>Send the amount you have requested from to the following address of Ethereum: <b>0x58FB4f49044266e0233121Ae8fF5589809c067C8</b><br/> Send a message by clicking on the button below indicating the user and the voucher or identification code of the transaction made.<br></p><br/>
                                              <div class="bs-example">
-                                                 <a href="<?php echo site_url().'backoffice/message_confirmation';?>"><button type="button" disabled class="btn btn-black btn-block"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Send Confirmation Message</span></button></a>
+                                                 <a href="#"><button type="button" class="btn btn-black btn-block"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Send Confirmation Message</span></button></a>
                                             </div>
                                         </div> 
                                 </div> 
