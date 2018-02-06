@@ -457,7 +457,7 @@ p {
 }
 
 .wellcome-heading > h2 {
-    font-size: 45px;
+    font-size: 30px;
     color: #ffffff;
     font-weight: 700;
     position: relative;
@@ -475,6 +475,26 @@ p {
     margin: 0px !important;
 }
 
+#name_spe{
+    color: #d99800 !important;
+    font-weight: bold !important;
+}
+#symbol_spe{
+    color: #d99800 !important;
+    font-weight: bold !important;
+}
+#decimal_spe{
+    color: #d99800 !important;
+    font-weight: bold !important;
+}
+#amount_spe{
+    color: #d99800 !important;
+    font-weight: bold !important;
+}
+#contract_spe{
+    color: #d99800 !important;
+    font-weight: bold !important;
+}
 
 .get-start-area .email {
     background: #9572e8;

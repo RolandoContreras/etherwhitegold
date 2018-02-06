@@ -39,7 +39,7 @@
                 <div class="col-4 col-md">
                     <div class="wellcome-heading">
                         <h2>EWG</h2>
-                        <p>The cryptocurrency of your luck</p>
+<!--                        <p>The cryptocurrency of your luck</p>-->
                     </div>
                     <div class="get-start-area">
                         <!-- Form Start -->
@@ -52,15 +52,15 @@
                 <div class="col-4 col-md-4">
                     <div class="wellcome-heading" style="text-align: right">
                         <h2>Specifications</h2>
-                        <p>Name:</p>
+                        <p id="name_spe">Name:</p>
                         <h4>Etherwhitegold</h4>
-                        <p>Symbol:</p>
+                        <p id="name_spe">Symbol:</p>
                         <h4>EWG</h4>
-                        <p>Decimal:</p>
+                        <p id="name_spe">Decimal:</p>
                         <h4>18</h4>
-                        <p>Amount:</p>
+                        <p id="name_spe">Amount:</p>
                         <h4>13,000,000</h4>
-                        <p>Contract:</p>
+                        <p id="name_spe">Contract:</p>
                         <h4>0x4380fe4B02844a4e4afC3e8E51491587c214df55</h4>
                     </div>
                 </div>
@@ -196,39 +196,31 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
                         <i class="fa fa-btc" aria-hidden="true"></i>
-                        <h5>Tecnología Blockchain</h5>
-                        <p>Usamos tecnología de transacción blockchain descentralizada para transacciones seguras y transparentes.</p>
+                        <h5>Blockchain Technology</h5>
+                        <p>We use decentralized blockchain transaction technology for secure and transparent transactions.</p>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
                         <i class="fa fa-rocket" aria-hidden="true"></i>
-                        <h5>Transacciones rápidas</h5>
-                        <p>Envíe y reciba pagos en cualquier parte del mundo de forma rápida y sencilla.</p>
+                        <h5>Quick transactions</h5>
+                        <p>Send and receive payments anywhere in the world quickly and easily.</p>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
                         <i class="fa fa-certificate" aria-hidden="true"></i>
-                        <h5>Recursos limitados</h5>
-                        <p>Solo habrá un suministro máximo de 13 millones de monedas. Esto asegurará la escasezde monedas.</p>
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="fa fa-user-secret" aria-hidden="true"></i>
-                        <h5>Anónimo</h5>
-                        <p>El origen de la transacción es completamente anónimo a menos que el propietario quierarevelar su identidad.</p>
+                        <h5>Limited resources</h5>
+                        <p>There will only be a maximum supply of 13 million coins.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
                         <i class="fa fa-exchange" aria-hidden="true"></i>
-                        <h5>Comercio</h5>
-                        <p>Preste liquidez a nuestros casinos online y gane un interés basado en su opción de inversión./ Podrá intercambiar BTC, ETWG y Fiat en nuestro intercambio internoúltima generación que se lanzará en enero de 2018.</p>
+                        <h5>Commerce</h5>
+                        <p>Lend liquidity to our online casinos and earn an interest based on your investment option.</p>
                     </div>
                 </div>
             </div>
@@ -266,7 +258,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="https://colorlib.com/etc/ca/img/team-img/team-1.jpg" alt="">
@@ -280,65 +272,68 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Jesús Garcia</h4>
-                            <p>Asesoria Programación blockchain</p>
+                            <h4>Jóse Diaz</h4>
+                            <p>Founder</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="https://colorlib.com/etc/ca/img/team-img/team-2.jpg" alt="">
-                            <div class="team-hover-effects">
-<!--                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>-->
-                            </div>
+                            <div class="team-hover-effects"></div>
                         </div>
                         <div class="member-text">
-                            <h4>Reivy Gimenes</h4>
-                            <p>Diseñador Grafico</p>
+                            <h4>Jesús Garcia</h4>
+                            <p>Blockchain programmer and market analyst</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="https://colorlib.com/etc/ca/img/team-img/team-3.jpg" alt="">
-                            <div class="team-hover-effects">
-<!--                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>-->
-                            </div>
+                            <div class="team-hover-effects"></div>
                         </div>
                         <div class="member-text">
-                            <h4>José Diaz</h4>
-                            <p>Fundador</p>
+                            <h4>Jesús Montes</h4>
+                            <p>Marketing Advisor</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/rolandoc.jpg';?>" alt="Rolando Contreras">
-                            <div class="team-hover-effects">
-<!--                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>-->
-                            </div>
+                            <div class="team-hover-effects"></div>
+                        </div>
+                        <div class="member-text">
+                            <h4>Luz Casalins</h4>
+                            <p>Director of public relations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-team-member">
+                        <div class="member-image">
+                            <img src="<?php echo site_url().'static/page_front/images/team/rolandoc.jpg';?>" alt="Rolando Contreras">
+                            <div class="team-hover-effects"></div>
                         </div>
                         <div class="member-text">
                             <h4>Rolando Contreras</h4>
-                            <p>Programador y Desarrollador</p>
+                            <p>Web programmer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-team-member">
+                        <div class="member-image">
+                            <img src="<?php echo site_url().'static/page_front/images/team/rolandoc.jpg';?>" alt="Rolando Contreras">
+                            <div class="team-hover-effects"></div>
+                        </div>
+                        <div class="member-text">
+                            <h4>Reivy Jimenez</h4>
+                            <p>Creative director</p>
                         </div>
                     </div>
                 </div>
