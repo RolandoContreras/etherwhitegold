@@ -4,6 +4,7 @@ class B_home extends CI_Controller {
      function __construct() {
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
+        $this->load->model("bonus_model","obj_bonus");
         $this->load->model("otros_model","obj_otros");
         $this->load->model("post_model","obj_post");
     }
@@ -15,7 +16,6 @@ class B_home extends CI_Controller {
         
         /// VISTA
         $customer_id = $_SESSION['customer']['customer_id'];
-        
         $params = array(
                         "select" =>"customer.customer_id,
                                     customer.username,
@@ -31,8 +31,18 @@ class B_home extends CI_Controller {
                          "where" => "customer.customer_id = $customer_id");
             $obj_customer = $this->obj_customer->get_search_row($params);
             
-                $this->tmp_backoffice->set("obj_customer",$obj_customer);
-                $this->tmp_backoffice->render("backoffice/b_home");
+        //GET DATE TODAY    
+        $day = date("Y-m-d"); 
+        $where = "date_start <= '$day' and date_end >= '$day'";
+        $params_bonus = array(
+                        "select" =>"*",
+                        "where" => $where,
+                        "order" => "bonus_id DESC");
+        $obj_bonus = $this->obj_bonus->get_search_row($params_bonus); 
+
+        $this->tmp_backoffice->set("obj_bonus",$obj_bonus);
+        $this->tmp_backoffice->set("obj_customer",$obj_customer);
+        $this->tmp_backoffice->render("backoffice/b_home");
     }
     
     public function make_pedido(){
@@ -134,8 +144,9 @@ class B_home extends CI_Controller {
             if ($this->input->is_ajax_request()) {
                 //SELECT ID FROM CUSTOMER
             $value = str_to_minuscula(trim($this->input->post('value')));
+            $price = str_to_minuscula(trim($this->input->post('price')));
             //MULTIPLE BY THE VALUE
-            $new_data =  $value * 600;
+            $new_data =  $value / $price;
             echo json_encode($new_data);
             }
         }
@@ -144,8 +155,9 @@ class B_home extends CI_Controller {
             if ($this->input->is_ajax_request()) {
                 //SELECT ID FROM CUSTOMER
             $value = str_to_minuscula(trim($this->input->post('value')));
+            $price = str_to_minuscula(trim($this->input->post('price')));
             //MULTIPLE BY THE VALUE
-            $new_data =  $value / 600;
+            $new_data =  $value * $price;
             echo json_encode($new_data);
             }
         }    

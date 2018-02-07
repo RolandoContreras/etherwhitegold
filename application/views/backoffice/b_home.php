@@ -4,6 +4,9 @@
         <div class=" col-lg-9 col-md-8 col-sm-7 col-xs-12">
             <h1 class="title text-uppercase">Home</h1>
         </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 pull-right count-down-box">
+            <a class="white">EWG Price: <?php echo $obj_bonus->name."<br/>".$obj_bonus->price;?> ETH</a>
+        </div>
     </div> 
          <!-- Page content-->
     <div class="content-wrapper">
@@ -26,7 +29,7 @@
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
                             <h5 class="media-heading text-uppercase title-small">BALANCE DE ETHERWHITEGOLD</h5>
-                            <p class="title"><?php if(count($obj_balance)>0){echo number_format($obj_balance,'2','.',',');}else{echo "$0.00";}?></p>
+                            <p class="title"><?php if(count($obj_balance)>0){echo number_format($obj_balance,'2','.',',');}else{echo "0.00";}?></p>
                             <div class="mt-10">
                             </div>
                             </div>
@@ -37,7 +40,8 @@
                     </div>
                 </div>
             </div>
-
+            
+            
         <div class="col-md-12"> 
             <div class="panel panel-default">
                     <div class="panel-heading clearfix"> 
@@ -64,6 +68,7 @@
                             <div class="media-body media-middle">
                                 <h5 class="media-heading text-uppercase title-small"></h5>
                             <input type="text" onkeyup="validate_ewg(this.value);" class="form-control form-control" name="ewg" id="ewg"/> 
+                            <input type="hidden" name="price" id="price" value="<?php echo $obj_bonus->price;?>"/> 
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">

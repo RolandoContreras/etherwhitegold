@@ -19,6 +19,9 @@ class bonus_model_atributos{
     var $bonus_id='';
     var $name='';
     var $percent='';
+    var $price='';
+    var $date_start='';
+    var $date_end='';
     var $status_value='';
     var $created_at='';
     var $created_by='';
@@ -35,6 +38,9 @@ class Bonus_Model extends CI_Model{
         $this->bonus_id='';
         $this->name='';
         $this->percent='';
+        $this->price='';
+        $this->date_start='';
+        $this->date_end='';
 	$this->status_value='';
         $this->created_at='';
         $this->created_by='';
