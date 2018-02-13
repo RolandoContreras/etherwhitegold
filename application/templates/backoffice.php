@@ -95,6 +95,7 @@
                                     $url = explode("/",uri_string()); 
                                     $style_inicio = "";
                                     $style_misdatos = "";
+                                    $style_order = "";
                                     if(isset($url[1])){
                                         switch ($url[1]) {
                                             ////////
@@ -107,6 +108,9 @@
                                                     case "order":
                                                         $style_order = "a_active";
                                                         break;
+                                                    case "message_confirmation":
+                                                        $style_inicio = "a_active";
+                                                        break;  
                                                     default:
                                                          $title = "Inicio";
                                             }
@@ -117,7 +121,7 @@
                         <li class="has-sub"><a href="<?php echo site_url().'backoffice'?>" class="<?php echo $style_inicio;?>"><i class="fa fa-tachometer fa-lg"></i><span class="title">Dashboard</span></a></li>
                         <li class="has-sub"><a href="<?php echo site_url().'backoffice/profile'?>" class="<?php echo $style_misdatos;?>"><i class="fa fa-address-book fa-lg"></i><span class="title">My Profile</span></a></li>
                         <li class="has-sub"><a href="#" class="<?php echo $style_order;?>"><i class="fa fa-align-left fa-lg"></i><span class="title">My Orders</span></a></li>
-                        <li class="has-sub"><a href="<?php echo site_url().'login/logout';?>" class="<?php echo $style_pagos;?>"><i class="fa fa-sign-out fa-lg"></i><span class="title">Sign Out</span></a></li>
+                        <li class="has-sub"><a href="<?php echo site_url().'login/logout';?>"><i class="fa fa-sign-out fa-lg"></i><span class="title">Sign Out</span></a></li>
 		</ul>
 		<!-- /main navigation -->		
   </div>

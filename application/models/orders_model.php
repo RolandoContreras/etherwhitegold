@@ -15,38 +15,42 @@ BITSHARE S.A.C
 * Fecha: 16/11/2016
 ****/
 
-class commissions_model_atributos{	
-    var $commissions_id='';
+class orders_model_atributos{	
+    var $order_id='';
     var $customer_id='';
     var $bonus_id='';
     var $name='';
-    var $amount='';
-    var $mandatory_account='';
-    var $normal_account='';
+    var $amount_ether='';
+    var $amount_ewg='';
     var $date='';
+    var $active='';
     var $status_value='';
     var $created_at='';
     var $created_by='';
+    var $updated_at='';
+    var $updated_by='';
 }
 
-class Commissions_Model extends CI_Model{ 
+class Orders_Model extends CI_Model{ 
 
     public function __construct() {
         parent::__construct();  
-        $this->table = 'commissions';
-	$this->table_id = 'commissions_id';
-        $this->commissions_id='';
+        $this->table = 'orders';
+	$this->table_id = 'order_id';
+        $this->order_id='';
         $this->customer_id='';
         $this->bonus_id='';
         $this->name ='';
-	$this->amount='';
-        $this->mandatory_account='';
-        $this->normal_account='';
+	$this->amount_ether='';
+        $this->amount_ewg='';
         $this->date='';
+        $this->active='';
 	$this->status_value='';
         $this->created_at='';
         $this->created_by='';
-	$this->fields = new commissions_model_atributos();
+        $this->updated_at='';
+        $this->updated_by='';
+	$this->fields = new orders_model_atributos();
     }   
     
     public function fields(){

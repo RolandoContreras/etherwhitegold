@@ -1,10 +1,10 @@
 <section>
     <div class="section-heading row">
         <div class=" col-lg-9 col-md-8 col-sm-7 col-xs-12">
-            <h1 class="title text-uppercase">Tablero</h1>
+            <h1 class="title text-uppercase">CONFIRMATION MESSAGE</h1>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 pull-right count-down-box">
-            <a class="white"><?php echo "Precio del BITCOIN: "?><?php echo $price_btc;?></a>
+            <a class="white">EWG Price: <?php echo $obj_bonus->name."<br/>".$obj_bonus->price;?> ETH</a>
         </div>
     </div> 
          <!-- Page content-->
@@ -15,8 +15,8 @@
                     <div class="col-sm-6">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">TOTAL PAGADO</h5>
-                            <p class="title"><?php if(count($obj_total)>0){echo "$".number_format($obj_total,'2','.',',');}else{echo "$0.00";}?></p>
+                            <h5 class="media-heading text-uppercase title-small">TOTAL PAID</h5>
+                            <p class="title"><?php if(!is_null($obj_total_pay)){echo $obj_total_pay;}else{echo "0.00";}?></p>
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
@@ -27,8 +27,8 @@
                     <div class="col-sm-6">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">BALANCE POR DISPONER</h5>
-                            <p class="title"><?php if(count($obj_balance)>0){echo "$".number_format($obj_balance,'2','.',',');}else{echo "$0.00";}?></p>
+                            <h5 class="media-heading text-uppercase title-small">BALANCE OF ETHERWHITEGOLD</h5>
+                            <p class="title"><?php if(!is_null($obj_total_etherwhitegold)){echo $obj_total_etherwhitegold;}else{echo "0.00";}?></p>
                             <div class="mt-10">
                             </div>
                             </div>
@@ -52,8 +52,7 @@
             <!--END SEPARATE SECCION-->
             
             <?php 
-            if($messaje_active_count == 0){ ?>
-                
+            if($messaje_active_count != 0){ ?>
                 <div class="col-lg-1"></div>
             <div class="col-lg-10">
                 <div class="mail-box-header">
@@ -95,15 +94,6 @@
                                     <div class="form-group text-right">
                                         <button type="submit" name="upload" id="upload" class="btn btn-primary"><i class="fa fa-reply"></i> Enviar </button>
                                     </div>
-                                    
-                                    
-
-<!--<div class="alert alert-success">...</div>
-<div class="alert alert-info">...</div>
-<div class="alert alert-warning">...</div>
-<!--<div class="alert alert-danger">hola</div>-->
-
-                                    
                                      <div id="uploaded_image"></div>
                             </form>
                     </div>
@@ -112,7 +102,7 @@
             <div class="col-lg-1"></div>
                 
           <?php }else{ ?>
-            <div class="alert alert-success" style="text-align: center">En las primeras 24 horas estaremos activando su paquete.</div>
+            <div class="alert alert-danger" style="text-align: center">Must make a purchase order</div>
             <?php } ?>
             
         </div>

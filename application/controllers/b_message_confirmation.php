@@ -5,9 +5,8 @@ class B_message_confirmation extends CI_Controller {
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
         $this->load->model("activation_message_model","obj_activation_message");
-        $this->load->model("otros_model","obj_otros");
-        $this->load->model("commissions_model","obj_commissions");
-        $this->load->model("messages_model","obj_messages");
+        $this->load->model("bonus_model","obj_bonus");
+        $this->load->model("orders_model","obj_orders");
         
     }
 
@@ -17,11 +16,6 @@ class B_message_confirmation extends CI_Controller {
         $this->get_session();
         //GET CUSTOMER_ID 
         $customer_id = $_SESSION['customer']['customer_id'];
-        //GET TOTAL MESSAGE
-         $all_message = $this->get_total_messages($customer_id);
-         //GET TOTAL MESSAGE
-         $obj_message = $this->get_messages($customer_id);
-        
         //GET MESSAGE SEND FROM USER
         $param = array(
                         "select" =>"activation_message_id,
@@ -32,52 +26,65 @@ class B_message_confirmation extends CI_Controller {
          $obj_message_activate = $this->obj_activation_message->get_search_row($param);
          $messaje_active_count = count($obj_message_activate);
          
-         //GET TOTAL AMOUNT
-                $params_total = array(
-                        "select" =>"sum(amount) as total,
-                                    (select sum(amount) FROM commissions WHERE status_value <= 2 and customer_id = $customer_id) as balance",
-                         "where" => "commissions.customer_id = $customer_id",
-                    );
-             $obj_commissions = $this->obj_commissions->get_search_row($params_total); 
-             $obj_total = $obj_commissions->total;
-             $obj_balance = $obj_commissions->balance;
-         
          //VERIFY IF ISSET MESSAGE
-         if($messaje_active_count == 0){
+         if($messaje_active_count != 0){
                 //GET DATA FROM CUTOMER
              $params = array(
                         "select" =>"customer.customer_id,
                                     customer.first_name,
                                     customer.last_name,
                                     customer.status_value,
-                                    customer.franchise_id,
-                                    franchise.price,
-                                    franchise.name as franchise,
-                                    ",
+                                    bonus.name,
+                                    bonus.price",
                          "where" => "customer.customer_id = $customer_id",
-                         "join" => array('franchise, customer.franchise_id = franchise.franchise_id',)
+                         "join" => array('bonus, customer.bonus_id = bonus.bonus_id'),
+                          "order" => "customer.customer_id = $customer_id",
                                         );
                 $obj_customer = $this->obj_customer->get_search_row($params);
                 $this->tmp_backoffice->set("obj_customer",$obj_customer);
          }
-         
-            //GET PRICE BTC
-            $params_price_btc = array(
-                                    "select" =>"",
-                                     "where" => "otros_id = 1");
-                
-           $obj_otros = $this->obj_otros->get_search_row($params_price_btc); 
-           $price_btc = "$".number_format($obj_otros->precio_btc,2);
+            //GET BONUS DAY
+            $obj_bonus = $this->bonus_day();  
+            //GET TOTAL PAY
+            $obj_total_pay = $this->total_pay($customer_id);
+            //GET TOTAL ETHERWHITEGOLD
+            $obj_total_etherwhitegold = $this->total_etherwhitegold($customer_id);
             
-            $this->tmp_backoffice->set("obj_message",$obj_message);
-            $this->tmp_backoffice->set("all_message",$all_message); 
-            $this->tmp_backoffice->set("obj_total",$obj_total);
-            $this->tmp_backoffice->set("obj_balance",$obj_balance);
+            $this->tmp_backoffice->set("obj_total_etherwhitegold",$obj_total_etherwhitegold);
+            $this->tmp_backoffice->set("obj_total_pay",$obj_total_pay);
+            $this->tmp_backoffice->set("obj_bonus",$obj_bonus);
             $this->tmp_backoffice->set("messaje_active_count",$messaje_active_count);
-            $this->tmp_backoffice->set("price_btc",$price_btc);
             $this->tmp_backoffice->render("backoffice/b_message_confirmation");
     }
     
+    public function bonus_day(){
+        //GET DATE TODAY    
+        $day = date("Y-m-d"); 
+        $where = "date_start <= '$day' and date_end >= '$day'";
+        $params_bonus = array(
+                        "select" =>"*",
+                        "where" => $where,
+                        "order" => "bonus_id DESC");
+        $obj_bonus = $this->obj_bonus->get_search_row($params_bonus); 
+        return $obj_bonus;
+    }
+    public function total_pay($customer_id){
+        //GET DATE TODAY    
+        $params_bonus = array(
+                        "select" =>"sum(amount_ether) as total",
+                        "where" => "customer_id = $customer_id and active = 1");
+        $obj_total_pay = $this->obj_orders->get_search_row($params_bonus); 
+        return $obj_total_pay = $obj_total_pay->total;
+    }
+    
+    public function total_etherwhitegold($customer_id){
+        //GET DATE TODAY    
+        $params_bonus = array(
+                        "select" =>"sum(amount_ewg) as total",
+                        "where" => "customer_id = $customer_id and active = 1");
+        $obj_total_ewg = $this->obj_orders->get_search_row($params_bonus); 
+        return $obj_total_ewg = $obj_total_ewg->total;
+    }
     public function upload()
     {
         //GET SESION ACTUALY

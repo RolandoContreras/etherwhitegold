@@ -5,7 +5,6 @@ class B_data extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
-        $this->load->model("messages_model","obj_messages");
         $this->load->model("otros_model","obj_otros");
     }
 
@@ -48,8 +47,6 @@ class B_data extends CI_Controller {
          $obj_customer = $this->obj_customer->get_search_row($params);  
          
          //SEND DATA TO VIEW  
-         $this->tmp_backoffice->set("obj_message",$obj_message);
-         $this->tmp_backoffice->set("all_message",$all_message);
          $this->tmp_backoffice->set("obj_customer",$obj_customer);
          $this->tmp_backoffice->render("backoffice/b_data");
 	}

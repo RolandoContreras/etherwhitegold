@@ -1,4 +1,3 @@
-<!--<link rel="stylesheet" href="https://blockchain.info/es/wallet/css/wallet-0a7b9d4166fc49bbe5ef295bc17b5a7cd15138e7.css">-->
 <section>
     <div class="section-heading row">
         <div class=" col-lg-9 col-md-8 col-sm-7 col-xs-12">
@@ -16,8 +15,8 @@
                     <div class="col-sm-6">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">TOTAL PAGADO</h5>
-                            <p class="title"><?php if(count($obj_total)>0){echo "$".number_format($obj_total,'2','.',',');}else{echo "$0.00";}?></p>
+                            <h5 class="media-heading text-uppercase title-small">TOTAL PAID</h5>
+                            <p class="title"><?php if(!is_null($obj_total_pay)){echo $obj_total_pay;}else{echo "0.00";}?></p>
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
@@ -28,8 +27,8 @@
                     <div class="col-sm-6">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">BALANCE DE ETHERWHITEGOLD</h5>
-                            <p class="title"><?php if(count($obj_balance)>0){echo number_format($obj_balance,'2','.',',');}else{echo "0.00";}?></p>
+                            <h5 class="media-heading text-uppercase title-small">BALANCE OF ETHERWHITEGOLD</h5>
+                            <p class="title"><?php if(!is_null($obj_total_etherwhitegold)){echo $obj_total_etherwhitegold;}else{echo "0.00";}?></p>
                             <div class="mt-10">
                             </div>
                             </div>
@@ -108,7 +107,7 @@
                                         <div class="panel-body"> 
                                              <p>Send the amount you have requested from to the following address of Ethereum: <b>0x58FB4f49044266e0233121Ae8fF5589809c067C8</b><br/> Send a message by clicking on the button below indicating the user and the voucher or identification code of the transaction made.<br></p><br/>
                                              <div class="bs-example">
-                                                 <a href="#"><button type="button" class="btn btn-black btn-block"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Send Confirmation Message</span></button></a>
+                                                 <a href="<?php echo site_url().'backoffice/message_confirmation';?>"><button type="button" class="btn btn-black btn-block"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Send Confirmation Message</span></button></a>
                                             </div>
                                         </div> 
                                 </div> 

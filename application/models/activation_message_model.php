@@ -17,12 +17,13 @@ BITSHARE S.A.C
 
 class activation_message_model_atributos{	
     var $activation_message_id='';
+    var $customer_id='';
+    var $bonus_id='';
     var $subject='';
     var $message='';
     var $name='';
-    var $franchise='';
-    var $customer_id='';
     var $date='';
+    var $active='';
     var $status_value='';
     var $created_at='';
     var $created_by='';
@@ -37,12 +38,13 @@ class Activation_message_model extends CI_Model{
         $this->table = 'activation_message';
 	$this->table_id = 'activation_message_id';
         $this->activation_message_id='';
+        $this->customer_id='';
+        $this->franchise_id='';
         $this->subject='';
         $this->message='';
         $this->name='';
-        $this->franchise='';
-        $this->customer_id='';
         $this->date='';
+        $this->active='';
 	$this->status_value='';
         $this->created_at='';
         $this->created_by='';
