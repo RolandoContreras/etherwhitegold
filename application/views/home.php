@@ -261,14 +261,8 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="https://colorlib.com/etc/ca/img/team-img/team-1.jpg" alt="">
+                            <img src="<?php echo site_url().'static/page_front/images/team/jose_diaz.jpg';?>" alt="José Díaz">
                             <div class="team-hover-effects">
-<!--                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>-->
                             </div>
                         </div>
                         <div class="member-text">
@@ -280,7 +274,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="https://colorlib.com/etc/ca/img/team-img/team-2.jpg" alt="">
+                            <img src="<?php echo site_url().'static/page_front/images/team/jesus_garcia.jpg';?>" alt="Jesús Garcia">
                             <div class="team-hover-effects"></div>
                         </div>
                         <div class="member-text">
@@ -292,7 +286,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="https://colorlib.com/etc/ca/img/team-img/team-3.jpg" alt="">
+                            <img src="<?php echo site_url().'static/page_front/images/team/jesus_montes.jpg';?>" alt="Jesús Montes">
                             <div class="team-hover-effects"></div>
                         </div>
                         <div class="member-text">
@@ -304,7 +298,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="<?php echo site_url().'static/page_front/images/team/rolandoc.jpg';?>" alt="Rolando Contreras">
+                            <img src="<?php echo site_url().'static/page_front/images/team/luz_casalins.jpg';?>" alt="Luz Casalins">
                             <div class="team-hover-effects"></div>
                         </div>
                         <div class="member-text">
@@ -316,7 +310,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="<?php echo site_url().'static/page_front/images/team/rolandoc.jpg';?>" alt="Rolando Contreras">
+                            <img src="<?php echo site_url().'static/page_front/images/team/ronaldo_contreras.jpg';?>" alt="Rolando Contreras">
                             <div class="team-hover-effects"></div>
                         </div>
                         <div class="member-text">
@@ -328,7 +322,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
-                            <img src="<?php echo site_url().'static/page_front/images/team/rolandoc.jpg';?>" alt="Rolando Contreras">
+                            <img src="<?php echo site_url().'static/page_front/images/team/reivy_jimenez.jpg';?>" alt="Reivy Jimenez">
                             <div class="team-hover-effects"></div>
                         </div>
                         <div class="member-text">
