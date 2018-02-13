@@ -47,21 +47,20 @@
 	<div class="page-container">
             <div class="single-portfolio-holder portfolio-type-3 alt-four">
 		<div class="title section-title">
-                    <h1>PAQUETE EXECUTIVE</h1>
+                    <h1>PAQUETE MASTER</h1>
                 </div>
     		<div class="details row">
                     <div class="col-sm-12">
                         <div class="project-description">
                             <div class="post-formatting">
-                                <p><?php echo replace_vocales_voculeshtml("El paquete EXECUTIVE tiene un costo de $250 dólares americanos y te otorgan 187 puntos para el plan de ganancias.");?></p>
+                                <p><?php echo replace_vocales_voculeshtml("El paquete MASTER tiene un costo de $3000 dólares americanos y te otorgan 2250 puntos para el plan de ganancias.");?></p>
                                             <p><b>Recibes:</b></p>
-                                            <p><b>UN ECO CRUCERO Y TEN UNA GRAN EXPERIENCIA.</b></p>
-                                            <p><?php echo replace_vocales_voculeshtml("Los pasos 3 y 4 del  sistema de 9 pasos desarrollado por Frank García. Formador de más de 30 millonarios, autor del libro “De balsero a millonario”, ¿Por qué fracasa la gente? entre otros.");?></p>
-                                            <p><b>Paso 3:</b><br/>- Mi primer mes en redes de mercadeo.<br/>- Deseo ardiente.</p>
-                                            <p><b>Paso 4:</b><br/><?php echo replace_vocales_voculeshtml("- El secreto está en las preguntas.");?><br/>- Importancia del sistema educativo.<br/><?php echo replace_vocales_voculeshtml("- Diamante en 90 días.");?></p>
+                                            <p><b><?php echo replace_vocales_voculeshtml("RECIBE UN VIAJE INTERNACIONAL TODO PAGADO.");?></b></p>
+                                            <p><?php echo replace_vocales_voculeshtml("El paso 9 del  sistema de 9 pasos desarrollado por Frank García. Formador de más de 30 millonarios, autor del libro “De balsero a millonario”, ¿Por qué fracasa la gente? entre otros.");?></p>
+                                            <p><b>Paso 9:</b><br/><?php echo replace_vocales_voculeshtml("- Recibe videos exclusivos de negociación y cierre en vivo.");?><br/></p>
                                             <p><b>Objetivo:</b></p>
-                                            <p><?php echo replace_vocales_voculeshtml("Le muestra a la persona los pasos claros y simples de que hacer el primer mes, de la importancia del tener un sistema educativo y  como tener éxito en los primeros 90 días de iniciar su negocio.");?></p>
-                                            <p><b><?php echo replace_vocales_voculeshtml("RECIBE CURSOS DE FOREX NIVEL BÁSICO EN NUESTRA ACADEMIA “3T ACADEMY”.");?></b></p>
+                                            <p><?php echo replace_vocales_voculeshtml("La persona aprende en videos de negociaciones en vivo, como aplicar todas las técnicas para lograr un cierre efectivo.");?></p>
+                                            <p><b><?php echo replace_vocales_voculeshtml("RECIBE UN CONVERSATORIO EN PRIVADO CON NUESTRO TRADER EN JEFE.");?></b></p>
                             </div>
                         </div>
                     </div>
@@ -72,9 +71,9 @@
                             <style>.gallery-item-0 {max-width: 1139px;}</style>				
                             <style>.img-456 {background-color: #484848;}</style>	
                                     <span class="image-placeholder img-456" style="padding-bottom:56.18055556%">
-                                        <img width="1440" height="809" class="lazyload" alt="" data-src="<?php echo site_url().'static/page_front/images/plan/presentacion/executive.jpg'?>" data-srcset="<?php echo site_url().'static/page_front/images/plan/presentacion/executive.jpg'?> 1440w, <?php echo site_url().'static/page_front/images/plan/presentacion/executivex300.jpg'?> 300w, <?php echo site_url().'static/page_front/images/plan/presentacion/executivex768.jpg'?> 768w, <?php echo site_url().'static/page_front/images/plan/presentacion/executivex1024.jpg'?> 1024w, <?php echo site_url().'static/page_front/images/plan/presentacion/executivex1116.jpg'?> 1116w, <?php echo site_url().'static/page_front/images/plan/presentacion/executivex806.jpg'?> 806w, <?php echo site_url().'static/page_front/images/plan/presentacion/executivex558.jpg'?> 558w, <?php echo site_url().'static/page_front/images/plan/presentacion/executivex655.jpg'?> 655w" data-sizes="(max-width: 1440px) 100vw, 1440px">	
+                                        <img width="1440" height="809" class="lazyload" alt="" data-src="<?php echo site_url().'static/page_front/images/plan/presentacion/master.jpg'?>" data-srcset="<?php echo site_url().'static/page_front/images/plan/presentacion/master.jpg'?> 1440w, <?php echo site_url().'static/page_front/images/plan/presentacion/masterx300.jpg'?> 300w, <?php echo site_url().'static/page_front/images/plan/presentacion/masterx768.jpg'?> 768w, <?php echo site_url().'static/page_front/images/plan/presentacion/masterx1024.jpg'?> 1024w, <?php echo site_url().'static/page_front/images/plan/presentacion/masterx1116.jpg'?> 1116w, <?php echo site_url().'static/page_front/images/plan/presentacion/masterx806.jpg'?> 806w, <?php echo site_url().'static/page_front/images/plan/presentacion/masterx558'?> 558w, <?php echo site_url().'static/page_front/images/plan/presentacion/masterx655.jpg'?> 655w" data-sizes="(max-width: 1440px) 100vw, 1440px">	
                                     </span>
-                                    <div class="caption">$250</div>
+                                    <div class="caption">$3000</div>
 			</div>
                     </div>
                     <div class="row">

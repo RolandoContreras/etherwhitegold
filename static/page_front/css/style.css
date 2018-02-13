@@ -281,23 +281,21 @@ p {
     z-index: 999999;
 }
 
+/*background-image: url("../gif/preloader.gif");*/
+
 .colorlib-load {
+    background-image: url("../gif/preloader.gif") !important;
     -webkit-animation: 2000ms linear 0s normal none infinite running colorlib-load;
     animation: 2000ms linear 0s normal none infinite running colorlib-load;
-    background: transparent none repeat scroll 0 0;
-    border-color: #dddddd #dddddd #fb397d;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    height: 40px;
-    left: calc(50% - 20px);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
     position: relative;
-    top: calc(50% - 20px);
-    width: 40px;
-    z-index: 9;
+    
 }
 
-@-webkit-keyframes colorlib-load {
+/*@-webkit-keyframes colorlib-load {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -306,9 +304,9 @@ p {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
-}
+}*/
 
-@keyframes colorlib-load {
+/*@keyframes colorlib-load {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -317,7 +315,7 @@ p {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
-}
+}*/
 
 /* --------------------------
 :: 2.0 Header Area CSS
