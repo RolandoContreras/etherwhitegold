@@ -70,7 +70,7 @@ class B_home extends CI_Controller {
         //GET DATE TODAY    
         $params_bonus = array(
                         "select" =>"sum(amount_ewg) as total",
-                        "where" => "customer_id = $customer_id and active = 1");
+                        "where" => "customer_id = $customer_id and active = 2");
         $obj_total_ewg = $this->obj_orders->get_search_row($params_bonus); 
         return $obj_total_ewg = $obj_total_ewg->total;
     }

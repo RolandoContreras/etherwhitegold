@@ -14,37 +14,37 @@
             <div class="row">
                <div class="col-lg-12">
                     <div id="panelDemo14" class="panel panel-info">
-                     <div class="panel-heading">Mi Balance</div>
+                     <div class="panel-heading">My Orders</div>
                      <div class="panel-body">
                            <table id="table" class="display table table-striped table-hover responsive">
                               <thead>
                                 <tr>
-                                    <th class="all">Fecha</th>
-                                    <th>Concepto</th>
-                                    <th>Monto</th>
-                                    <th>Periodo</th>
-                                    <th>EWG</th>
-                                    <th>Estado</th>
+                                    <th class="all">Date</th>
+                                    <th>Concept</th>
+                                    <th>Round</th>
+                                    <th>Price</th>
+                                    <th>Amount ETH</th>
+                                    <th>Amount EWG</th>
+                                    <th>Status</th>
                                     
                                 </tr>
                               </thead>
                               <tbody>
-                                <?php foreach ($obj_commissions as $value) { ?>
+                                <?php foreach ($obj_order as $value) { ?>
                                       <tr role="row" class="odd">
-                                          <td class="sorting_1"><?php echo formato_fecha($value->date);?></td>
-                                          <td>Concepto &nbsp;<?php echo $value->bonus;?></td>
+                                            <td class="sorting_1"><?php echo formato_fecha_barras($value->date);?></td>
+                                            <td>EWG Purchase</td>
+                                            <td><?php echo $value->name;?></td>
+                                            <td><b><?php echo $value->price;?></b></td>
+                                            <td><?php echo $value->amount_ether;?></td>
+                                            <td><span class="text-success"><b><?php echo $value->amount_ewg;?></b></span></td>
                                             <td>
-                                            <span class="text-success"><?php echo "$".$value->amount;?></span>
-                                            </td>
-                                            <td>
-                                               <span class="label label-success">
                                                    <?php 
-                                                   if($value->status_value == 1 || $value->status_value == 2){ ?>
-                                                       <span class="label label-success">Procesado</span>
-                                                   <?php }else{ ?>
-                                                       <span class="label label-warning">En espera por procesar</span>
+                                                   if($value->active == 1){ ?>
+                                                       <span class="label label-danger">Awaiting Confirmation</span>
+                                                   <?php }elseif($value->active == 2){ ?>
+                                                       <span class="label label-success">Processed</span>
                                                    <?php } ?>
-                                               </span> 
                                             </td>
                                        </tr>
                                  <?php } ?>

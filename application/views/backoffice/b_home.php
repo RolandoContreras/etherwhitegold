@@ -13,20 +13,8 @@
          <!-- Page content-->
     <div class="content-wrapper">
         <div class="row fix-box-height package-box-fix mt-30">
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="well media media-badges box-height box">
-                            <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">TOTAL PAID</h5>
-                            <p class="title"><?php if(!is_null($obj_total_pay)){echo $obj_total_pay;}else{echo "0.00";}?></p>
-                            <div class="mt-10"></div>
-                            </div>
-                        <div class="media-right media-middle">
-                            <i class="fa fa-usd fa-4x" aria-hidden="true"></i>
-                        </div>
-                        </div>
-                    </div>
+            <div class="col-lg-12">
+                <div class="row"><div class="col-sm-6"></div>
                     <div class="col-sm-6">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
@@ -109,7 +97,7 @@
                                         <!-- panel body --> 
                                         <div id="spinner"></div>
                                         <div class="panel-body"> 
-                                             <p>Send the amount you have requested from to the following address of Ethereum: <b>0x58FB4f49044266e0233121Ae8fF5589809c067C8</b><br/> Send a message by clicking on the button below indicating the user and the voucher or identification code of the transaction made.<br></p><br/>
+                                             <p>Send a message by clicking on the button below indicating the user and the voucher or identification code of the transaction made.<br></p><br/>
                                              <div class="bs-example">
                                                  <a href="<?php echo site_url().'backoffice/message_confirmation';?>"><button type="button" class="btn btn-black btn-block"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Send Confirmation Message</span></button></a>
                                             </div>
