@@ -172,7 +172,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="special_description_img">
-                                     <img src="<?php echo site_url().'static/page_front/images/bonus.png';?>" alt="Bonus Information"/>
+                                     <img src="<?php echo site_url().'static/page_front/images/bonus.jpg';?>" alt="Bonus Information"/>
                                 </div>
                         </div>
                     </div>          
@@ -350,12 +350,6 @@
                     </div>
                     <div class="footer-text">
                         <p>We will send you information about the cryptocurrency that will change the world</p>
-                    </div>
-<!--                    <div class="address-text">
-                        <p><span>Address:</span> 40 Baria Sreet 133/2 NewYork City, US</p>
-                    </div>-->
-                    <div class="phone-text">
-                        <p><span>Phone:</span> +11-225-888-888-66</p>
                     </div>
                     <div class="email-text">
                         <p><span>Email:</span> info.etherwhitegold.com</p>
