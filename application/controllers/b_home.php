@@ -78,80 +78,35 @@ class B_home extends CI_Controller {
     public function make_pedido(){
 
              if($this->input->is_ajax_request()){   
+                 
                 //SELECT ID FROM CUSTOMER
-               $franchise_id = $this->input->post('franchise_id');
-               $customer_id = $_SESSION['customer']['customer_id'];
+               $customer_id = $this->input->post('customer_id');
+               $ewg = $this->input->post('ewg');
+               $eth = $this->input->post('eth');
+               $bonus_id = $this->input->post('bonus_id');
                
-               if($franchise_id != "" && $customer_id != ""){
-                            //UPDATE DATA EN CUSTOMER TABLE
-                            if($franchise_id == 1){
-                                //CHANGE TO BASIC
-                                 $data = array(
-                                            
-                                            'franchise_id' => 1,
-                                            'point_calification_left' => 50,
-                                            'point_calification_rigth' => 50,
-                                            'updated_by' => $customer_id,
-                                            'updated_at' => date("Y-m-d H:i:s")
-                                        ); 
-                                        $this->obj_customer->update($customer_id,$data);
-                            }elseif($franchise_id == 2){
-                                //CHANGE TO EXECUTIVE
-                                 $data = array(
-                                            
-                                            'franchise_id' => 2,
-                                            'point_calification_left' => 100,
-                                            'point_calification_rigth' => 100,
-                                            'updated_by' => $customer_id,
-                                            'updated_at' => date("Y-m-d H:i:s")
-                                        ); 
-                                        $this->obj_customer->update($customer_id,$data);
-                            }elseif($franchise_id == 3){
-                                //CHANGE TO SENIOR EXECUTIVE
-                                 $data = array(
-                                            'franchise_id' => 3,
-                                            'point_calification_left' => 300,
-                                            'point_calification_rigth' => 300,
-                                            'updated_by' => $customer_id,
-                                            'updated_at' => date("Y-m-d H:i:s")
-                                        ); 
-                                        $this->obj_customer->update($customer_id,$data);
-                            }elseif($franchise_id == 4){
-                                //CHANGE TO MASTER
-                                 $data = array(
-                                            'franchise_id' => 4,
-                                            'point_calification_left' => 500,
-                                            'point_calification_rigth' => 500,
-                                            'updated_by' => $customer_id,
-                                            'updated_at' => date("Y-m-d H:i:s")
-                                        ); 
-                                        $this->obj_customer->update($customer_id,$data);
-                            }elseif($franchise_id == 5){
-                                //CHANGE TO MASTER
-                                 $data = array(
-                                            'franchise_id' => 5,
-                                            'point_calification_left' => 1000,
-                                            'point_calification_rigth' => 1000,
-                                            'updated_by' => $customer_id,
-                                            'updated_at' => date("Y-m-d H:i:s")
-                                        ); 
-                                        $this->obj_customer->update($customer_id,$data);
-                            }elseif($franchise_id == 6){
-                                //CHANGE TO MASTER
-                                 $data = array(
-                                            'franchise_id' => 6,
-                                            'point_calification_left' => 5000,
-                                            'point_calification_rigth' => 5000,
-                                            'updated_by' => $customer_id,
-                                            'updated_at' => date("Y-m-d H:i:s")
-                                        ); 
-                                        $this->obj_customer->update($customer_id,$data);
-                            }
-                             $data['message'] = "true";
-                             echo json_encode($data); 
-                             exit();
-               }else{
+               if($ewg != "" && $eth != ""){
+                    //INSERT DATA EN ORDERS TABLE
+                     $data = array(
+                                'customer_id' => $customer_id,
+                                'bonus_id' => $bonus_id,
+                                'amount_ether' => $eth,
+                                'amount_ewg' => $ewg,
+                                'date' => date("Y-m-d H:i:s"),
+                                'active' => 1,
+                                'status_value' => 1,
+                                'created_at' => date("Y-m-d H:i:s"),
+                                'created_by' => $customer_id
+                            ); 
+                      $this->obj_orders->insert($data);
+
                      $data['message'] = "true";
+                     $data['info'] = '<div class="alert alert-success" style="text-align: center">Order sent successfully.</div>';
+                     echo json_encode($data); 
+                     exit();
+               }else{
+                     $data['message'] = "false";
+                     $data['info'] = '<div class="alert alert-danger" style="text-align: center">You must fill all the fields.</div>';
                      echo json_encode($data); 
                      exit();
                }

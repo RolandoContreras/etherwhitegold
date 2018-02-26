@@ -19,7 +19,6 @@ class orders_model_atributos{
     var $order_id='';
     var $customer_id='';
     var $bonus_id='';
-    var $name='';
     var $amount_ether='';
     var $amount_ewg='';
     var $date='';
@@ -40,7 +39,6 @@ class Orders_Model extends CI_Model{
         $this->order_id='';
         $this->customer_id='';
         $this->bonus_id='';
-        $this->name ='';
 	$this->amount_ether='';
         $this->amount_ewg='';
         $this->date='';

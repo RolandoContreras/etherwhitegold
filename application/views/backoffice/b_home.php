@@ -71,6 +71,7 @@
                                 <h5 class="media-heading text-uppercase title-small"></h5>
                             <input type="text" onkeyup="validate_ewg(this.value);" class="form-control form-control" name="ewg" id="ewg"/> 
                             <input type="hidden" name="price" id="price" value="<?php echo $obj_bonus->price;?>"/> 
+                            <input type="hidden" name="bonus_id" id="bonus_id" value="<?php echo $obj_bonus->bonus_id;?>"/> 
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
@@ -80,13 +81,13 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="bs-example">
-                        <a onclick="make_order();"><button type="button" class="btn btn-success btn-block"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">Send the order</span></button></a>     
+                        <a onclick="make_order(<?php echo $obj_customer->customer_id;?>);"><button type="button" class="btn btn-success btn-block"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">Send the order</span></button></a>     
                         <br/>
                     </div>
                 </div>
+               <div class="col-md-12" id="alert_message"></div>         
             </div> 
         </div>    
-
             <!--PAKAGE SELECTED-->
         <div class="col-md-12"> 
             <div class="panel panel-info">

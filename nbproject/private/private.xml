@@ -8,9 +8,11 @@
             <file>file:/C:/wamp/www/etherwhitegold/application/views/backoffice/b_home.php</file>
             <file>file:/C:/wamp/www/etherwhitegold/application/controllers/b_home.php</file>
             <file>file:/C:/wamp/www/etherwhitegold/index.php</file>
+            <file>file:/C:/wamp/www/etherwhitegold/application/models/orders_model.php</file>
             <file>file:/C:/wamp/www/etherwhitegold/application/templates/backoffice.php</file>
             <file>file:/C:/wamp/www/etherwhitegold/application/controllers/b_message_confirmation.php</file>
             <file>file:/C:/wamp/www/etherwhitegold/application/views/backoffice/b_message_confirmation.php</file>
+            <file>file:/C:/wamp/www/etherwhitegold/application/controllers/b_data.php</file>
         </group>
     </open-files>
 </project-private>

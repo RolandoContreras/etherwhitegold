@@ -22,9 +22,14 @@ function validate_ewg(value){
         }            
     });
 }
-function make_order(){
+function make_order(customer_id){
+    var ewg = document.getElementById("ewg").value;
+    var eth = document.getElementById("eth").value;
+    var bonus_id = document.getElementById("bonus_id").value;
+    
     bootbox.confirm({
-    message: "Confirm that you want to place the order?",
+    message: "Send the requested amount to the following etherium address\n\
+    0x58FB4f49044266e0233121Ae8fF5589809c067C8",
     buttons: {
         confirm: {
             label: 'Confirm',
@@ -38,11 +43,18 @@ function make_order(){
     callback: function () {
         $.ajax({
                    type: "post",
-                   url: site+"dashboard/comentarios/cambiar_status",
+                   url: site+"b_home/make_pedido",
                    dataType: "json",
-                   data: {comment_id : comment_id},
-                   success:function(data){                             
-                   location.reload();
+                   data: {customer_id : customer_id,
+                          ewg : ewg,
+                          eth : eth,
+                          bonus_id : bonus_id},
+                   success:function(data){
+                       if(data.message == "false") {
+                           $("#alert_message").html(data.info);
+                       }else{
+                           $("#alert_message").html(data.info);
+                       }
                    }         
            });
     }
