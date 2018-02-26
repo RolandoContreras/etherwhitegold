@@ -1,3 +1,6 @@
+<script src="static/cms/js/core/jquery.js"></script>        
+<script src="<?php echo site_url().'static/page_front/js/bootbox.min.js';?>"></script>
+<script src="static/cms/js/core/bootstrap-modal.js"></script>
 <section>
     <div class="section-heading row">
         <div class=" col-lg-9 col-md-8 col-sm-7 col-xs-12">
@@ -77,7 +80,7 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="bs-example">
-                        <a href="#"><button type="button" class="btn btn-success btn-block"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">Send the order</span></button></a>     
+                        <a onclick="make_order();"><button type="button" class="btn btn-success btn-block"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">Send the order</span></button></a>     
                         <br/>
                     </div>
                 </div>

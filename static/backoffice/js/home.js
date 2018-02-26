@@ -22,3 +22,29 @@ function validate_ewg(value){
         }            
     });
 }
+function make_order(){
+    bootbox.confirm({
+    message: "Confirm that you want to place the order?",
+    buttons: {
+        confirm: {
+            label: 'Confirm',
+            className: 'btn-success'
+        },
+        cancel: {
+            label: 'Cancel',
+            className: 'btn-danger'
+        }
+    },
+    callback: function () {
+        $.ajax({
+                   type: "post",
+                   url: site+"dashboard/comentarios/cambiar_status",
+                   dataType: "json",
+                   data: {comment_id : comment_id},
+                   success:function(data){                             
+                   location.reload();
+                   }         
+           });
+    }
+});
+}
