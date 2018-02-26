@@ -67,8 +67,19 @@
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;I am not American </label> <img src="<?php echo site_url().'static/page_front/images/language/not_en.png';?>" alt="not american" width="25px"/>
-                                                                                                                                                                      
+                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to confirm that you are NOT a U.S. citizen, resident or entity (each a “U.S. Person”) nor are you purchasing EWG Tokens or signing on behalf of a U.S. Person.</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to confirm that you have read, understand and agree to the terms of EWG Token <b>Purchase Agreement</b></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to indicate that you have read etherwhitegold.io <b>Whitepaper</b></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to confirm that you are NOT a citizen of or resident of the People’s Republic of China or an entity formed under the laws of the People’s Republic of China (each a “Chinese Person”) nor are you purchasing EWG Tokens or signing on behalf of a Chinese Person.</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to confirm that you have read, understand and agree to the <b>Term of Use</b></label>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
