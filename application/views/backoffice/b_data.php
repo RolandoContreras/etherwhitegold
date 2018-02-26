@@ -1,3 +1,6 @@
+<script src="static/cms/js/core/jquery.js"></script>        
+<script src="<?php echo site_url().'static/page_front/js/bootbox.min.js';?>"></script>
+<script src="static/cms/js/core/bootstrap-modal.js"></script>
 <section>
     <div class="section-heading row">
         <div class=" col-lg-9 col-md-8 col-sm-7 col-xs-12">
@@ -84,12 +87,10 @@
                                                 <div class="panel-heading text-uppercase clearfix">
                                                     <h3 class="title pull-left">Ether Address</h3>
                                                     <div class="pull-right">
-                                                        <button type="button" onclick="alter_btc();" class="btn btn-primary btn-sm edit-btn">
-                                                            <i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
+                                                        <a onclick="alter_btc(<?php echo $obj_customer->customer_id;?>);"><button type="button" class="btn btn-success btn-block"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">Save</span></button></a>     
                                                     </div> 
                                                 </div>
                                                 <div class="panel-body">
-                                                    
                                                         <div class="form-group">
                                                             <div class="form-group">
                                                                 <p class="form-control">
@@ -97,10 +98,9 @@
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                    
+                                                    <div class="col-sm-12" id="message_addres"></div>
                                                 </div>
                                                 </div>
-                                                
                                             </div>
                                         </div>
                                       </div>
@@ -110,20 +110,18 @@
                     </div>
                 </div>
                 <div class="row">
-                    
                     <div class="col-md-12">
                         <form name="form">
                         <div class="panel panel-default panel-form">
-                            <div class="panel-heading text-uppercase"><h3>Cambiar Contraseña</h3></div>
+                            <div class="panel-heading text-uppercase"><h3>Change Password</h3></div>
                             <hr class="style-2">
                             <div class="panel-body">
                                 <div class="">
                                     <div class="row">
                                     <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label class="control-label required">Contraseña Actual</label>
+                                        <label class="control-label required">Current password</label>
                                         <input type="password" id="password" name="password" onblur="validate_password(this.value);" class="form-control form-control" maxlength="50" data-constraints="@NotEmpty"/>
-                                        <!--<input type="password" required="required" class="form-control form-control"/>-->
                                         <span class="alert-0"></span>
                                     </div>
                                     </div>
@@ -131,14 +129,14 @@
 
                                     <div class="row">
                                     <div class="col-sm-12">
-                                    <div class="form-group"><label class="control-label required"><?php echo replace_vocales_voculeshtml("Nueva Contraseña");?></label>
+                                    <div class="form-group"><label class="control-label required"><?php echo "New Password";?></label>
                                         <input type="password" id="password_one" name="password_one" disabled  required="required" class="form-control form-control"/>
                                     </div>
                                     </div>
                                     </div>
                                     <div class="row">
                                     <div class="col-sm-12">
-                                    <div class="form-group"><label class="control-label required"><?php echo replace_vocales_voculeshtml("Repita Nueva Contraseña");?></label>
+                                    <div class="form-group"><label class="control-label required"><?php echo "Repeat new password";?></label>
                                         <input type="password" id="password_two" name="password_two" required="required" disabled  class="form-control form-control"/></div>
 
                                     </div>
@@ -146,9 +144,9 @@
                                 <hr class="style-1">
                                     <div class="row">
                                         <div class="mb-10">
-                                            <a class="btn btn-primary btn-block" onclick="alter_password();" name="button_password" style="word-wrap: break-word; white-space: normal !important;"><?php echo replace_vocales_voculeshtml("Cambiar Contraseña");?></a>
-                                            <span style="position: relative;left: 25%;top: 50%; transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);" class="alert-1"></span>
+                                            <a class="btn btn-success btn-block" onclick="alter_password();" name="button_password" style="word-wrap: break-word; white-space: normal !important;"><?php echo "Save Password";?></a>
                                         </div>
+                                        <span class="alert-1"></span>
                                     </div>
 
                                 </div>
@@ -163,73 +161,6 @@
 </div>
 </div>
 </div>  
-<script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>    
+<!--<script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>-->
 <script src="<?php echo site_url().'static/backoffice/js/data.js';?>"></script>
 </section>
-<script>
-function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-<style>
-    /* Style the tab */
-div.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-div.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-div.tab button.active {
-   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
-background: #45484d; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, #45484d 0%, #000000 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-color:white;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-</style>
-    
-    
