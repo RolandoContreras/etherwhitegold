@@ -21,7 +21,6 @@ class activation_message_model_atributos{
     var $bonus_id='';
     var $subject='';
     var $message='';
-    var $name='';
     var $date='';
     var $active='';
     var $status_value='';
@@ -42,7 +41,6 @@ class Activation_message_model extends CI_Model{
         $this->franchise_id='';
         $this->subject='';
         $this->message='';
-        $this->name='';
         $this->date='';
         $this->active='';
 	$this->status_value='';

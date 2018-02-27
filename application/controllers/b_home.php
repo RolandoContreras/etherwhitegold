@@ -33,13 +33,10 @@ class B_home extends CI_Controller {
             
         //GET BONUS DAY
         $obj_bonus = $this->bonus_day();    
-        //GET TOTAL PAY
-        $obj_total_pay = $this->total_pay($customer_id);
         //GET TOTAL ETHERWHITEGOLD
         $obj_total_etherwhitegold = $this->total_etherwhitegold($customer_id);
 
         $this->tmp_backoffice->set("obj_total_etherwhitegold",$obj_total_etherwhitegold);
-        $this->tmp_backoffice->set("obj_total_pay",$obj_total_pay);
         $this->tmp_backoffice->set("obj_bonus",$obj_bonus);
         $this->tmp_backoffice->set("obj_customer",$obj_customer);
         $this->tmp_backoffice->render("backoffice/b_home");

@@ -10,7 +10,25 @@
                     <a class="white">EWG Price: <?php echo $obj_bonus->name."<br/>".$obj_bonus->price;?> ETH</a>
                 </div>
             </div> 
-
+           <div class="row fix-box-height package-box-fix mt-30">
+            <div class="col-lg-12">
+                <div class="row"><div class="col-sm-6"></div>
+                    <div class="col-sm-6">
+                        <div class="well media media-badges box-height box">
+                            <div class="media-body media-middle">
+                            <h5 class="media-heading text-uppercase title-small">BALANCE OF ETHERWHITEGOLD</h5>
+                            <p class="title"><?php if(!is_null($obj_total_etherwhitegold)){echo $obj_total_etherwhitegold;}else{echo "0.00";}?></p>
+                            <div class="mt-10">
+                            </div>
+                            </div>
+                        <div class="media-right media-middle">
+                            <i class="fa fa-university fa-4x" aria-hidden="true"></i>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </div>
             <div class="row">
                <div class="col-lg-12">
                     <div id="panelDemo14" class="panel panel-info">

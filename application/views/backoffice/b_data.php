@@ -6,10 +6,10 @@
         <div class=" col-lg-9 col-md-8 col-sm-7 col-xs-12">
             <h1 class="title text-uppercase">My Profile</h1>
         </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 pull-right count-down-box">
+            <a class="white">EWG Price: <?php echo $obj_bonus->name."<br/>".$obj_bonus->price;?> ETH</a>
+        </div>
     </div> 
-    <!--SPINNER-->
-        <div id="spinner"></div>
-    <!--END SPINNER-->
     <div class="row ml-custom">
         <div class="col-xs-12">
             <div class="profile-section">
