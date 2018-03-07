@@ -39,14 +39,13 @@
         <div class="container-front h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-4 col-md">
-                    <div class="wellcome-heading">
+                    <div class="wellcome-heading d-none">
                         <h2>EWG</h2>
-<!--                        <p>The cryptocurrency of your luck</p>-->
                     </div>
                     <div class="get-start-area">
                         <!-- Form Start -->
                         <a class="submit" href="<?php echo site_url().'static/page_front/whitepaper/whitepaper_es.pdf';?>" download><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/es.png';?>" alt="Spanish" /></a>
-                        <a class="submit" href="#"><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/en.png';?>" alt="English" /></a>
+                        <a class="submit rel" href="#"><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/en.png';?>" alt="English" /></a>
                         <!-- Form End -->
                     </div>
                 </div>
@@ -91,7 +90,7 @@
                 </div>
                 <div class="col-4 col-md-4">
                   <div class="wellcome-heading-specfication">
-                    <div class="button-specification d-none d-lg-block">
+                    <div class="button-specification d-lg-block">
                         <b>SPECIFICATIONS</b>
                         <div>Name:</div>
                         <div class="name_spe">Etherwhitegold</div>
@@ -104,19 +103,6 @@
                         Contract:
                         <div class="name_spe">0x4380fe4B02844a4e4afC3e8E51491587c214df55</div>
                     </div>
-                    </div>
-                    <div class="wellcome-heading" style="text-align: right">
-<!--                        <h2>Specifications</h2>
-                        <p id="name_spe">Name:</p>
-                        <h4>Etherwhitegold</h4>
-                        <p id="name_spe">Symbol:</p>
-                        <h4>EWG</h4>
-                        <p id="name_spe">Decimal:</p>
-                        <h4>18</h4>
-                        <p id="name_spe">Amount:</p>
-                        <h4>13,000,000</h4>
-                        <p id="name_spe">Contract:</p>
-                        <h4>0x4380fe4B02844a4e4afC3e8E51491587c214df55</h4>-->
                     </div>
                 </div>
             </div>
@@ -449,5 +435,4 @@
    <?php $this->load->view("footer")?>
     <!-- ***** Footer Area Start ***** -->
 </body>
-
 </html>
