@@ -393,6 +393,24 @@ p {
     transition-duration: 500ms;
 }
 
+.button-specification{
+  color: #fff;
+    display: inline-block;
+    border: 2px solid #d99800;
+    height: 100%;
+    min-width: 178px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 24px 24px 24px 0px;   
+}
+
+
+.button-specification .name_spe{
+    color: #d99800 !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+}
+
 /* stcicky css */
 
 .header_area.sticky {
@@ -566,8 +584,21 @@ p {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
 }
 
+.container-front{
+    padding: 0 10%;
+}
 .wellcome-heading {
     margin-bottom: 100px;
+}
+.wellcome-heading-specfication{
+    margin-bottom: 100px;
+    margin-left: 145px;
+}
+
+.wellcome-heading-count {
+    margin-bottom: 897px;
+           margin-left: 105px;
+
 }
 
 /* --------------------------

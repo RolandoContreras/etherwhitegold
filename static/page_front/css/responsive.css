@@ -1,4 +1,112 @@
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .wellcome_area {
+        height: 1180px !important;
+    }
+    .menu_area .navbar-brand {
+        font-size: 42px;
+    }
+    .menu_area #nav .nav-link {
+        padding: 35px 7.5px;
+    }
+    .sing-up-button > a {
+        color: #fff;
+        height: 40px;
+        min-width: 152px;
+        line-height: 36px;
+        font-size: 14px;
+    }
+    .welcome-thumb {
+        width: 50%;
+        bottom: -100px;
+        right: 50px;
+    }
+    .video-area {
+        height: 550px;
+    }
+    .app_screenshots_slides {
+        padding: 0 4%;
+    }
+    .header_area.sticky .menu_area #nav .nav-link {
+        padding: 23px 7.5px;
+    }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1399px)  {
+    .container-front {
+        padding: 0 5%;
+    }
+    .wellcome-heading-count{
+        margin-bottom:600px;
+        margin-left: 46px;
+    }
+    .get-start-area .submit{
+        min-width: 130px;
+        font-size: 14px;
+    }
+    .wellcome-heading-specfication{
+        font-size:14px;
+        margin-left:95px;
+        margin-left: 45px;
+    }
+    .button-specification .name_spe{
+        font-size: 11px;
+    }
+    
+    .menu_area .navbar-brand {
+        font-size: 42px;
+    }
+    .menu_area #nav .nav-link {
+        padding: 35px 7.5px;
+    }
+    .sing-up-button > a {
+        color: #fff;
+        height: 40px;
+        min-width: 152px;
+        line-height: 36px;
+        font-size: 14px;
+    }
+    .welcome-thumb {
+        width: 50%;
+        bottom: -100px;
+        right: 50px;
+    }
+    .video-area {
+        height: 550px;
+    }
+    .app_screenshots_slides {
+        padding: 0 4%;
+    }
+    .header_area.sticky .menu_area #nav .nav-link {
+        padding: 23px 7.5px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .wellcome_area {
+    height: 690px;
+    }
+    
+    .container-front{
+        padding: 0 1%;
+    }
+    .wellcome-heading-count{
+        margin-bottom: 450px;
+    }
+    .wellcome-heading-specfication{
+        margin-left: 43px;
+    }
+    .get-start-area .submit {
+        margin-top: 5px;
+    }
+    .button-specification {
+        margin-left: -25px;
+        font-size: 13px;
+    }
+    .button-specification .name_spe {
+    font-size: 12px !important;
+    }       
+    
     .menu_area .navbar-brand {
         font-size: 42px;
     }

@@ -36,7 +36,7 @@
 
     <!-- ***** Wellcome Area Start ***** -->
     <section class="wellcome_area clearfix" id="home">
-        <div class="container h-100">
+        <div class="container-front h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-4 col-md">
                     <div class="wellcome-heading">
@@ -50,10 +50,63 @@
                         <!-- Form End -->
                     </div>
                 </div>
-                <div class="col-4 col-md"></div>
+                <div class="col-4 col-md">
+                    <div class="wellcome-heading-count">
+                <!-- START COUNTDOWN -->
+                <script src="<?php echo site_url().'static/page_front/js/countdown/countdown.js'; ?>" type="text/javascript"></script>
+                <!-- START COUNTDOWN -->
+                    <script type="application/javascript">
+                        var myCountdown1 = new Countdown({
+                            time: 86400 * 11, // 86400 seconds = 1 day
+                            width:300, 
+                            height:60,  
+                            rangeHi:"day",
+                            style:"flip",	// <- no comma on last item!
+                            numbers	:{
+                                    font 	: "Arial",
+                                    color	: "#fff",
+                                    bkgd	: "#dfaf1f",
+                                    fontSize : 200,
+                                    rounded	: 0.15,				// percentage of size 
+                                    shadow :{
+                                        x : 0,			// x offset (in pixels)
+                                        y : 3,			// y offset (in pixels)
+                                        s : 4,			// spread
+                                        c : "#000000",	// color
+                                        a : 0.4			// alpha	// <- no comma on last item!
+                                        }
+                                    },
+									
+                            labels : {
+                                   font   : "Arial",
+                             color  : "#ffffff",
+                             offset : 0, // Number of pixels to push the labels down away from numbers.
+                             textScale  : 1, // Percentage of size
+                             weight : "bolder" // < - no comma on last item!
+                            } // <- no comma on last item!
+                        });
+                    </script>
+                <!-- END COUNTDOWN -->
+                </div>
+                </div>
                 <div class="col-4 col-md-4">
+                  <div class="wellcome-heading-specfication">
+                    <div class="button-specification d-none d-lg-block">
+                        <b>SPECIFICATIONS</b>
+                        <div>Name:</div>
+                        <div class="name_spe">Etherwhitegold</div>
+                        Symbol:
+                        <div class="name_spe">EWG</div>
+                        Decimal:
+                        <div class="name_spe">18</div>
+                        Amount:
+                        <div class="name_spe">13,000,000</div>
+                        Contract:
+                        <div class="name_spe">0x4380fe4B02844a4e4afC3e8E51491587c214df55</div>
+                    </div>
+                    </div>
                     <div class="wellcome-heading" style="text-align: right">
-                        <h2>Specifications</h2>
+<!--                        <h2>Specifications</h2>
                         <p id="name_spe">Name:</p>
                         <h4>Etherwhitegold</h4>
                         <p id="name_spe">Symbol:</p>
@@ -63,7 +116,7 @@
                         <p id="name_spe">Amount:</p>
                         <h4>13,000,000</h4>
                         <p id="name_spe">Contract:</p>
-                        <h4>0x4380fe4B02844a4e4afC3e8E51491587c214df55</h4>
+                        <h4>0x4380fe4B02844a4e4afC3e8E51491587c214df55</h4>-->
                     </div>
                 </div>
             </div>
