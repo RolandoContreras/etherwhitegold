@@ -56,7 +56,9 @@
                 <!-- START COUNTDOWN -->
                     <script type="application/javascript">
                         var myCountdown1 = new Countdown({
-                            time: 86400 * 11, // 86400 seconds = 1 day
+                            year: 2018, 	
+                            month:3, 
+                            day:18,
                             width:300, 
                             height:60,  
                             rangeHi:"day",
@@ -380,7 +382,7 @@
                         </div>
                         <div class="member-text">
                             <h4>Gorka Carballo</h4>
-                            <p>Web programmer</p>
+                            <p>Advisor</p>
                         </div>
                     </div>
                 </div>
@@ -392,7 +394,7 @@
                         </div>
                         <div class="member-text">
                             <h4>Julian Zamudio</h4>
-                            <p>Creative director</p>
+                            <p>Advisor</p>
                         </div>
                     </div>
                 </div>

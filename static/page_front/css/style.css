@@ -285,6 +285,7 @@ p {
 
 .colorlib-load {
     background-image: url("../gif/preloader.gif") !important;
+    background-size: 100px;
     -webkit-animation: 2000ms linear 0s normal none infinite running colorlib-load;
     animation: 2000ms linear 0s normal none infinite running colorlib-load;
     height: 100%;
