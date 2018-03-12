@@ -3,7 +3,7 @@
     <meta name="description" content="EtherWhiteGold is an ERC20 tokens focused on being a currency accessible to the public and easy to use. Its innovative features allow the community to use ETWG as a means of payment in different areas of entertainment such as virtual casino">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="EtherWhiteGold, EWG, cryptocurrency, virtual casino">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Title -->
     <title>EtherWhiteGold | Cryptocurrency</title>
