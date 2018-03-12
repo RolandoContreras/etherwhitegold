@@ -29,7 +29,7 @@
     <link href="<?php echo site_url().'static/page_front/css/style.css';?>" rel="stylesheet">
     <!-- Responsive CSS -->
     <link href="<?php echo site_url().'static/page_front/css/responsive.css';?>" rel="stylesheet">
-<!--    <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>-->
+    <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>
     <script type="text/javascript">
         var site = '<?php echo site_url();?>';
     </script>

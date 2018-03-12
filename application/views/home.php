@@ -36,7 +36,7 @@
 
     <!-- ***** Wellcome Area Start ***** -->
     <section class="wellcome_area clearfix" id="home">
-        <div class="container-front h-100">
+        <div class="container-front h-100 h-mobile">
             <div class="row h-100 align-items-center">
                 <div class="col-4 col-md">
                     <div class="wellcome-heading d-none">

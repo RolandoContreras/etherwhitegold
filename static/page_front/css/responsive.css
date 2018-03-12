@@ -1594,7 +1594,6 @@
         margin-bottom: 24px;
         margin-left: -394px;
          
-        background: #4c4c4c; 
         background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
         background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
         background: linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
@@ -1767,7 +1766,7 @@
     }
 }
 
-@media (min-width: 321px) and (max-width: 414px) {
+/*@media (min-width: 321px) and (max-width: 414px) {
     @media (orientation:landscape){
         .wellcome_area {
             height: 366px;
@@ -2151,10 +2150,204 @@
     }
     
     
-}
-
-@media (min-width: 100px) and (max-width: 320px) {
+}*/
+@media (min-width: 376px) and (max-width: 414px) {
     @media (orientation:landscape){
+        .h-mobile{
+         height:193% !important;   
+        }   
+        .wellcome_area {
+            height: 366px;
+            margin-left: -13px;
+        }
+        .section_padding_100 {
+            margin-top: 490px;
+        }
+        .container-front {
+            padding: 0%;
+        }
+        .wellcome-heading, .single-cool-fact {
+        margin-bottom: 15px;
+        }
+                        
+        
+
+        .wellcome-heading-specfication {
+            margin-bottom: 24px;
+            margin-left: -290px;
+            background: #4c4c4c; 
+            background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+            background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+            background: linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); 
+            padding: 50px;
+            padding-left: 60px;
+            padding-top: 38px;
+            padding-bottom: 35px;
+            margin-top: -92px;
+        }
+        .button-specification {
+            padding: 6px;
+        }
+        .button-specification .name_spe {
+            font-size: 12px !important;
+        }
+
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: 0;
+            margin-top: -158px;
+        }
+
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: -180px;
+        }
+        .get-start-area .submit {
+            margin-left: 59px;
+            margin-top: 320px;
+            min-width: 145px;
+        }
+
+        .rel{
+            margin-left: 239px !important;
+            margin-top: -50px !important;
+            padding: -12px !important;
+            position: absolute !important;
+        }
+
+        .wellcome-heading-count {
+            margin-left: -153px;
+            margin-top: 367px;
+            padding-top: 24px;
+
+            background: #000000; 
+            background: -moz-linear-gradient(left, #000000 0%, #f4a74e 22%, #000000 52%, #f4a74e 74%, #000000 100%); 
+            background: -webkit-linear-gradient(left, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            background: linear-gradient(to right, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+            width: 400%;
+            padding-bottom: 15px;
+            padding-left: 55px;
+        }
+
+        .header_area {
+            padding: 0;
+        }
+        .menu_area .navbar-brand {
+            font-size: 48px;
+        }
+        .header_area.sticky {
+            height: 50px;
+        }
+        .header_area .menu_area #nav .nav-link,
+        .header_area.sticky .menu_area #nav .nav-link {
+            padding: 5px 15px;
+        }
+        #ca-navbar {
+            padding: 20px;
+            border-radius: 3px;
+            background-color: #5b32b4;
+            text-align: left;
+        }
+        .sing-up-button {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .header_area {
+            top: 0;
+        }
+        .welcome_text .cd-intro > p {
+            font-size: 14px;
+        }
+        .wellcome-heading > h2 {
+            font-size: 48px;
+        }
+        .get-start-area .email {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+        .welcome-thumb {
+            width: 90%;
+            bottom: -74px;
+            right: 0;
+        }
+        .logo_area > a > h2 {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        .section-heading > h2 {
+            font-size: 32px;
+        }
+        .single-special {
+            margin-bottom: 30px;
+        }
+        .special_description_area.mt-150 {
+            margin-top: 50px;
+        }
+        .special_description_content > h2 {
+            font-size: 30px;
+        }
+        .app-download-btn:first-child {
+            margin-right: 0;
+        }
+        .app-download-area {
+            display: block;
+        }
+        .app-download-btn {
+            margin-bottom: 20px;
+        }
+        .video-area {
+            border: 10px solid #fff;
+            border-radius: 20px;
+            height: 250px;
+        }
+        .video-area::after {
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            border: 1px solid #f1f4f8;
+            z-index: 2;
+            border-radius: 20px;
+        }
+        .clients-feedback-area .client-description > p {
+            font-size: 20px;
+        }
+        .clients-feedback-area .slick-slide img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .clients-feedback-area .slick-slide.slick-current img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+        .membership-description > h2 {
+            font-size: 32px;
+        }
+        .get-started-button {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .contact_from {
+            margin-top: 30px;
+        }
+        .wellcome-heading > h3 {
+            font-size: 252px;
+            top: -105px;
+            left: -1px;
+        }
+        .wellcome-heading,
+        .single-cool-fact {
+            margin-bottom: 50px;
+        }
+        .cool_facts_area .col-12:last-of-type .single-cool-fact {
+            margin-bottom: 0;
+        }
+    
+    }
+    @media (orientation:portrait){
+        .h-mobile{
+         height:373% !important;   
+        }
         .wellcome_area {
             height: 366px;
             margin-left: -13px;
@@ -2169,10 +2362,606 @@
         margin-bottom: 15px;
         }
 
+        .get-start-area{
+            margin-left: -15%;
+        }
+        .wellcome-heading-specfication {
+            margin-bottom: 24px;
+            margin-left: -281px !important;
+            background: #4c4c4c; 
+            background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+            background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+            background: linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); 
+            padding: 50px;
+            padding-left: 60px;
+            padding-top: 38px;
+            padding-bottom: 35px;
+            margin-top: -92px;
+        }
+        .button-specification {
+            padding: 6px;
+        }
+        .button-specification .name_spe {
+            font-size: 12px !important;
+        }
+
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: 0;
+            margin-top: -158px;
+        }
+
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: -180px;
+        }
+        
+        .get-start-area{
+            margin-left: 10px;
+        }
+        
+        .get-start-area .submit {
+            margin-left: 59px;
+            margin-top: 320px;
+            min-width: 145px;
+        }
+
+        .rel{
+            margin-left: 225px !important;
+            margin-top: -50px !important;
+            padding: -12px !important;
+            position: absolute !important;
+            
+        }
+
+        .wellcome-heading-count {
+            margin-left: -153px;
+            margin-top: 367px;
+            padding-top: 24px;
+
+            background: #000000; 
+            background: -moz-linear-gradient(left, #000000 0%, #f4a74e 22%, #000000 52%, #f4a74e 74%, #000000 100%); 
+            background: -webkit-linear-gradient(left, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            background: linear-gradient(to right, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+            width: 400%;
+            padding-bottom: 15px;
+            padding-left: 55px;
+        }
+
+        .header_area {
+            padding: 0;
+        }
+        .menu_area .navbar-brand {
+            font-size: 48px;
+        }
+        .header_area.sticky {
+            height: 50px;
+        }
+        .header_area .menu_area #nav .nav-link,
+        .header_area.sticky .menu_area #nav .nav-link {
+            padding: 5px 15px;
+        }
+        #ca-navbar {
+            padding: 20px;
+            border-radius: 3px;
+            background-color: #5b32b4;
+            text-align: left;
+        }
+        .sing-up-button {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .header_area {
+            top: 0;
+        }
+        .welcome_text .cd-intro > p {
+            font-size: 14px;
+        }
+        .wellcome-heading > h2 {
+            font-size: 48px;
+        }
+        .get-start-area .email {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+        .welcome-thumb {
+            width: 90%;
+            bottom: -74px;
+            right: 0;
+        }
+        .logo_area > a > h2 {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        .section-heading > h2 {
+            font-size: 32px;
+        }
+        .single-special {
+            margin-bottom: 30px;
+        }
+        .special_description_area.mt-150 {
+            margin-top: 50px;
+        }
+        .special_description_content > h2 {
+            font-size: 30px;
+        }
+        .app-download-btn:first-child {
+            margin-right: 0;
+        }
+        .app-download-area {
+            display: block;
+        }
+        .app-download-btn {
+            margin-bottom: 20px;
+        }
+        .video-area {
+            border: 10px solid #fff;
+            border-radius: 20px;
+            height: 250px;
+        }
+        .video-area::after {
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            border: 1px solid #f1f4f8;
+            z-index: 2;
+            border-radius: 20px;
+        }
+        .clients-feedback-area .client-description > p {
+            font-size: 20px;
+        }
+        .clients-feedback-area .slick-slide img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .clients-feedback-area .slick-slide.slick-current img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+        .membership-description > h2 {
+            font-size: 32px;
+        }
+        .get-started-button {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .contact_from {
+            margin-top: 30px;
+        }
+        .wellcome-heading > h3 {
+            font-size: 252px;
+            top: -105px;
+            left: -1px;
+        }
+        .wellcome-heading,
+        .single-cool-fact {
+            margin-bottom: 50px;
+        }
+        .cool_facts_area .col-12:last-of-type .single-cool-fact {
+            margin-bottom: 0;
+        }
+    }
+    
+    
+}
+
+@media (min-width: 361px) and (max-width: 375px) {
+    @media (orientation:landscape){
+        .h-mobile{
+         height:193% !important;   
+        }   
+        .wellcome_area {
+            height: 366px;
+            margin-left: -13px;
+        }
+        .section_padding_100 {
+            margin-top: 490px;
+        }
+        .container-front {
+            padding: 0%;
+        }
+        .wellcome-heading, .single-cool-fact {
+        margin-bottom: 15px;
+        }
+                        
+        
+
         .wellcome-heading-specfication {
             margin-bottom: 24px;
             margin-left: -290px;
+            background: #4c4c4c; 
+            background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+            background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+            background: linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); 
+            padding: 50px;
+            padding-left: 60px;
+            padding-top: 38px;
+            padding-bottom: 35px;
+            margin-top: -92px;
+        }
+        .button-specification {
+            padding: 6px;
+        }
+        .button-specification .name_spe {
+            font-size: 12px !important;
+        }
 
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: 0;
+            margin-top: -158px;
+        }
+
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: -180px;
+        }
+        .get-start-area .submit {
+            margin-left: 59px;
+            margin-top: 320px;
+            min-width: 145px;
+        }
+
+        .rel{
+            margin-left: 239px !important;
+            margin-top: -50px !important;
+            padding: -12px !important;
+            position: absolute !important;
+        }
+
+        .wellcome-heading-count {
+            margin-left: -153px;
+            margin-top: 367px;
+            padding-top: 24px;
+
+            background: #000000; 
+            background: -moz-linear-gradient(left, #000000 0%, #f4a74e 22%, #000000 52%, #f4a74e 74%, #000000 100%); 
+            background: -webkit-linear-gradient(left, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            background: linear-gradient(to right, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+            width: 400%;
+            padding-bottom: 15px;
+            padding-left: 55px;
+        }
+
+        .header_area {
+            padding: 0;
+        }
+        .menu_area .navbar-brand {
+            font-size: 48px;
+        }
+        .header_area.sticky {
+            height: 50px;
+        }
+        .header_area .menu_area #nav .nav-link,
+        .header_area.sticky .menu_area #nav .nav-link {
+            padding: 5px 15px;
+        }
+        #ca-navbar {
+            padding: 20px;
+            border-radius: 3px;
+            background-color: #5b32b4;
+            text-align: left;
+        }
+        .sing-up-button {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .header_area {
+            top: 0;
+        }
+        .welcome_text .cd-intro > p {
+            font-size: 14px;
+        }
+        .wellcome-heading > h2 {
+            font-size: 48px;
+        }
+        .get-start-area .email {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+        .welcome-thumb {
+            width: 90%;
+            bottom: -74px;
+            right: 0;
+        }
+        .logo_area > a > h2 {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        .section-heading > h2 {
+            font-size: 32px;
+        }
+        .single-special {
+            margin-bottom: 30px;
+        }
+        .special_description_area.mt-150 {
+            margin-top: 50px;
+        }
+        .special_description_content > h2 {
+            font-size: 30px;
+        }
+        .app-download-btn:first-child {
+            margin-right: 0;
+        }
+        .app-download-area {
+            display: block;
+        }
+        .app-download-btn {
+            margin-bottom: 20px;
+        }
+        .video-area {
+            border: 10px solid #fff;
+            border-radius: 20px;
+            height: 250px;
+        }
+        .video-area::after {
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            border: 1px solid #f1f4f8;
+            z-index: 2;
+            border-radius: 20px;
+        }
+        .clients-feedback-area .client-description > p {
+            font-size: 20px;
+        }
+        .clients-feedback-area .slick-slide img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .clients-feedback-area .slick-slide.slick-current img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+        .membership-description > h2 {
+            font-size: 32px;
+        }
+        .get-started-button {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .contact_from {
+            margin-top: 30px;
+        }
+        .wellcome-heading > h3 {
+            font-size: 252px;
+            top: -105px;
+            left: -1px;
+        }
+        .wellcome-heading,
+        .single-cool-fact {
+            margin-bottom: 50px;
+        }
+        .cool_facts_area .col-12:last-of-type .single-cool-fact {
+            margin-bottom: 0;
+        }
+    
+    }
+    @media (orientation:portrait){
+        .h-mobile{
+         height:373% !important;   
+        }
+        .wellcome_area {
+            height: 366px;
+            margin-left: -13px;
+        }
+        .section_padding_100 {
+            margin-top: 490px;
+        }
+        .container-front {
+            padding: 0%;
+        }
+        .wellcome-heading, .single-cool-fact {
+        margin-bottom: 15px;
+        }
+
+        .get-start-area{
+            margin-left: -15%;
+        }
+        .wellcome-heading-specfication {
+            margin-bottom: 24px;
+            margin-left: -281px;
+
+            background: #4c4c4c; 
+            background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+            background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+            background: linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); 
+            padding: 50px;
+            padding-left: 60px;
+            padding-top: 38px;
+            padding-bottom: 35px;
+            margin-top: -92px;
+        }
+        .button-specification {
+            padding: 6px;
+        }
+        .button-specification .name_spe {
+            font-size: 12px !important;
+        }
+
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: 0;
+            margin-top: -158px;
+        }
+
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: -180px;
+        }
+
+        .get-start-area .submit {
+            margin-left: 59px;
+            margin-top: 320px;
+            min-width: 145px;
+        }
+
+        .rel{
+            margin-left: 225px !important;
+            margin-top: -50px !important;
+            padding: -12px !important;
+            position: absolute !important;
+            
+        }
+
+        .wellcome-heading-count {
+            margin-left: -153px;
+            margin-top: 367px;
+            padding-top: 24px;
+
+            background: #000000; 
+            background: -moz-linear-gradient(left, #000000 0%, #f4a74e 22%, #000000 52%, #f4a74e 74%, #000000 100%); 
+            background: -webkit-linear-gradient(left, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            background: linear-gradient(to right, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+            width: 400%;
+            padding-bottom: 15px;
+            padding-left: 55px;
+        }
+
+        .header_area {
+            padding: 0;
+        }
+        .menu_area .navbar-brand {
+            font-size: 48px;
+        }
+        .header_area.sticky {
+            height: 50px;
+        }
+        .header_area .menu_area #nav .nav-link,
+        .header_area.sticky .menu_area #nav .nav-link {
+            padding: 5px 15px;
+        }
+        #ca-navbar {
+            padding: 20px;
+            border-radius: 3px;
+            background-color: #5b32b4;
+            text-align: left;
+        }
+        .sing-up-button {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .header_area {
+            top: 0;
+        }
+        .welcome_text .cd-intro > p {
+            font-size: 14px;
+        }
+        .wellcome-heading > h2 {
+            font-size: 48px;
+        }
+        .get-start-area .email {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+        .welcome-thumb {
+            width: 90%;
+            bottom: -74px;
+            right: 0;
+        }
+        .logo_area > a > h2 {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        .section-heading > h2 {
+            font-size: 32px;
+        }
+        .single-special {
+            margin-bottom: 30px;
+        }
+        .special_description_area.mt-150 {
+            margin-top: 50px;
+        }
+        .special_description_content > h2 {
+            font-size: 30px;
+        }
+        .app-download-btn:first-child {
+            margin-right: 0;
+        }
+        .app-download-area {
+            display: block;
+        }
+        .app-download-btn {
+            margin-bottom: 20px;
+        }
+        .video-area {
+            border: 10px solid #fff;
+            border-radius: 20px;
+            height: 250px;
+        }
+        .video-area::after {
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            border: 1px solid #f1f4f8;
+            z-index: 2;
+            border-radius: 20px;
+        }
+        .clients-feedback-area .client-description > p {
+            font-size: 20px;
+        }
+        .clients-feedback-area .slick-slide img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .clients-feedback-area .slick-slide.slick-current img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+        .membership-description > h2 {
+            font-size: 32px;
+        }
+        .get-started-button {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .contact_from {
+            margin-top: 30px;
+        }
+        .wellcome-heading > h3 {
+            font-size: 252px;
+            top: -105px;
+            left: -1px;
+        }
+        .wellcome-heading,
+        .single-cool-fact {
+            margin-bottom: 50px;
+        }
+        .cool_facts_area .col-12:last-of-type .single-cool-fact {
+            margin-bottom: 0;
+        }
+    }
+    
+    
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+    @media (orientation:landscape){
+        .h-mobile{
+         height:193% !important;   
+        }   
+        .wellcome_area {
+            height: 366px;
+            margin-left: -13px;
+        }
+        .section_padding_100 {
+            margin-top: 490px;
+        }
+        .container-front {
+            padding: 0%;
+        }
+        .wellcome-heading, .single-cool-fact {
+        margin-bottom: 15px;
+        }
+                        
+        
+
+        .wellcome-heading-specfication {
+            margin-bottom: 24px;
+            margin-left: -290px;
             background: #4c4c4c; 
             background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
             background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
@@ -2344,6 +3133,9 @@
     
     }
     @media (orientation:portrait){
+        .h-mobile{
+         height:373% !important;   
+        }
         .wellcome_area {
             height: 366px;
             margin-left: -13px;
@@ -2391,7 +3183,11 @@
         .wellcome-heading, .single-cool-fact {
             margin-bottom: -180px;
         }
-
+        
+        .get-start-area{
+            margin-left: -17px;
+        }
+        
         .get-start-area .submit {
             margin-left: 59px;
             margin-top: 320px;
@@ -2406,6 +3202,393 @@
             
         }
 
+        .wellcome-heading-count {
+            margin-left: -153px;
+            margin-top: 367px;
+            padding-top: 24px;
+
+            background: #000000; 
+            background: -moz-linear-gradient(left, #000000 0%, #f4a74e 22%, #000000 52%, #f4a74e 74%, #000000 100%); 
+            background: -webkit-linear-gradient(left, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            background: linear-gradient(to right, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+            width: 400%;
+            padding-bottom: 15px;
+            padding-left: 55px;
+        }
+
+        .header_area {
+            padding: 0;
+        }
+        .menu_area .navbar-brand {
+            font-size: 48px;
+        }
+        .header_area.sticky {
+            height: 50px;
+        }
+        .header_area .menu_area #nav .nav-link,
+        .header_area.sticky .menu_area #nav .nav-link {
+            padding: 5px 15px;
+        }
+        #ca-navbar {
+            padding: 20px;
+            border-radius: 3px;
+            background-color: #5b32b4;
+            text-align: left;
+        }
+        .sing-up-button {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .header_area {
+            top: 0;
+        }
+        .welcome_text .cd-intro > p {
+            font-size: 14px;
+        }
+        .wellcome-heading > h2 {
+            font-size: 48px;
+        }
+        .get-start-area .email {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+        .welcome-thumb {
+            width: 90%;
+            bottom: -74px;
+            right: 0;
+        }
+        .logo_area > a > h2 {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        .section-heading > h2 {
+            font-size: 32px;
+        }
+        .single-special {
+            margin-bottom: 30px;
+        }
+        .special_description_area.mt-150 {
+            margin-top: 50px;
+        }
+        .special_description_content > h2 {
+            font-size: 30px;
+        }
+        .app-download-btn:first-child {
+            margin-right: 0;
+        }
+        .app-download-area {
+            display: block;
+        }
+        .app-download-btn {
+            margin-bottom: 20px;
+        }
+        .video-area {
+            border: 10px solid #fff;
+            border-radius: 20px;
+            height: 250px;
+        }
+        .video-area::after {
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            border: 1px solid #f1f4f8;
+            z-index: 2;
+            border-radius: 20px;
+        }
+        .clients-feedback-area .client-description > p {
+            font-size: 20px;
+        }
+        .clients-feedback-area .slick-slide img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .clients-feedback-area .slick-slide.slick-current img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+        .membership-description > h2 {
+            font-size: 32px;
+        }
+        .get-started-button {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .contact_from {
+            margin-top: 30px;
+        }
+        .wellcome-heading > h3 {
+            font-size: 252px;
+            top: -105px;
+            left: -1px;
+        }
+        .wellcome-heading,
+        .single-cool-fact {
+            margin-bottom: 50px;
+        }
+        .cool_facts_area .col-12:last-of-type .single-cool-fact {
+            margin-bottom: 0;
+        }
+    }
+    
+    
+}
+
+@media (min-width: 100px) and (max-width: 320px) {
+    @media (orientation:landscape){
+        .h-mobile{
+         height:193% !important;   
+        }   
+        .wellcome_area {
+            height: 366px;
+            margin-left: -13px;
+        }
+        .section_padding_100 {
+            margin-top: 490px;
+        }
+        .container-front {
+            padding: 0%;
+        }
+        .wellcome-heading, .single-cool-fact {
+        margin-bottom: 15px;
+        }
+                        
+        
+
+        .wellcome-heading-specfication {
+            margin-bottom: 24px;
+            margin-left: -290px;
+            background: #4c4c4c; 
+            background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+            background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+            background: linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); 
+            padding: 50px;
+            padding-left: 60px;
+            padding-top: 38px;
+            padding-bottom: 35px;
+            margin-top: -92px;
+        }
+        .button-specification {
+            padding: 6px;
+        }
+        .button-specification .name_spe {
+            font-size: 12px !important;
+        }
+
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: 0;
+            margin-top: -158px;
+        }
+
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: -180px;
+        }
+
+        .get-start-area .submit {
+            margin-left: 59px;
+            margin-top: 320px;
+            min-width: 145px;
+        }
+
+        .rel{
+            margin-left: 239px !important;
+            margin-top: -50px !important;
+            padding: -12px !important;
+            position: absolute !important;
+        }
+
+        .wellcome-heading-count {
+            margin-left: -153px;
+            margin-top: 367px;
+            padding-top: 24px;
+
+            background: #000000; 
+            background: -moz-linear-gradient(left, #000000 0%, #f4a74e 22%, #000000 52%, #f4a74e 74%, #000000 100%); 
+            background: -webkit-linear-gradient(left, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            background: linear-gradient(to right, #000000 0%,#f4a74e 22%,#000000 52%,#f4a74e 74%,#000000 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+            width: 400%;
+            padding-bottom: 15px;
+            padding-left: 55px;
+        }
+
+        .header_area {
+            padding: 0;
+        }
+        .menu_area .navbar-brand {
+            font-size: 48px;
+        }
+        .header_area.sticky {
+            height: 50px;
+        }
+        .header_area .menu_area #nav .nav-link,
+        .header_area.sticky .menu_area #nav .nav-link {
+            padding: 5px 15px;
+        }
+        #ca-navbar {
+            padding: 20px;
+            border-radius: 3px;
+            background-color: #5b32b4;
+            text-align: left;
+        }
+        .sing-up-button {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .header_area {
+            top: 0;
+        }
+        .welcome_text .cd-intro > p {
+            font-size: 14px;
+        }
+        .wellcome-heading > h2 {
+            font-size: 48px;
+        }
+        .get-start-area .email {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+        .welcome-thumb {
+            width: 90%;
+            bottom: -74px;
+            right: 0;
+        }
+        .logo_area > a > h2 {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        .section-heading > h2 {
+            font-size: 32px;
+        }
+        .single-special {
+            margin-bottom: 30px;
+        }
+        .special_description_area.mt-150 {
+            margin-top: 50px;
+        }
+        .special_description_content > h2 {
+            font-size: 30px;
+        }
+        .app-download-btn:first-child {
+            margin-right: 0;
+        }
+        .app-download-area {
+            display: block;
+        }
+        .app-download-btn {
+            margin-bottom: 20px;
+        }
+        .video-area {
+            border: 10px solid #fff;
+            border-radius: 20px;
+            height: 250px;
+        }
+        .video-area::after {
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            border: 1px solid #f1f4f8;
+            z-index: 2;
+            border-radius: 20px;
+        }
+        .clients-feedback-area .client-description > p {
+            font-size: 20px;
+        }
+        .clients-feedback-area .slick-slide img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .clients-feedback-area .slick-slide.slick-current img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+        .membership-description > h2 {
+            font-size: 32px;
+        }
+        .get-started-button {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .contact_from {
+            margin-top: 30px;
+        }
+        .wellcome-heading > h3 {
+            font-size: 252px;
+            top: -105px;
+            left: -1px;
+        }
+        .wellcome-heading,
+        .single-cool-fact {
+            margin-bottom: 50px;
+        }
+        .cool_facts_area .col-12:last-of-type .single-cool-fact {
+            margin-bottom: 0;
+        }
+    
+    }
+    @media (orientation:portrait){
+        .h-mobile{
+         height:373% !important;   
+        }
+        .wellcome_area {
+            height: 366px;
+            margin-left: -13px;
+        }
+        .section_padding_100 {
+            margin-top: 490px;
+        }
+        .container-front {
+            padding: 0%;
+        }
+        .wellcome-heading, .single-cool-fact {
+        margin-bottom: 15px;
+        }
+        .get-start-area{
+            margin-left: -47%;
+        }
+        .get-start-area .submit {
+            margin-left: 73px;
+            margin-top: 320px;
+            min-width: 136px;
+        }
+        .rel{
+            margin-left: 225px !important;
+            margin-top: -50px !important;
+            padding: -12px !important;
+            position: absolute !important;
+            
+        }
+        .wellcome-heading-specfication {
+            margin-bottom: 24px;
+            margin-left: -281px;
+            background: #4c4c4c; 
+            background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+            background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+            background: linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); 
+            padding: 50px;
+            padding-left: 60px;
+            padding-top: 38px;
+            padding-bottom: 35px;
+            margin-top: -92px;
+        }
+        .button-specification {
+            padding: 6px;
+            margin-left: 5px;
+        }
+        .button-specification .name_spe {
+            font-size: 12px !important;
+        }
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: 0;
+            margin-top: -158px;
+        }
+        .wellcome-heading, .single-cool-fact {
+            margin-bottom: -180px;
+        }
         .wellcome-heading-count {
             margin-left: -153px;
             margin-top: 367px;
