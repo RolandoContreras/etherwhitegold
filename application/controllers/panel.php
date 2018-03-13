@@ -12,19 +12,16 @@ class Panel extends CI_Controller{
         //GET THE SESSION
         $this->get_session();
 
-        //GET TOTAL ROWS
+        //GET TOTAL MESSAGES
         $params = array("select" =>"count(comment_id) as total_comments,
-                                    (select count(*) from customer) as total_customer,
-                                    (select count(*) from users) as total_users");
+                                    (select count(*) from customer where status_value = 1) as total_customer,
+                                    (select count(*) from comments where active = 1 and status_value = 1) as pending_comments,
+                                    (select count(*) from users where status_value = 1) as total_users",
+                        "where" => "status_value = 1");
         $obj_total = $this->obj_comments->get_search_row($params);
         
-         //GET PENDING ROWS
-        $params = array("select" =>"count(*) as pending_comments",
-                        "where" => "active = 1");
-        $obj_pending = $this->obj_comments->get_search_row($params);
-        
         //GET LASTEST COMMENT  
-        $params = array(
+        $param_last_commend = array(
                         "select" =>"comment_id,
                                     name,
                                     comment,
@@ -33,18 +30,12 @@ class Panel extends CI_Controller{
                                     date_comment",
                          "order" => "date_comment DESC"
             );
-        $obj_last_comment = $this->obj_comments->get_search_row($params);
-        
-        //GET TOTAL ROWS
-        $params = array("select" =>"count(comment_id) as total_comments,
-                                    (select count(*) from customer) as total_customer");
-        $obj_total = $this->obj_comments->get_search_row($params);
+        $obj_last_comment = $this->obj_comments->get_search_row($param_last_commend);
         
         $modulos ='Home'; 
         $link_modulo =  site_url().$modulos; 
         $seccion = 'Vista global';        
 
-        $this->tmp_mastercms->set('obj_pending',$obj_pending);
         $this->tmp_mastercms->set('obj_last_comment',$obj_last_comment);
         $this->tmp_mastercms->set('obj_total',$obj_total);
         $this->tmp_mastercms->set('modulos',$modulos);
@@ -53,26 +44,6 @@ class Panel extends CI_Controller{
         $this->tmp_mastercms->render('panel');
      }
      
-    public function guardar_btc(){
-        //ACTIVE CUSTOMER
-        if($this->input->is_ajax_request()){  
-            
-                //SELECT PRICE BTC
-                $btc_price = $this->input->post("btc_price");
-               
-                if($btc_price != 0){
-                    $data = array(
-                        'precio_btc' => $btc_price,
-                        'updated_at' => date("Y-m-d H:i:s"),
-                        'updated_by' => $_SESSION['usercms']['user_id'],
-                    ); 
-                    $this->obj_otros->update(1,$data);
-                }
-                    echo json_encode($data);            
-        exit();
-            }
-    }
-    
     public function masive_messages(){
         //ACTIVE CUSTOMER
         if($this->input->is_ajax_request()){  

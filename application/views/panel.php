@@ -23,16 +23,16 @@
                                 </thead><!-- table heading -->
                                 <tbody>
                                         <tr>
-                                            <td><a href="#"><b><?php echo $obj_total->total_customer;?></b><i class="fa fa-users"></i> Asociados
+                                            <td><a href="<?php echo site_url().'dashboard/clientes'?>"><b><?php echo $obj_total->total_customer;?></b><i class="fa fa-users"></i> Asociados
                                                 </a></td>
-                                                <td><a href="#"><b class="cmd">12</b><i class="fa fa-users"></i> Comprados</a></td>
+                                                <td><a href="<?php echo site_url().'dashboard/clientes'?>"><b class="cmd">12</b><i class="fa fa-users"></i> Comprados</a></td>
                                         </tr>
                                         <tr>
-                                                <td><a href="#"><b><?php echo $obj_total->total_comments;?></b><i class="fa fa-comments"></i> Comentarios</a></td>
-                                                <td><a href="#" class="pending"><b class="cmd"><?php echo $obj_pending->pending_comments;?></b><i class="fa fa-comments"></i> Por Leer</a></td>
+                                            <td><a href="<?php echo site_url().'dashboard/comentarios';?>"><b><?php echo $obj_total->total_comments;?></b><i class="fa fa-comments"></i> Comentarios</a></td>
+                                                <td><a href="<?php echo site_url().'dashboard/comentarios';?>" class="pending"><b class="cmd"><?php echo $obj_total->pending_comments;?></b><i class="fa fa-comments"></i> Por Leer</a></td>
                                         </tr>
                                         <tr>
-                                                <td><a href="#"><b>1<?php echo $obj_total->total_users;?></b><i class="fa fa-user-secret"></i> Usuarios</a></td>
+                                                <td><a href="<?php echo site_url().'dashboard/usuarios';?>"><b><?php echo $obj_total->total_users;?></b><i class="fa fa-user-secret"></i> Usuarios</a></td>
                                                 <td class="blank">&nbsp;</td>
                                         </tr>
                                 </tbody>

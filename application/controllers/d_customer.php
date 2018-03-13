@@ -7,7 +7,6 @@ class D_customer extends CI_Controller{
         $this->load->model("customer_model","obj_customer");
         $this->load->model("paises_model","obj_paises");
         $this->load->model("regiones_model","obj_regiones");
-        $this->load->model("franchise_model","obj_franchise");
     }   
                 
     public function index(){  
@@ -22,10 +21,11 @@ class D_customer extends CI_Controller{
                                     customer.created_at,
                                     customer.active,
                                     customer.status_value",
+                        "where" =>"customer.status_value = 1"            
                );
            //GET DATA FROM CUSTOMER
            $obj_customer= $this->obj_customer->search($params);
-  
+           
            /// PAGINADO
             $modulos ='clientes'; 
             $seccion = 'Lista';        

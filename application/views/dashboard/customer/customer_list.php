@@ -19,6 +19,7 @@
                 
              <!--<form>-->
                 <div class="well nomargin" style="width: 100%;">
+                    
                     <!--- INCIO DE TABLA DE RE4GISTRO -->
                    <table id="table" class="display" cellspacing="0" width="100%">
                         <thead>
@@ -27,33 +28,24 @@
                                 <th>USUARIO</th>
                                 <th>ASOCIADO</th>
                                 <th>E-MAIL</th>
-                                <th>PAQUETE</th>
                                 <th>ACTIVACIÓN</th> 
                                 <th>ESTADO</th> 
                                 <th>ACCIONES</th>
                             </tr>
                         </thead>
                         <tbody>
-                            
                             <?php 
-                            if(count($obj_customer) > 0){ ?>
-                            <tr>
-                                <td colspan="8" style="text-align: center">No hay clientes registrados</td>
-                            </tr>
-                            <?php }else{ ?>
-                            <tr>    <?php
                                 foreach ($obj_customer as $value): ?>
                                 <td align="center"><b><?php echo $value->customer_id;?></b></td>
                                 <td align="center"><b><?php echo $value->username;?></b></td>
                                 <td align="center"><?php echo $value->first_name." ".$value->last_name;?></td>
                                 <td align="center"><?php echo $value->email;?></td>
-                                <td align="center"><?php echo $value->franchise;?></td>
                                 <td align="center">
                                     <?php if ($value->active == 0) {
-                                        $valor = "Inactivo para bonos";
+                                        $valor = "Sin Comprar";
                                         $stilo = "label label-important";
                                     }else{
-                                        $valor = "Activo para bonos";
+                                        $valor = "Ya Compró";
                                         $stilo = "label label-success";
                                     } ?>
                                     <span class="<?php echo $stilo ?>"><?php echo $valor; ?></span>
@@ -71,13 +63,13 @@
                                 <td>
                                     <div class="operation">
                                             <div class="btn-group">
+                                                <button class="btn btn-small" onclick="edit_customer('<?php echo $value->customer_id;?>');">Detalle</button>
                                                 <button class="btn btn-small" onclick="edit_customer('<?php echo $value->customer_id;?>');">Editar</button>
                                           </div>
                                     </div>
                                 </td>
                             </tr>
-                            <?php endforeach;
-                            } ?>
+                            <?php endforeach;?>
                         </tbody>
                     </table>
             </div>
@@ -89,7 +81,7 @@
 <script type="text/javascript">
    $(document).ready(function() {
     $('#table').dataTable( {
-         "order": [[ 8, "desc" ]]
+         "order": [[ 0, "desc" ]]
     } );
 } );
 </script>

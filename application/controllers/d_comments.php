@@ -15,8 +15,9 @@ class D_comments extends CI_Controller{
                                     comments.name,
                                     comments.comment,
                                     comments.email,
-                                    comments.status_value,
+                                    comments.active,
                                     comments.date_comment",
+                         "where" => "comments.status_value = 1",
                          "order" => "date_comment ASC"
             );
             //GET DATA COMMENTS
