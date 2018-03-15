@@ -5,8 +5,7 @@ class D_customer extends CI_Controller{
     public function __construct(){
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
-        $this->load->model("paises_model","obj_paises");
-        $this->load->model("regiones_model","obj_regiones");
+        $this->load->model("orders_model","obj_orders");
     }   
                 
     public function index(){  
@@ -103,55 +102,6 @@ class D_customer extends CI_Controller{
                 );          
             //SAVE DATA IN TABLE    
             $this->obj_customer->update($customer_id, $data);
-            
-//            if($franchise == 2){
-//            //CHANGE TO BASIC
-//             $data = array(
-//                        'point_calification_left' => 100,
-//                        'point_calification_rigth' => 100,
-//                        'updated_by' => $customer_id,
-//                        'updated_at' => date("Y-m-d H:i:s")
-//                    ); 
-//                    $this->obj_customer->update($customer_id,$data);
-//            }elseif($franchise == 3){
-//                //CHANGE TO PLATINIUM
-//                 $data = array(
-//                            'point_calification_left' => 250,
-//                            'point_calification_rigth' => 250,
-//                            'updated_by' => $customer_id,
-//                            'updated_at' => date("Y-m-d H:i:s")
-//                        ); 
-//                        $this->obj_customer->update($customer_id,$data);
-//            }elseif($franchise == 4){
-//                //CHANGE TO GOLD
-//                 $data = array(
-//                            'point_calification_left' => 500,
-//                            'point_calification_rigth' => 500,
-//                            'updated_by' => $customer_id,
-//                            'updated_at' => date("Y-m-d H:i:s")
-//                        ); 
-//                        $this->obj_customer->update($customer_id,$data);
-//            }elseif($franchise == 5){
-//                //CHANGE TO VIP
-//                 $data = array(
-//                            'point_calification_left' => 1000,
-//                            'point_calification_rigth' => 1000,
-//                            'updated_by' => $customer_id,
-//                            'updated_at' => date("Y-m-d H:i:s")
-//                        ); 
-//                        $this->obj_customer->update($customer_id,$data);
-//            }elseif($franchise == 6){
-//                //CHANGE TO MEMBERSHIP
-//                 $data = array(
-//                            'point_calification_left' => 0,
-//                            'point_calification_rigth' => 0,
-//                            'updated_by' => $customer_id,
-//                            'updated_at' => date("Y-m-d H:i:s")
-//                        ); 
-//                        $this->obj_customer->update($customer_id,$data);
-//            }
-            
-            
         redirect(site_url()."dashboard/clientes");
     }
     
@@ -208,6 +158,43 @@ class D_customer extends CI_Controller{
             //RENDER TO VIEW
             $this->tmp_mastercms->set("obj_franchise",$obj_franchise); 
             
+            $modulos ='clientes'; 
+            $seccion = 'Formulario';        
+            $link_modulo =  site_url().'dashboard/'.$modulos; 
+
+            $this->tmp_mastercms->set('link_modulo',$link_modulo);
+            $this->tmp_mastercms->set('modulos',$modulos);
+            $this->tmp_mastercms->set('seccion',$seccion);
+            $this->tmp_mastercms->render("dashboard/customer/customer_form");    
+    }
+    
+    public function details($obj_customer=NULL){
+        //VERIFY IF ISSET CUSTOMER_ID
+        if ($obj_customer != ""){
+            /// PARAMETROS PARA EL SELECT 
+            $params = array(
+                        "select" =>"customer.customer_id,
+                                    customer.username,
+                                    customer.first_name,
+                                    customer.last_name,
+                                    customer.email,
+                                    customer.password,
+                                    customer.ether_address,
+                                    customer.not_american,
+                                    customer.active,
+                                    customer.not_american,
+                                    customer.status_value,
+                                    customer.created_at,
+                                    customer.status_value",
+                             "where" => "customer.customer_id = $obj_customer",
+                             "order" => "customer.customer_id DESC");
+            
+            $obj_customer  = $this->obj_customer->get_search_row($params); 
+            
+            //RENDER
+            $this->tmp_mastercms->set("obj_customer",$obj_customer);
+          }
+
             $modulos ='clientes'; 
             $seccion = 'Formulario';        
             $link_modulo =  site_url().'dashboard/'.$modulos; 

@@ -109,11 +109,11 @@ $route['dashboard/panel/guardar_btc'] = "panel/guardar_btc";
 $route['dashboard/panel/masive_messages'] = "panel/masive_messages";
 
 $route['dashboard/clientes'] = "d_customer";
-$route['dashboard/financiados'] = "d_customer/financiados";
 $route['dashboard/clientes/active_customer'] = "d_customer/active_customer";
 $route['dashboard/clientes/no_active_customer'] = "d_customer/no_active_customer";
 $route['dashboard/clientes/load/([0-9]+)'] = "d_customer/load/$1";
 $route['dashboard/clientes/validate'] = "d_customer/validate";
+$route['dashboard/clientes/detalle/([0-9]+)'] = "d_customer/details/$1";
 
 $route['dashboard/pagos_diarios'] = "d_pay_dialy";
 $route['dashboard/pagos_diarios/hacer_pago'] = "d_pay_dialy/hacer_pago";
