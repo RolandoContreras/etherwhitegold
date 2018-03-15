@@ -12,8 +12,11 @@
                     <div class="navbar navbar-static navbar_as_heading">
                             <div class="navbar-inner">
                                     <div class="container" style="width: auto;">
-                                            <a class="brand">LISTADO DE  USUARIOS</a>
-                                            <button class="btn btn-small" onclick="nuevo_users();">Nuevo</button>
+                                            <a class="brand">USERS LIST</a>
+                                            <?php 
+                                            if($obj_users_data->privilage == 3){ ?>
+                                                <button class="btn btn-small" onclick="nuevo_users();">New</button>
+                                            <?php } ?>
                                     </div>
                             </div>
                     </div>
@@ -25,13 +28,17 @@
                         <thead>
                             <tr>
                                 <th>USERNAME</th>
-                                <th>CONTRASEÑA</th>
-                                <th>NOMBRE</th>
+                                <th>PASSWORD</th>
+                                <th>NAME</th>
                                 <th>E-MAIL</th>
-                                <th>PRIVILEGIOS</th>
-                                <th>FECHA DE CREACIÓN</th>
-                                <th>ESTADO</th> 
-                                <th>ACCIONES</th>
+                                <th>PRIVILEGES</th>
+                                <th>CREATION DATE</th>
+                                <th>STATUS</th> 
+                                <?php 
+                                    if($obj_users_data->privilage == 3){ ?>
+                                        <th>ACTIONS</th>
+                                <?php } ?>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -55,22 +62,26 @@
                                 </td>
                                 <td align="center"><?php echo formato_fecha($value->created_at);?></td>
                                 <td align="center">
-                                    <?php if ($value->status_value == 0) {
-                                        $valor = "Inactivo";
-                                        $stilo = "label label-important";
-                                    }else{
-                                        $valor = "Activo";
+                                    <?php if ($value->status_value == 1) {
+                                        $valor = "Active";
                                         $stilo = "label label-success";
+                                    }else{
+                                        $valor = "Inactive";
+                                        $stilo = "label label-important";
                                     } ?>
                                     <span class="<?php echo $stilo ?>"><?php echo $valor; ?></span>
                                 </td>
-                                <td>
-                                    <div class="operation">
-                                            <div class="btn-group">
-                                                    <button class="btn btn-small" onclick="edit_users('<?php echo $value->user_id;?>');">Editar</button>
-                                          </div>
-                                    </div>
-                                </td>
+                                <?php 
+                                if($obj_users_data->privilage == 3){ ?>
+                                    <td>
+                                        <div class="operation">
+                                                <div class="btn-group">
+                                                            <button class="btn btn-small" onclick="edit_users('<?php echo $value->user_id;?>');"><i class="fa fa-edit"></i> Edit</button>
+                                              </div>
+                                        </div>
+                                    </td>
+                                <?php } ?>
+                               
                             </tr>
                             <?php endforeach; ?>
                         </tbody>

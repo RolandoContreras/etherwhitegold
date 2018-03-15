@@ -13,7 +13,15 @@ class D_Users extends CI_Controller{
            $params = array("select" =>"*");
            //GET DATA FROM CUSTOMER
            $obj_users= $this->obj_users->search($params);
-  
+           
+           $user_id = $_SESSION['usercms']['user_id'];
+           $param_user = array(
+                        "select" =>"user_id,
+                                    privilage",
+                         "where" => "user_id = $user_id",
+            ); 
+           $users_data= $this->obj_users->get_search_row($param_user);
+           
            /// PAGINADO
             $modulos ='usuarios'; 
             $seccion = 'Lista';        
@@ -24,6 +32,7 @@ class D_Users extends CI_Controller{
             $this->tmp_mastercms->set('modulos',$modulos);
             $this->tmp_mastercms->set('seccion',$seccion);
             $this->tmp_mastercms->set("obj_users",$obj_users);
+            $this->tmp_mastercms->set("obj_users_data",$users_data);
             $this->tmp_mastercms->render("dashboard/users/users_list");
     }
     
@@ -31,7 +40,6 @@ class D_Users extends CI_Controller{
         
         //GET CUSTOMER_ID
         $user_id = $this->input->post("user_id");
-        
         if($user_id != ""){
             //PARAM DATA
             $data = array(
@@ -43,8 +51,6 @@ class D_Users extends CI_Controller{
                'phone' => $this->input->post('phone'),
                'privilage' => $this->input->post('privilage'),
                'status_value' => $this->input->post('status_value'),
-               'created_at' => date("Y-m-d H:i:s"),
-               'created_by' => $_SESSION['usercms']['user_id'],
                'updated_at' => date("Y-m-d H:i:s"),
                'updated_by' => $_SESSION['usercms']['user_id']
                 );          

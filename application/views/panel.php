@@ -70,8 +70,6 @@
                                                         <?php }else{ ?>
                                                             <a class="btn btn-mini btn-warning" onclick="change_state('<?php echo $obj_last_comment->comment_id;?>');">Mark as Unread</a> 
                                                         <?php } ?>   
-                                                        
-                                                            
                                                     </p>
                                             </div>
                                         </div>
