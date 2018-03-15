@@ -61,11 +61,17 @@
                                         <div class="span10" style="margin-left:auto;">
                                             <div class="comment_content">
                                                 <p class="meta"><span class="comment_date"><?php echo formato_fecha($obj_last_comment->date_comment);?></span> | <a href="#"><?php echo $obj_last_comment->email;?></a></p>
-                                                    <p><a href="#" class="comment_author"><?php echo $obj_last_comment->name;?></a> : <?php echo $obj_last_comment->comment;?></p>
+                                                    <p><a class="comment_author"><?php echo $obj_last_comment->name;?></a> : <?php echo $obj_last_comment->comment;?></p>
+                                                    <p>Status : <a class="comment_author"><?php if($obj_last_comment->active == 1){echo "Unread";}else{echo "Read";}?></a></p>
                                                     <p>
-                                                            <a class="btn btn-mini btn-success" href="#">Mark as Read</a> 
-                                                            <a class="btn btn-mini btn-warning" href="#">Mark as Unread</a> 
-                                                            <a class="btn btn-mini btn-danger" href="#">Delete</a> 
+                                                        <?php 
+                                                        if($obj_last_comment->active == 1){ ?>
+                                                            <a class="btn btn-mini btn-success" onclick="change_state_no('<?php echo $obj_last_comment->comment_id;?>');" >Mark as Read</a> 
+                                                        <?php }else{ ?>
+                                                            <a class="btn btn-mini btn-warning" onclick="change_state('<?php echo $obj_last_comment->comment_id;?>');">Mark as Unread</a> 
+                                                        <?php } ?>   
+                                                        
+                                                            
                                                     </p>
                                             </div>
                                         </div>
@@ -92,3 +98,4 @@
         </div>
 </div>
 <script src="static/cms/js/panel.js"></script>
+<script src="<?php echo site_url();?>static/cms/js/comments.js"></script>

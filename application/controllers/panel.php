@@ -25,6 +25,7 @@ class Panel extends CI_Controller{
                         "select" =>"comment_id,
                                     name,
                                     comment,
+                                    active,
                                     email,
                                     status_value,
                                     date_comment",
