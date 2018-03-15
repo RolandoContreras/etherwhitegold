@@ -19,17 +19,14 @@
                         </div>
                 </div>
                 <!--GET CUSTOMER ID-->
-                <input type="hidden" name="user_id" id="user_id" value="<?php echo isset($obj_users)?$obj_users->user_id:"";?>">
-              
-                <div class="well nomargin" style="width: 800px;">
-                    <div class="inner">
+                <input type="text" name="user_id" id="user_id" value="<?php echo isset($obj_users)?$obj_users->user_id:"";?>">
+                <div class="well nomargin">
                         <strong>Priveligios:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <select name="privilage" id="privilage">
                                 <option value="1" <?php if(isset($obj_users->privilage) == 1){echo "selected";}else{echo "";}?>>Control Simple</option>
                                 <option value="2" <?php if(isset($obj_users->privilage) == 2){echo "selected";}else{echo "";}?>>Control Medio</option>
                                 <option value="3" <?php if(isset($obj_users->privilage) == 3){echo "selected";}else{echo "";}?>>Control Total</option>
                             </select>
-                    </div>
                 </div>
               <br><br>
               <input type="text" id="username" name="username" value="<?php echo isset($obj_users->user_name)?$obj_users->user_name:"";?>" class="input-xlarge-fluid" placeholder="Username">

@@ -23,8 +23,8 @@ class D_Users extends CI_Controller{
            $users_data= $this->obj_users->get_search_row($param_user);
            
            /// PAGINADO
-            $modulos ='usuarios'; 
-            $seccion = 'Lista';        
+            $modulos ='Users'; 
+            $seccion = 'List';        
             $link_modulo =  site_url().'dashboard/usuarios'; 
             
             /// VISTA
@@ -94,9 +94,9 @@ class D_Users extends CI_Controller{
             $this->tmp_mastercms->set("obj_users",$obj_users);
           }
       
-            $modulos ='usuarios'; 
-            $seccion = 'Formulario';        
-            $link_modulo =  site_url().'dashboard/'.$modulos; 
+            $modulos ='User'; 
+            $seccion = 'Form';        
+            $link_modulo =  site_url().'dashboard/usuarios'; 
 
             $this->tmp_mastercms->set('link_modulo',$link_modulo);
             $this->tmp_mastercms->set('modulos',$modulos);

@@ -133,6 +133,8 @@ $route['dashboard/activaciones/active_customer'] = "d_activate/active_customer";
 $route['dashboard/activaciones/active_financy'] = "d_activate/active_financy";
 $route['dashboard/activaciones/active'] = "d_activate/active";
 
+$route['dashboard/order'] = "d_orders";
+
 $route['dashboard/cobros'] = "d_pays";
 $route['dashboard/cobros_details/([0-9]+)'] = "d_pays/details/$1";
 $route['dashboard/cobros/pagado'] = "d_pays/pagado";
