@@ -23,31 +23,43 @@
                    <table id="table" class="display" cellspacing="0" width="100%">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Nombres</th>
-                                <th>Correo Electrónico</th>
-                                <th>Comentario</th>
-                                <th>Fecha de Comentario</th>
-                                <th>Estado</th>
-                                <th>Acción</th>
+                                <th>COD</th>
+                                <th>NAME</th>
+                                <th>E-MAIL</th>
+                                <th>COMENTARY</th>
+                                <th>DATE</th>
+                                <th>MARK AS</th>
+                                <th>STATUS</th>
+                                <th>ACTION</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($obj_comments as $value): ?>
-                                <tr>
-                            <th><?php echo $value->comment_id;?></th>
+                            <tr>
+                            <td><?php echo $value->comment_id;?></td>
                             <td>
                                 <div class="post_title"><?php echo $value->name;?></div>
                             </td>
                             <td><?php echo $value->email;?></td>
                             <td><?php echo $value->comment;?></td>
-                            <td><?php echo formato_fecha($value->date_comment);?></td>
+                            <td><?php echo formato_fecha_barras($value->date_comment);?></td>
                             <td>
-                                <?php if ($value->status_value == 1) {
-                                    $valor = "Leido";
+                                <?php if ($value->active == 1){
+                                    $valor = "Unread";
+                                    $stilo = "label label-warning";
+                                }else{
+                                    $valor = "Read";
+                                    $stilo = "label label-success";
+
+                                } ?>
+                                <span class="<?php echo $stilo ?>"><?php echo $valor; ?></span>
+                            </td>
+                            <td>
+                                <?php if ($value->status_value == 1){
+                                    $valor = "Active";
                                     $stilo = "label label-success";
                                 }else{
-                                    $valor = "No Leido";
+                                    $valor = "Inactive";
                                     $stilo = "label label-important";
                                 } ?>
                                 <span class="<?php echo $stilo ?>"><?php echo $valor; ?></span>
@@ -57,9 +69,9 @@
                                         <div class="btn-group">
                                             <?php 
                                             if($value->active == 1){ ?>
-                                                    <button class="btn btn-small" onclick="change_state_no('<?php echo $value->comment_id;?>');">Marcar como no Contestado</button>
+                                                    <button class="btn btn-small" onclick="change_state_no('<?php echo $value->comment_id;?>');"><i class="fa fa-envelope-open"></i> Mark as Read</button>
                                             <?php }else{ ?>
-                                                    <button class="btn btn-small" onclick="change_state('<?php echo $value->comment_id;?>');">Marcar como Contestado</button> 
+                                                    <button class="btn btn-small" onclick="change_state('<?php echo $value->comment_id;?>');"><i class="fa fa-envelope"></i> Mark as Unread</button> 
                                             <?php } ?>
                                         </div>
                                 </div>

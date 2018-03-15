@@ -99,6 +99,18 @@
                                         </ul>
                                         </div>
                                     </div>
+                                     <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#order">
+                                        Orders
+                                        </a>
+                                    </div>
+                                    <div id="order" class="accordion-body collapse">
+                                      <div class="accordion-inner">
+                                        <ul class="nav nav-list">
+                                            <li><a href="<?php echo site_url()."dashboard/order";?>"><i class="icon-large icon-th"></i>Order</a></li>
+                                        </ul>
+                                        </div>
+                                    </div>
                                     <div class="accordion-heading">
                                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#report">
                                         Reports

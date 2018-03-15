@@ -1,5 +1,5 @@
 function change_state(comment_id){
-     bootbox.dialog("Confirma que desea marcar como leído en Comentario?", [        
+     bootbox.dialog("Confirm that you want to mark as Unread?", [        
         { "label" : "Cancelar"},
         {
             "label" : "Confirmar",
@@ -20,7 +20,7 @@ function change_state(comment_id){
 }
 
 function change_state_no(comment_id){
-     bootbox.dialog("Confirma que desea no publicar el Comentario?", [        
+     bootbox.dialog("Confirm that you want to mark as read?", [        
         { "label" : "Cancelar"},
         {
             "label" : "Confirmar",
