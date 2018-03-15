@@ -20,7 +20,6 @@ class D_customer extends CI_Controller{
                                     customer.created_at,
                                     customer.active,
                                     customer.status_value",
-                        "where" =>"customer.status_value = 1"            
                );
            //GET DATA FROM CUSTOMER
            $obj_customer= $this->obj_customer->search($params);
@@ -40,66 +39,29 @@ class D_customer extends CI_Controller{
     
     public function validate(){
         
-        $parents_id =  $this->input->post('parents_id');
-        //fecha inicio de pago
-        $date_start =  $this->input->post('date_start');
-        //fecha final de pago
-//        $date_end =  $this->input->post('date_end');
-        //financiada
-        $financy =  $this->input->post('financy');
-        //position temporal
-        $position_temporal =  $this->input->post('position_temporal');
-        //activo o pagado
-//        $point_calification_left =  $this->input->post('point_calification_left');
-//        $point_calification_rigth =  $this->input->post('point_calification_rigth');
-        $identificador =  $this->input->post('identificador');
-        //puntos izquierda
-        $point_left =  $this->input->post('point_left');
-        //puntos derecha
-        $point_rigth =  $this->input->post('point_rigth');
-        //franchise_id
-        $franchise=  $this->input->post('franchise');
-        
-        
-        
-        
         //GET CUSTOMER_ID
         $customer_id = $this->input->post("customer_id");
+        $first_name = $this->input->post("first_name");
+        $last_name = $this->input->post("last_name");
+        $username = $this->input->post("username");
+        $password = $this->input->post("password");
+        $email = $this->input->post("email");
+        $ether_address = $this->input->post("ether_address");
+        $status_value = $this->input->post("status_value");
+        $active = $this->input->post("active");
+        
         $data = array(
-                
-                'first_name' => $this->input->post('first_name'),
-                'last_name   ' => $this->input->post('last_name'),
-                'username' => $this->input->post('username'),
-                'password' => $this->input->post('password'),
-                'email' => $this->input->post('email'),
-                'dni' => $this->input->post('dni'),  
-                'parents_id' => $parents_id,  
-                'date_start' => $date_start,  
-                'date_end' => $date_end,  
-                'financy' => $financy,  
-                'position_temporal' => $position_temporal,  
-//                'point_calification_left' => $point_calification_left,  
-//                'point_calification_rigth' => $point_calification_rigth,  
-                'identificador' => $identificador,  
-                'point_left' => $point_left,  
-                'point_rigth' => $point_rigth,  
-                'birth_date' => $this->input->post('fecha_de_nacimiento'),  
-                'phone' => $this->input->post('phone'),
-//                'bank_name' => $this->input->post('bank_name'),
-//                'titular_name' => $this->input->post('titular_name'),
-//                'bank_account' => $this->input->post('bank_account'),
-                'country' => $this->input->post('pais'),
-                'region' => $this->input->post('region'),
-                'franchise_id' => $franchise,
-                'position' => $this->input->post('position'),
-                'address' => $this->input->post('address'),
-                'btc_address' => $this->input->post('btc_address'),
-                'city' => $this->input->post('city'),
-//                'calification' => $this->input->post('calification'),
-                'status_value' => $this->input->post('status_value'),
-                'updated_at' => date("Y-m-d H:i:s"),
-                'updated_by' => $_SESSION['usercms']['user_id']
-                );          
+            'first_name' => $first_name,
+            'last_name' => $last_name,
+            'username' => $username,
+            'password' => $password,
+            'email' => $email,
+            'ether_address' => $ether_address,
+            'active' => $active,
+            'status_value' => $status_value,
+            'updated_at' => date("Y-m-d H:i:s"),
+            'updated_by' => $_SESSION['usercms']['user_id']
+            );          
             //SAVE DATA IN TABLE    
             $this->obj_customer->update($customer_id, $data);
         redirect(site_url()."dashboard/clientes");
@@ -133,39 +95,18 @@ class D_customer extends CI_Controller{
                          "where" => $where,
             ); 
             $obj_customer  = $this->obj_customer->get_search_row($params); 
-            
             //RENDER
             $this->tmp_mastercms->set("obj_customer",$obj_customer);
           }
           
-            //SELECT PAISES
-            $params = array("select" => "",
-                            "where" => "id_idioma = 7");
-            $obj_paises  = $this->obj_paises->search($params);   
-            //RENDER TO VIEW
-            $this->tmp_mastercms->set("obj_paises",$obj_paises);
-            
-            //SELECT REGIONES
-            $params = array("select" => "",
-                            "where" => "id_idioma = 7");
-            $obj_regiones  = $this->obj_regiones->search($params);   
-            //RENDER TO VIEW
-            $this->tmp_mastercms->set("obj_regiones",$obj_regiones); 
-            
-            //SELECT PAQUETES
-            $params = array("select" => "");
-            $obj_franchise  = $this->obj_franchise->search($params);   
-            //RENDER TO VIEW
-            $this->tmp_mastercms->set("obj_franchise",$obj_franchise); 
-            
-            $modulos ='clientes'; 
-            $seccion = 'Formulario';        
-            $link_modulo =  site_url().'dashboard/'.$modulos; 
+            $modulos ='Customer'; 
+            $seccion = 'Form';        
+            $link_modulo =  site_url().'dashboard/clientes'; 
 
             $this->tmp_mastercms->set('link_modulo',$link_modulo);
             $this->tmp_mastercms->set('modulos',$modulos);
             $this->tmp_mastercms->set('seccion',$seccion);
-            $this->tmp_mastercms->render("dashboard/customer/customer_form");    
+            $this->tmp_mastercms->render("dashboard/customer/customer_form");
     }
     
     public function details($obj_customer=NULL){
@@ -195,30 +136,13 @@ class D_customer extends CI_Controller{
             $this->tmp_mastercms->set("obj_customer",$obj_customer);
           }
             $modulos ='Customer'; 
-            $seccion = 'Formulario';        
+            $seccion = 'Form';        
             $link_modulo =  site_url().'dashboard/clientes'; 
 
             $this->tmp_mastercms->set('link_modulo',$link_modulo);
             $this->tmp_mastercms->set('modulos',$modulos);
             $this->tmp_mastercms->set('seccion',$seccion);
             $this->tmp_mastercms->render("dashboard/customer/customer_form");    
-    }
-    
-    public function no_active_customer(){
-            //NO ACTIVE CUSTOMER
-        if($this->input->is_ajax_request()){   
-            $customer_id = $this->input->post("customer_id");
-                if(count($customer_id) > 0){
-                    $data = array(
-                        'calification' => 0,
-                        'updated_at' => date("Y-m-d H:i:s"),
-                        'updated_by' => $_SESSION['usercms']['user_id'],
-                    ); 
-                    $this->obj_customer->update($customer_id,$data);
-                }
-                echo json_encode($data);            
-        exit();
-            }
     }
     
     public function get_session(){          

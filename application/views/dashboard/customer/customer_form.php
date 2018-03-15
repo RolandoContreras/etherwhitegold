@@ -47,16 +47,15 @@
               <input type="text" id="email" name="email" value="<?php echo isset($obj_customer->email)?$obj_customer->email:"";?>" class="input-xlarge-fluid" placeholder="Correo Electrónico" <?php echo $style;?>>
               <br><br>
               <strong>Fecha de Creación:</strong><br>
-              <input type="text" id="date_end" name="date_end" class="input-small-fluid" value="<?php echo isset($obj_customer->created_at)?formato_fecha_barras($obj_customer->created_at):"";?>" <?php echo $style;?>>
+              <input type="text" id="date_end" name="date_end" class="input-small-fluid" value="<?php echo isset($obj_customer->created_at)?formato_fecha_barras($obj_customer->created_at):"";?>" disabled>
               <br><br>
               
               <div class="inner">
-                    <strong>Compra EWG:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>Purchase ewg EWG:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <select name="active" id="active" <?php echo $style;?>>
-                                <option value="">[ Seleccionar ]</option>
                                 <option value="1" <?php if(isset($obj_customer)){
                                     if($obj_customer->active == 1){ echo "selected";}
-                                }else{echo "";} ?>>Si</option>
+                                }else{echo "";} ?>>Yes</option>
                                 <option value="0" <?php if(isset($obj_customer)){
                                     if($obj_customer->active == 0){ echo "selected";}
                                 }else{echo "";} ?>>No</option>
@@ -64,19 +63,18 @@
                </div>
               <br><br>
               <strong>Ether Wallet:</strong><br>
-              <input type="text" id="btc_address" name="btc_address" class="input-xlarge-fluid" placeholder="Direccion de BitCoin" value="<?php echo isset($obj_customer->ether_address)?$obj_customer->ether_address:"";?>" <?php echo $style;?>>
+              <input type="text" id="ether_address" name="ether_address" class="input-xlarge-fluid" placeholder="Ether Wallet" value="<?php echo isset($obj_customer->ether_address)?$obj_customer->ether_address:"";?>" <?php echo $style;?>>
                 <br><br>
              <div class="well nomargin" style="width: 200px;">
                       <div class="inner">
                           <strong>Estado para el sistema:</strong>
                           <select name="status_value" id="status_value" <?php echo $style;?>>
-                                      <option value="">[ Seleccionar ]</option>
                                       <option value="0" <?php if(isset($obj_customer)){
                                           if($obj_customer->status_value == 0){ echo "selected";}
-                                      }else{echo "";} ?>>Inactivo</option>
+                                      }else{echo "";} ?>>Inactive</option>
                                       <option value="1" <?php if(isset($obj_customer)){
                                           if($obj_customer->status_value == 1){ echo "selected";}
-                                      }else{echo "";} ?>>Activo</option>
+                                      }else{echo "";} ?>>Active</option>
                           </select>
                       </div>
                   </div>

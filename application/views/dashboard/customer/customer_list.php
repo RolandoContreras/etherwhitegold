@@ -28,7 +28,7 @@
                                 <th>USERNAME</th>
                                 <th>NAME</th>
                                 <th>E-MAIL</th>
-                                <th>ACTIVATION</th> 
+                                <th>PURCHASE</th> 
                                 <th>STATUS</th> 
                                 <th>ACTIONS</th>
                             </tr>
@@ -42,20 +42,20 @@
                                 <td align="center"><?php echo $value->email;?></td>
                                 <td align="center">
                                     <?php if ($value->active == 0) {
-                                        $valor = "Sin Comprar";
+                                        $valor = "No";
                                         $stilo = "label label-important";
                                     }else{
-                                        $valor = "Ya Compró";
+                                        $valor = "Yes";
                                         $stilo = "label label-success";
                                     } ?>
                                     <span class="<?php echo $stilo ?>"><?php echo $valor; ?></span>
                                 </td>
                                 <td align="center">
                                     <?php if ($value->status_value == 0) {
-                                        $valor = "Inactivo";
+                                        $valor = "Inactive";
                                         $stilo = "label label-important";
                                     }else{
-                                        $valor = "Activo";
+                                        $valor = "Active";
                                         $stilo = "label label-success";
                                     } ?>
                                     <span class="<?php echo $stilo ?>"><?php echo $valor; ?></span>
