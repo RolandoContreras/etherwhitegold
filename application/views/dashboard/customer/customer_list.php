@@ -63,7 +63,7 @@
                                 <td>
                                     <div class="operation">
                                             <div class="btn-group">
-                                                <button class="btn btn-small" onclick="edit_customer('<?php echo $value->customer_id;?>');">Detalle</button>
+                                                <button class="btn btn-small" onclick="details_customer('<?php echo $value->customer_id;?>');">Detalle</button>
                                                 <button class="btn btn-small" onclick="edit_customer('<?php echo $value->customer_id;?>');">Editar</button>
                                           </div>
                                     </div>
