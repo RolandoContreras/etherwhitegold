@@ -10,7 +10,7 @@
                         <div class="navbar navbar-static navbar_as_heading">
                                 <div class="navbar-inner">
                                         <div class="container" style="width: auto;">
-                                                <a class="brand">Vista Rápida</a>
+                                                <a class="brand">Quick View</a>
                                         </div>
                                 </div>
                         </div>
@@ -18,21 +18,21 @@
                                 <thead>
                                         <tr>
                                                 <th>CMS</th>
-                                                <th>Acciones</th>
+                                                <th>Actions</th>
                                         </tr>
                                 </thead><!-- table heading -->
                                 <tbody>
                                         <tr>
-                                            <td><a href="<?php echo site_url().'dashboard/clientes'?>"><b><?php echo $obj_total->total_customer;?></b><i class="fa fa-users"></i> Asociados
+                                            <td><a href="<?php echo site_url().'dashboard/clientes'?>"><b><?php echo $obj_total->total_customer;?></b><i class="fa fa-users"></i> Customer
                                                 </a></td>
-                                                <td><a href="<?php echo site_url().'dashboard/clientes'?>"><b class="cmd">12</b><i class="fa fa-users"></i> Comprados</a></td>
+                                                <td><a href="<?php echo site_url().'dashboard/clientes'?>"><b class="cmd">0</b><i class="fa fa-bitcoin"></i> buyer</a></td>
                                         </tr>
                                         <tr>
-                                            <td><a href="<?php echo site_url().'dashboard/comentarios';?>"><b><?php echo $obj_total->total_comments;?></b><i class="fa fa-comments"></i> Comentarios</a></td>
-                                                <td><a href="<?php echo site_url().'dashboard/comentarios';?>" class="pending"><b class="cmd"><?php echo $obj_total->pending_comments;?></b><i class="fa fa-comments"></i> Por Leer</a></td>
+                                            <td><a href="<?php echo site_url().'dashboard/comentarios';?>"><b><?php echo $obj_total->total_comments;?></b><i class="fa fa-comments"></i> Comments</a></td>
+                                                <td><a href="<?php echo site_url().'dashboard/comentarios';?>" class="pending"><b class="cmd"><?php echo $obj_total->pending_comments;?></b><i class="fa fa-exclamation"></i> To read</a></td>
                                         </tr>
                                         <tr>
-                                                <td><a href="<?php echo site_url().'dashboard/usuarios';?>"><b><?php echo $obj_total->total_users;?></b><i class="fa fa-user-secret"></i> Usuarios</a></td>
+                                                <td><a href="<?php echo site_url().'dashboard/usuarios';?>"><b><?php echo $obj_total->total_users;?></b><i class="fa fa-user-secret"></i> Users</a></td>
                                                 <td class="blank">&nbsp;</td>
                                         </tr>
                                 </tbody>
@@ -47,7 +47,7 @@
                                 <div class="navbar navbar-static navbar_as_heading">
                                         <div class="navbar-inner">
                                                 <div class="container" style="width: auto;">
-                                                        <a class="brand">Último Comentario</a>
+                                                        <a class="brand">Last Comment</a>
                                                 </div>
                                         </div>
                                 </div>
@@ -63,12 +63,14 @@
                                                 <p class="meta"><span class="comment_date"><?php echo formato_fecha($obj_last_comment->date_comment);?></span> | <a href="#"><?php echo $obj_last_comment->email;?></a></p>
                                                     <p><a href="#" class="comment_author"><?php echo $obj_last_comment->name;?></a> : <?php echo $obj_last_comment->comment;?></p>
                                                     <p>
-                                                            <a class="btn btn-mini btn-primary" href="#">Reply</a> <a class="btn btn-mini btn-danger" href="#">Delete</a> <a class="btn btn-mini btn-warning" href="#">Mark as Spam</a> 
+                                                            <a class="btn btn-mini btn-success" href="#">Mark as Read</a> 
+                                                            <a class="btn btn-mini btn-warning" href="#">Mark as Unread</a> 
+                                                            <a class="btn btn-mini btn-danger" href="#">Delete</a> 
                                                     </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="<?php echo site_url("dashboard/comentarios");?>" class="btn btn-duadua">Ver más</a>
+                                    <a href="<?php echo site_url("dashboard/comentarios");?>" class="btn btn-duadua">All Comments</a>
                                 </div>
                             <?php }else{ ?>
                                     <div class="row-fluid">
@@ -82,7 +84,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        <a href="<?php echo site_url("dashboard/comentarios");?>" class="btn btn-duadua">Ver más</a>
+                                        <a href="<?php echo site_url("dashboard/comentarios");?>" class="btn btn-duadua">All Comments</a>
                                     </div>
                             <?php }  ?>
                         </div>

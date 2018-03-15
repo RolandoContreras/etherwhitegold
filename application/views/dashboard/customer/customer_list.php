@@ -12,7 +12,7 @@
                     <div class="navbar navbar-static navbar_as_heading">
                             <div class="navbar-inner">
                                     <div class="container" style="width: 110%;">
-                                            <a class="brand">LISTADO DE  ASOCIADOS</a>
+                                            <a class="brand">LIST OF ASSOCIATES</a>
                                     </div>
                             </div>
                     </div>
@@ -24,13 +24,13 @@
                    <table id="table" class="display" cellspacing="0" width="100%">
                         <thead>
                             <tr>
-                                <th>CODIGO</th>
-                                <th>USUARIO</th>
-                                <th>ASOCIADO</th>
+                                <th>COD</th>
+                                <th>USERNAME</th>
+                                <th>NAME</th>
                                 <th>E-MAIL</th>
-                                <th>ACTIVACIÓN</th> 
-                                <th>ESTADO</th> 
-                                <th>ACCIONES</th>
+                                <th>ACTIVATION</th> 
+                                <th>STATUS</th> 
+                                <th>ACTIONS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -63,8 +63,8 @@
                                 <td>
                                     <div class="operation">
                                             <div class="btn-group">
-                                                <button class="btn btn-small" onclick="details_customer('<?php echo $value->customer_id;?>');">Detalle</button>
-                                                <button class="btn btn-small" onclick="edit_customer('<?php echo $value->customer_id;?>');">Editar</button>
+                                                <button class="btn btn-small" onclick="details_customer('<?php echo $value->customer_id;?>');"><i class="fa fa-eye"></i> More Detail</button>
+                                                <button class="btn btn-small" onclick="edit_customer('<?php echo $value->customer_id;?>');"><i class="fa fa-edit"></i> Edit</button>
                                           </div>
                                     </div>
                                 </td>

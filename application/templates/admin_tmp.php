@@ -69,7 +69,7 @@
                         </a>
                         <ul class="dropdown-menu megamenu col2 ud">
                                 <ul>
-                                    <a href="<?php echo site_url().'dashboard/logout';?>"><img class="image_icons" src="<?php echo site_url().'static/cms/png/door9.png';?>"> Cerrar Session</a>
+                                    <a href="<?php echo site_url().'dashboard/logout';?>"><img class="image_icons" src="<?php echo site_url().'static/cms/png/door9.png';?>"> Sign Off</a>
                                 </ul>
                         </ul>
                     </div>
@@ -86,16 +86,28 @@
                             <div class="accordion-group fs">
                                     <div class="accordion-heading">
                                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#dashboardsb">
-                                        Mantenimientos  
+                                        Maintenances
                                         </a>
                                     </div>
                                     <div id="dashboardsb" class="accordion-body collapse">
                                       <div class="accordion-inner">
                                         <ul class="nav nav-list">
                                             <li><a href="<?php echo site_url()."dashboard/panel";?>"><i class="icon-large icon-th"></i>Panel</a></li>
-                                            <li><a href="<?php echo site_url()."dashboard/clientes";?>"><i class="icon-large icon-th"></i>Clientes</a></li>
-                                            <li><a href="<?php echo site_url()."dashboard/comentarios";?>"><i class="icon-large icon-th"></i>Comentarios</a></li>
-                                            <li><a href="<?php echo site_url()."dashboard/usuarios";?>"><i class="icon-large icon-th"></i>Usuarios</a></li>
+                                            <li><a href="<?php echo site_url()."dashboard/clientes";?>"><i class="icon-large icon-th"></i>Customer</a></li>
+                                            <li><a href="<?php echo site_url()."dashboard/comentarios";?>"><i class="icon-large icon-th"></i>Comments</a></li>
+                                            <li><a href="<?php echo site_url()."dashboard/usuarios";?>"><i class="icon-large icon-th"></i>Users</a></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#report">
+                                        Reports
+                                        </a>
+                                    </div>
+                                    <div id="report" class="accordion-body collapse">
+                                      <div class="accordion-inner">
+                                        <ul class="nav nav-list">
+                                            <li><a href="<?php echo site_url()."dashboard/panel";?>"><i class="icon-large icon-th"></i>Panel</a></li>
                                         </ul>
                                         </div>
                                     </div>
