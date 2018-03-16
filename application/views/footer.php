@@ -8,14 +8,13 @@
         <div class="footer-social-icon">
             <a href="https://www.facebook.com/etherwhitegold.io/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://twitter.com/@etherwhitegold" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://t.me/joinchat/Eh6B0051x7L1Hpxd0QXqTA" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            <a href="https://t.me/joinchat/FsdVA0SdvoYFN5qPJ_tO1Q" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
             <a href="https://bitcointalk.org/index.php?topic=2825372.new#new" target="_blank"><i class="fa fa-btc" aria-hidden="true"></i></a>
         </div>
         <div class="footer-menu">
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -28,7 +27,7 @@
         </div>
     </footer>
     <!-- ***** Footer Area Start ***** -->
-
+            
     <!-- Jquery-2.2.4 JS -->
     <script src="<?php echo site_url().'static/page_front/js/jquery-2.2.4.min.js';?>"></script>
     <!-- Popper js -->

@@ -12,10 +12,9 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/etherwhitegold/static/page_front/css/responsive.css</file>
-            <file>file:/C:/wamp/www/etherwhitegold/static/page_front/css/style.css</file>
-            <file>file:/C:/wamp/www/etherwhitegold/application/views/head.php</file>
-            <file>file:/C:/wamp/www/etherwhitegold/application/views/home.php</file>
+            <file>file:/C:/xampp/htdocs/etherwhitegold/application/config/routes.php</file>
+            <file>file:/C:/xampp/htdocs/etherwhitegold/application/controllers/d_orders.php</file>
+            <file>file:/C:/xampp/htdocs/etherwhitegold/application/views/dashboard/order/order_list.php</file>
         </group>
     </open-files>
 </project-private>

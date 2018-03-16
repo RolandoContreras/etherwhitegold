@@ -114,7 +114,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="ether" id="ether" placeholder="Ether Address" required>
+                                            <input type="text" class="form-control" name="ether" id="ether" placeholder="Ethereum Address" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
