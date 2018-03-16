@@ -70,13 +70,10 @@
                                             <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to confirm that you are NOT a U.S. citizen, resident or entity (each a “U.S. Person”) nor are you purchasing EWG Tokens or signing on behalf of a U.S. Person.</label>
                                         </div>
                                         <div class="form-group">
-                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to confirm that you have read, understand and agree to the terms of EWG Token <b>Purchase Agreement</b></label>
-                                        </div>
-                                        <div class="form-group">
                                             <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to indicate that you have read etherwhitegold.io <b>Whitepaper</b></label>
                                         </div>
                                         <div class="form-group">
-                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to confirm that you are NOT a citizen of or resident of the People’s Republic of China or an entity formed under the laws of the People’s Republic of China (each a “Chinese Person”) nor are you purchasing EWG Tokens or signing on behalf of a Chinese Person.</label>
+                                            <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to confirm that you have read and understood Etherwhitegold Ico WhitePaper, and agreed to the <b>Terms and Conditions and Privacy Policy</b></label>
                                         </div>
                                         <div class="form-group">
                                             <label><input type="checkbox" id="american" name="american" value="1" required>&nbsp;&nbsp;Check here to confirm that you have read, understand and agree to the <b>Term of Use</b></label>
