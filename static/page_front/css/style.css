@@ -1397,3 +1397,12 @@ p {
     text-align: center;
     font-size: 12px;
 }
+.text-contract{
+    padding-top: 10px;
+    color:#726a84;
+    margin-top: 14px; 
+}
+.text-capitalize-policy{
+    color: #d99800;
+    font-size: 18px;
+}

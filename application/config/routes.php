@@ -54,6 +54,9 @@ $route['forgot_notsend'] = 'forgot/notsend';
 $route['login/inactive'] = 'login';
 $route['blog/([0-9]+)/([0-9a-z_-]+)'] = 'blog/internal';
 $route['plan/([0-9a-z_-]+)'] = "plan/packages";
+$route['privacy_policy'] = "policy";
+$route['term_condition'] = "term";
+
 
 $route['backoffice'] = "b_home";
 $route['backoffice/productos'] = "b_product";

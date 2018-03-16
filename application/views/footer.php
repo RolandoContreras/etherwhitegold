@@ -15,8 +15,8 @@
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="<?php echo site_url().'privacy_policy';?>">Privacy Policy</a></li>
+                    <li><a href="<?php echo site_url().'term_condition';?>">Terms &amp; Conditions</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
