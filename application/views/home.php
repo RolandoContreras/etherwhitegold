@@ -304,6 +304,9 @@
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/jose_diaz.jpg';?>" alt="José Díaz">
                             <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <p class="text-social">Entrepreneur with 6 years of experience in the area of project planning, a trader by profession with 3 years of experience currently operating in the area of markets such as cryptocurrencies and the stock market.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="member-text">
@@ -316,7 +319,11 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/jesus_garcia.jpg';?>" alt="Jesús Garcia">
-                            <div class="team-hover-effects"></div>
+                            <div class="team-hover-effects">
+                                 <div class="team-social-icon">
+                                    <p class="text-social">A passionate about everything related to the crypto coins. An innate capacity for business. Expert in ERC20 protocol and fully integrated in the Blockchain ecosystem. He is the creator of our protocol. In addition to being the founder of other projects wants to make a qualitative leap with Etherwhitegold</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="member-text">
                             <h4>Jesús Garcia</h4>
@@ -328,7 +335,11 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/jesus_montes.jpg';?>" alt="Jesús Montes">
-                            <div class="team-hover-effects"></div>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <p class="text-social">Passionate about cryptocurrencies since 2013, entrepreneur, investor and advisor in several virtual projects. In charge of the marketing department with great experience in market and sales networks.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="member-text">
                             <h4>Jesús Montes</h4>
@@ -340,7 +351,12 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/luz_casalins.jpg';?>" alt="Luz Casalins">
-                            <div class="team-hover-effects"></div>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <!--<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> -->
+                                    <p class="text-social">Professional in the area of public relations with 7 years of experience and image acessor.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="member-text">
                             <h4>Luz Casalins</h4>
@@ -352,7 +368,11 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/ronaldo_contreras.jpg';?>" alt="Rolando Contreras">
-                            <div class="team-hover-effects"></div>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <p class="text-social">Informational engineer, software developer, general manager of Cevolution Web. Networker with more than 6 years in the industry. Founder of 3T Club (multilevel company).</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="member-text">
                             <h4>Rolando Contreras</h4>
@@ -364,7 +384,11 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/reivy_jimenez.jpg';?>" alt="Reivy Jimenez">
-                            <div class="team-hover-effects"></div>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <p class="text-social">Graphic Designer teacher with 5 years of experience in the area of digitization of content such as banners, animation, images, advertising campaigns among others.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="member-text">
                             <h4>Reivy Jimenez</h4>
@@ -376,7 +400,11 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/gorka_carballo.jpg';?>" alt="Gorka Carballo">
-                            <div class="team-hover-effects"></div>
+                             <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <p class="text-social">Visionary, entrepreneur, creator of ecosystems is dedicated to project correction and process improvement in the Blockchain community.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="member-text">
                             <h4>Gorka Carballo</h4>
@@ -388,7 +416,11 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/julian_zamudio.jpg';?>" alt="Julian Zamudio">
-                            <div class="team-hover-effects"></div>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <p class="text-social">Business Administrator - De La Salle University. General Manager Innprotec Ingenieria y Comercializadora SAS. Specialist in Marketing and Commercial Management U, Rosario. International Financial Coach - Independent Investor.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="member-text">
                             <h4>Julian Zamudio</h4>

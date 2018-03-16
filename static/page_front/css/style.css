@@ -1390,3 +1390,10 @@ p {
 .copyright-text > p {
     margin-bottom: 0;
 }
+
+.text-social{
+    padding: 15px;
+    color: #284885;
+    text-align: center;
+    font-size: 12px;
+}
