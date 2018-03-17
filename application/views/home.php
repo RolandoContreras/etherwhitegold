@@ -370,7 +370,7 @@
                             <img src="<?php echo site_url().'static/page_front/images/team/ronaldo_contreras.jpg';?>" alt="Rolando Contreras">
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
-                                    <p class="text-social">Informational engineer, software developer, general manager of Cevolution Web. Networker with more than 6 years in the industry. Founder of 3T Club (multilevel company).</p>
+                                    <p class="text-social">Systems Engineer, software developer, general manager of Cevolution Web. Networker with more than 6 years in the industry. Founder of 3T Club (multilevel company).</p>
                                 </div>
                             </div>
                         </div>
