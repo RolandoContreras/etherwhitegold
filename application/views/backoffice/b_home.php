@@ -106,6 +106,35 @@
                         </div>
                 </div> 
         </div>
+        <div class="col-md-12"> 
+            <div class="panel panel-info">
+                    <div class="col-md-3"> 
+                        <div class="panel panel-default">
+                                    <!-- panel body --> 
+                                    <div class="panel-body"> 
+                                            <p>
+                                                <img src="<?php echo site_url()."static/page_front/images/etherwhitegold.jpg";?>" alt="etherwhitegold"/>
+                                            </p>
+                                    </div> 
+                            </div> 
+                    </div>
+                        <div class="col-md-9"> 
+                                <div class="panel panel-default">
+                                        <div class="panel-heading clearfix"> 
+                                            <div class="panel-title"><b>PURCHASING MODE</b></div> 
+                                        </div> 
+                                        <!-- panel body --> 
+                                        <div id="spinner"></div>
+                                        <div class="panel-body"> 
+                                             <p>Send a message by clicking on the button below indicating the user and the voucher or identification code of the transaction made.<br></p><br/>
+                                             <div class="bs-example">
+                                                 <a href="<?php echo site_url().'backoffice/message_confirmation';?>"><button type="button" class="btn btn-black btn-block"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Send Confirmation Message</span></button></a>
+                                            </div>
+                                        </div> 
+                                </div> 
+                        </div>
+                </div> 
+        </div>
         </div>
     </div>
    </section>

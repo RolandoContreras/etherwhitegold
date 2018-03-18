@@ -59,7 +59,7 @@
                     </div>
                     <div class="text-contract">
                         <p class="text-capitalize-policy">Use of Website</p>
-                        <p>The purpose of our Website is to provide you with you some general information about the software being developed by spadecoin.com. You must not breach any of the following terms or our Acceptable Use Policy set out below.</p>
+                        <p>The purpose of our Website is to provide you with you some general information about the software being developed by etherwhitegold.io. You must not breach any of the following terms or our Acceptable Use Policy set out below.</p>
                     </div>
                     <div class="text-contract">
                         <p class="text-capitalize-policy">Open Source Software</p>
