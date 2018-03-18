@@ -20,6 +20,8 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
+            //SET TIMEZONE AMERICA
+                date_default_timezone_set('America/Lima');
 		$this->load->view('home');
 	}
 }

@@ -30,22 +30,6 @@
             </div>
         </div>
     </header>
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Wellcome Area Start ***** -->
-    <section class="our-monthly-membership section_padding_50 clearfix">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-<!--    <section class="wellcome_area clearfix">
-    </section>-->
-    <!-- ***** Wellcome Area End ***** -->
-
     <!-- ***** Contact Us Area Start ***** -->
     <section class="footer-contact-area section_padding_100 clearfix">
         <div class="container">
