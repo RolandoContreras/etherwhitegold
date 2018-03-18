@@ -4,7 +4,7 @@
             <h1 class="title text-uppercase">CONFIRMATION MESSAGE</h1>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 pull-right count-down-box">
-            <a class="white">EWG Price: <?php echo $obj_bonus->name."<br/>".$obj_bonus->price;?> ETH</a>
+            <a class="white"><?php echo $obj_bonus->name." - ".$obj_bonus->percent.'%'."<br/>".$obj_bonus->price;?> ETH</a>
         </div>
     </div> 
          <!-- Page content-->
