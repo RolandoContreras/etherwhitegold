@@ -144,7 +144,7 @@
                                         <div class="panel-body"> 
                                              <p>The video explains the correct form of how to make the solitude order of the etherwhitegold and at the same time how to make the contribution or deposit for the activation of the same.</p><br/>
                                              <div class="bs-example">
-                                                 <a href="https://www.youtube.com/watch?v=hE1C3Ucmom8&feature=youtu.be" target="_blank"><button type="button" class="btn btn-success btn-block"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">WATCH VIDEO</span></button></a>
+                                                 <a href="https://www.youtube.com/watch?v=hE1C3Ucmom8&feature=youtu.be" target="_blank"><button type="button" class="btn btn-black btn-block"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">WATCH VIDEO</span></button></a>
                                             </div>
                                         </div> 
                                 </div> 
