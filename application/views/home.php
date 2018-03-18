@@ -38,8 +38,10 @@
             <div class="row h-100 align-items-center">
                 <div class="col-4 col-md">
                     <div class="wellcome-heading">
-                        <h2>EWG</h2>
-                        <p>hollaaa</p>
+                        <h2><?php echo "Round : ".$round." - ".$percent."%";?></h2>
+                        <div class="progress">
+                            <div style="width: 75%" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="13000000" style="width: 75%">1 ETH</div>
+                        </div>
                     </div>
                     <div class="get-start-area">
                         <!-- Form Start -->

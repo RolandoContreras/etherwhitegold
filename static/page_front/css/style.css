@@ -1406,6 +1406,12 @@ p {
     color: #d99800;
     font-size: 18px;
 }
+
+.wellcome-heading {
+    margin-bottom: 55px;
+    width: 88%;
+}
+
 .wellcome-heading-specfication{
     background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
     background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
