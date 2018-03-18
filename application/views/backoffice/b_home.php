@@ -14,7 +14,21 @@
     <div class="content-wrapper">
         <div class="row fix-box-height package-box-fix mt-30">
             <div class="col-lg-12">
-                <div class="row"><div class="col-sm-6"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="well media media-badges box-height box">
+                            <div class="media-middle">
+                                <h5 class="media-heading text-uppercase title-small">Only payments are allowed:</h5>
+                                <div class="mt-10"></div>
+                            </div>
+                        <div class="media-right media-middle">
+                            <img src="<?php echo site_url().'static/backoffice/images/metamask.png';?>" alt="Metamask" width="150"/>
+                        </div>
+                            <div class="media-right media-middle">
+                                <img src="<?php echo site_url().'static/backoffice/images/myetherwallet.png';?>" alt="Myetherwallet" width="150"/>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-sm-6">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">

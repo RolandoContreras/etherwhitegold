@@ -55,8 +55,8 @@
                     <script type="application/javascript">
                         var myCountdown1 = new Countdown({
                             year: 2018, 	
-                            month:3, 
-                            day:18,
+                            month:5, 
+                            day:17,
                             width:300, 
                             height:60,  
                             rangeHi:"day",
