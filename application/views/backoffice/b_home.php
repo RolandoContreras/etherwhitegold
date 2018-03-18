@@ -112,23 +112,25 @@
                         <div class="panel panel-default">
                                     <!-- panel body --> 
                                     <div class="panel-body"> 
-                                            <p>
-                                                <img src="<?php echo site_url()."static/page_front/images/etherwhitegold.jpg";?>" alt="etherwhitegold"/>
-                                            </p>
+                                            <div class="lockup-thumbnail">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hE1C3Ucmom8?showinfo=0" allowfullscreen=""></iframe>
+                                                    </div>
+                                            </div>
                                     </div> 
                             </div> 
                     </div>
                         <div class="col-md-9"> 
                                 <div class="panel panel-default">
                                         <div class="panel-heading clearfix"> 
-                                            <div class="panel-title"><b>PURCHASING MODE</b></div> 
+                                            <div class="panel-title"><b>How to Make a Contribution to EtherwhiteGold?</b></div> 
                                         </div> 
                                         <!-- panel body --> 
                                         <div id="spinner"></div>
                                         <div class="panel-body"> 
-                                             <p>Send a message by clicking on the button below indicating the user and the voucher or identification code of the transaction made.<br></p><br/>
+                                             <p>The video explains the correct form of how to make the solitude order of the etherwhitegold and at the same time how to make the contribution or deposit for the activation of the same.</p><br/>
                                              <div class="bs-example">
-                                                 <a href="<?php echo site_url().'backoffice/message_confirmation';?>"><button type="button" class="btn btn-black btn-block"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Send Confirmation Message</span></button></a>
+                                                 <a href="https://www.youtube.com/watch?v=hE1C3Ucmom8&feature=youtu.be" target="_blank"><button type="button" class="btn btn-success btn-block"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">WATCH VIDEO</span></button></a>
                                             </div>
                                         </div> 
                                 </div> 
