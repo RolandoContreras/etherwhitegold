@@ -1409,7 +1409,7 @@ p {
 
 .wellcome-heading {
     margin-bottom: 55px;
-    width: 88%;
+    width: 83%;
 }
 
 .wellcome-heading-specfication{
@@ -1418,4 +1418,20 @@ p {
     background: linear-gradient(45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 );
     border-radius: 24px 24px 24px 0px;
+    
+    text-align: center;
+}
+.wellcome-heading > h2{
+    font-size: 26px;
+    text-align: center;
+    text-shadow: 2px 0 0 #284885, -2px 0 0 #284885, 0 2px 0 #284885, 0 -2px 0 #284885, 1px 1px #284885, -1px -1px 0 #284885, 1px -1px 0 #284885, -1px 1px 0 #284885;
+}
+.button-specification {
+    padding: 12px;
+}
+.get-start-area{
+    margin-left: 28px;
+}
+.rel{
+    margin-left: 15px !important;
 }
