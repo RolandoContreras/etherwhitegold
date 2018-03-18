@@ -43,7 +43,7 @@
                     <div class="get-start-area">
                         <!-- Form Start -->
                         <a class="submit" href="<?php echo site_url().'static/page_front/whitepaper/whitepaper_es.pdf';?>" download><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/es.png';?>" alt="Spanish" /></a>
-                        <a class="submit rel" href="#"><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/en.png';?>" alt="English" /></a>
+                        <a class="submit rel" href="<?php echo site_url().'static/page_front/whitepaper/whitepaper_en.pdf';?>" download><i class="fa fa-download"></i> WhitePaper <img width="23px" src="<?php echo site_url().'static/page_front/images/language/en.png';?>" alt="English" /></a>
                         <!-- Form End -->
                     </div>
                 </div>
