@@ -37,8 +37,9 @@
         <div class="container-front h-100 h-mobile">
             <div class="row h-100 align-items-center">
                 <div class="col-4 col-md">
-                    <div class="wellcome-heading d-none">
+                    <div class="wellcome-heading">
                         <h2>EWG</h2>
+                        <p>hollaaa</p>
                     </div>
                     <div class="get-start-area">
                         <!-- Form Start -->
