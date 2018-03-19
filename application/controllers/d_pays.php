@@ -16,33 +16,32 @@ class D_pays extends CI_Controller{
                         "select" =>"customer.username,
                                     customer.first_name,
                                     customer.last_name,
-                                    pay.descount as fee,
-                                    pay.amount_total,
-                                    pay.status_value,
-                                    customer.customer_id,
-                                    customer.first_name,
-                                    customer.username,
-                                    customer.btc_address,
-                                    customer.last_name,
-                                    customer.email,
-                                    customer.dni",
-                        "join" => array('customer, pay.customer_id = customer.customer_id'),
-                        "order" => "pay.pay_id DESC"
+                                    activation_message.activation_message_id,
+                                    activation_message.amount_ewg,
+                                    activation_message.amount_eth,
+                                    activation_message.img,
+                                    activation_message.date,
+                                    activation_message.active,
+                                    bonus.name",
+                        "join" => array('customer, activation_message.customer_id = customer.customer_id',
+                                        'bonus, activation_message.bonus_id = bonus.bonus_id'),
+                        "where" => "activation_message.status_value = 1",                
+                        "order" => "activation_message.activation_message_id DESC"
                );
            //GET DATA FROM CUSTOMER
            $obj_pay= $this->obj_activation_message->search($params);
            
            /// PAGINADO
-            $modulos ='cobros'; 
-            $seccion = 'Lista';        
-            $link_modulo =  site_url().'dashboard/cobros'; 
+            $modulos ='Payments'; 
+            $seccion = 'List';        
+            $link_modulo =  site_url().'dashboard/pagos'; 
             
             /// VISTA
             $this->tmp_mastercms->set('link_modulo',$link_modulo);
             $this->tmp_mastercms->set('modulos',$modulos);
             $this->tmp_mastercms->set('seccion',$seccion);
             $this->tmp_mastercms->set("obj_pay",$obj_pay);
-            $this->tmp_mastercms->render("dashboard/cobros/cobros_list");
+            $this->tmp_mastercms->render("dashboard/pagos/payments_list");
     }
     
     public function details($pay_id){  
