@@ -1424,7 +1424,7 @@ p {
 .wellcome-heading > h2{
     font-size: 26px;
     text-align: center;
-    text-shadow: 2px 0 0 #284885, -2px 0 0 #284885, 0 2px 0 #284885, 0 -2px 0 #284885, 1px 1px #284885, -1px -1px 0 #284885, 1px -1px 0 #284885, -1px 1px 0 #284885;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 .button-specification {
     padding: 12px;
