@@ -1968,8 +1968,15 @@
             margin-left: -13px;
         }
         .section_padding_100 {
-            margin-top: 490px;
+            margin-top: 100px;
         }
+        #about{
+            margin-top: 680px;
+        }
+        #contact{
+            margin-top:-100px !important;
+        }
+        
         .container-front {
             padding: 0%;
         }
@@ -1978,7 +1985,7 @@
         }
 
         .get-start-area{
-            margin-left: 0px;
+            margin-left: 10px !important;
         }
         .wellcome-heading-specfication {
             margin-bottom: 24px;
@@ -1999,10 +2006,6 @@
         }
         .button-specification .name_spe {
             font-size: 12px !important;
-        }
-        
-        .section_padding_100 {
-            margin-top: 650px;
         }
         .get-start-area{
             margin-left: -17%;
@@ -2049,7 +2052,7 @@
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
             width: 350% !important;
             padding-bottom: 15px;
-            padding-left: 25px;
+            padding-left: 60px;
         }
 
         .header_area {
@@ -2372,14 +2375,17 @@
             margin-left: -13px;
         }
         .section_padding_100 {
-            margin-top: 490px;
+            margin-top: 100px;
         }
-        .container-front {
-            padding: 0%;
+        #about{
+            margin-top: 600px !important;
+        }
+        #contact{
+            margin-top: -100px !important;
         }
         
-        .section_padding_100 {
-            margin-top: 650px;
+        .container-front {
+            padding: 0%;
         }
         .get-start-area{
             margin-left: -17%;
@@ -2808,7 +2814,13 @@
         }
         
         .section_padding_100 {
+            margin-top: 100px;
+        }
+        #about{
             margin-top: 650px;
+        }
+        #contact{
+            margin-top:-100px !important;
         }
         .get-start-area{
             margin-left: -17%;
@@ -2829,6 +2841,8 @@
             width: 93%;
             margin-top: 5px;
         }
+        
+        
         
         
         .wellcome-heading, .single-cool-fact {
@@ -3187,9 +3201,11 @@
         .container-front {
             padding: 0%;
         }
-
-        .section_padding_100 {
-            margin-top: 600px;
+        #about{
+            margin-top: 600px !important;
+        }
+        #contact{
+            margin-top: -100px !important;
         }
         .get-start-area{
             margin-left: -47%;
