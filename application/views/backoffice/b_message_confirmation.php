@@ -46,6 +46,8 @@
                                         <input class="form-control" name="first_name" id="first_name" placeholder="De" value="<?php echo $obj_customer->first_name." ".$obj_customer->last_name;?>" disabled="">
                                         <input type="hidden" name="customer_id" id="customer_id" value="<?php echo $obj_customer->customer_id;?>">
                                         <input type="hidden" name="bonus_id" id="bonus_id" value="<?php echo $obj_bonus->bonus_id;?>">
+                                        <input type="hidden" name="ewg" id="ewg" value="<?php echo $obj_order->amount_ewg;?>">
+                                        <input type="hidden" name="eth" id="eth" value="<?php echo $obj_order->amount_ether;?>">
                                     </div>
                                  <label>For:</label>
                                     <div class="form-group">

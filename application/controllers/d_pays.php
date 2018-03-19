@@ -5,18 +5,17 @@ class D_pays extends CI_Controller{
     public function __construct(){
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
-        $this->load->model("commissions_model","obj_commission");
-        $this->load->model("pay_commission_model","obj_pay_commission");
-        $this->load->model("pay_model","obj_pay");
+        $this->load->model("activation_message_model","obj_activation_message");
     }   
                 
     public function index(){  
         
            $this->get_session();
+           
            $params = array(
-                        "select" =>"pay.pay_id,
-                                    pay.date,
-                                    pay.amount,
+                        "select" =>"customer.username,
+                                    customer.first_name,
+                                    customer.last_name,
                                     pay.descount as fee,
                                     pay.amount_total,
                                     pay.status_value,
@@ -31,7 +30,7 @@ class D_pays extends CI_Controller{
                         "order" => "pay.pay_id DESC"
                );
            //GET DATA FROM CUSTOMER
-           $obj_pay= $this->obj_pay->search($params);
+           $obj_pay= $this->obj_activation_message->search($params);
            
            /// PAGINADO
             $modulos ='cobros'; 

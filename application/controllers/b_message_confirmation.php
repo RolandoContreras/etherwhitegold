@@ -112,13 +112,19 @@ class B_message_confirmation extends CI_Controller {
 
                     /// GET DATA METHOD POST
                         $bonus_id = $_POST['bonus_id'];
+                        $eth = $_POST['eth'];
+                        $ewg = $_POST['ewg'];
                         $message = $_POST['message'];
                         $img = $_FILES["image_file"]["name"];
+                        
+                        
                     // INSERT ON TABLE activation_message
                         $data = array(
                                 'customer_id' => $customer_id,
                                 'date' => date("Y-m-d H:i:s"),
                                 'message' => $message,
+                                'amount_ewg' => $ewg,
+                                'amount_eth' => $eth,
                                 'status_value' => 1,    
                                 'active' => 1,    
                                 'img' => $img,
