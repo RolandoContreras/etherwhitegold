@@ -109,6 +109,7 @@ $route['dashboard/clientes/detalle/([0-9]+)'] = "d_customer/details/$1";
 
 $route['dashboard/pagos'] = "d_pays";
 
+
 $route['dashboard/comentarios'] = "d_comments";
 $route['dashboard/comentarios/cambiar_status'] = "d_comments/change_status";
 $route['dashboard/comentarios/cambiar_status_no'] = "d_comments/change_status_no";
@@ -125,6 +126,9 @@ $route['dashboard/activaciones/active_financy'] = "d_activate/active_financy";
 $route['dashboard/activaciones/active'] = "d_activate/active";
 
 $route['dashboard/order'] = "d_orders";
+$route['dashboard/order/cambiar_cancel'] = "d_orders/cambiar_cancel";
+$route['dashboard/order/cambiar_processed'] = "d_orders/cambiar_processed";
+$route['dashboard/order/cambiar_awaiting'] = "d_orders/cambiar_awaiting";
 
 $route['dashboard/cobros'] = "d_pays";
 $route['dashboard/cobros_details/([0-9]+)'] = "d_pays/details/$1";
