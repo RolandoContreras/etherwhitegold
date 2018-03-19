@@ -47,9 +47,12 @@
                                 <td class="post_title" align="center"><?php echo $value->percent."%";?></td>
                                 <td align="center">
                                     <?php if ($value->active == 1) {
-                                        $valor = "Awaiting";
+                                        $valor = "Awaiting confirmation";
                                         $stilo = "label label-warning";
-                                    }else{
+                                    }elseif($value->active == 2){
+                                        $valor = "Cancel";
+                                        $stilo = "label label-important";
+                                    }elseif($value->active == 3){
                                         $valor = "Processed";
                                         $stilo = "label label-success";
                                     } ?>
@@ -65,18 +68,20 @@
                                     } ?>
                                     <span class="<?php echo $stilo ?>"><?php echo $valor; ?></span>
                                 </td>
-                                <td>
+                                <td align="center">
                                     <div class="operation">
                                             <div class="btn-group">
-                                                <button class="btn btn-small"><i class="fa fa-eye"></i> More Detail</button>
-                                                <?php
+                                                <?php 
                                                 if($value->active == 1){ ?>
-                                                    <button class="btn btn-small"><i class="fa fa-check-circle"></i> Mark Processed</button>
-                                                <?php }else{?>
-                                                    <button class="btn btn-small"><i class="fa fa-pause"></i> Mark Awaiting</button>
+                                                    <button class="btn btn-small" onclick="mark_cancel('<?php echo $value->order_id;?>');"><i class="fa fa-ban"></i> Mark as Cancel</button>
+                                                    <button class="btn btn-small" onclick="mark_processed('<?php echo $value->order_id;?>');"><i class="fa fa-check-circle"></i> Mark as Processed</button>
+                                                <?php }elseif($value->active == 2){ ?>
+                                                    <button class="btn btn-small" onclick="mark_awating('<?php echo $value->order_id;?>');"><i class="fa fa-ban"></i> Mark as Awating</button>
+                                                    <button class="btn btn-small" onclick="mark_processed('<?php echo $value->order_id;?>');"><i class="fa fa-check-circle"></i> Mark as Processed</button>
+                                                <?php }else{ ?>
+                                                     <button class="btn btn-small" onclick="mark_awating('<?php echo $value->order_id;?>');"><i class="fa fa-ban"></i> Mark as Awating</button>
+                                                    <button class="btn btn-small" onclick="mark_cancel('<?php echo $value->order_id;?>');"><i class="fa fa-check-circle"></i> Mark as cancel</button>
                                                 <?php } ?>
-                                                
-                                                
                                           </div>
                                     </div>
                                 </td>
@@ -97,4 +102,4 @@
     } );
 } );
 </script>
-<script src="static/cms/js/customer.js"></script>
+<script src="static/cms/js/order.js"></script>

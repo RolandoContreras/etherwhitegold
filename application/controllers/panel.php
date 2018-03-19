@@ -16,6 +16,7 @@ class Panel extends CI_Controller{
         $params = array("select" =>"count(comment_id) as total_comments,
                                     (select count(*) from customer where status_value = 1) as total_customer,
                                     (select count(*) from comments where active = 1 and status_value = 1) as pending_comments,
+                                    (select count(*) from activation_message where active = 1 and status_value = 1) as pending_pay,
                                     (select count(*) from users where status_value = 1) as total_users",
                         "where" => "status_value = 1");
         $obj_total = $this->obj_comments->get_search_row($params);

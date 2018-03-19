@@ -86,15 +86,6 @@ $route['backoffice/compose_message'] = "b_messages/compose_message";
 $route['backoffice/unilevel'] = "b_unilevel";
 $route['backoffice/unilevel/([0-9a-z_-]+)'] = "b_unilevel/index/$1";
 
-$route['backoffice/comisiones'] = "b_comissions";
-//$route['backoffice/comisiones/consultar'] = "b_comissions/consultar";
-$route['backoffice/comisiones/pay_dialy'] = "b_comissions/index/$1";
-$route['backoffice/comisiones/binary'] = "b_comissions/index/$1";
-$route['backoffice/comisiones/referred'] = "b_comissions/index/$1";
-
-$route['backoffice/billetera'] = "b_wallet";
-$route['backoffice/cobros'] = "b_pay";
-$route['backoffice/pagos/validar'] = "b_pay/validate";
 
 $route['backoffice/message_confirmation'] = "b_message_confirmation";
 $route['backoffice/message_confirmation/upload'] = "b_message_confirmation/upload";
@@ -103,8 +94,6 @@ $route['logout'] = "b_home/logout";
 $route['backoffice/misdatos'] = "b_data";
 
 $route['register/username'] = "register/username";
-//$route['register/validate_username'] = "register/username";
-
 
 $route['dashboard'] = "dashboard";
 $route['dashboard/panel'] = "panel";
@@ -118,8 +107,8 @@ $route['dashboard/clientes/load/([0-9]+)'] = "d_customer/load/$1";
 $route['dashboard/clientes/validate'] = "d_customer/validate";
 $route['dashboard/clientes/detalle/([0-9]+)'] = "d_customer/details/$1";
 
-$route['dashboard/pagos_diarios'] = "d_pay_dialy";
-$route['dashboard/pagos_diarios/hacer_pago'] = "d_pay_dialy/hacer_pago";
+$route['dashboard/pagos'] = "d_pays";
+
 
 $route['dashboard/comentarios'] = "d_comments";
 $route['dashboard/comentarios/cambiar_status'] = "d_comments/change_status";
@@ -137,6 +126,9 @@ $route['dashboard/activaciones/active_financy'] = "d_activate/active_financy";
 $route['dashboard/activaciones/active'] = "d_activate/active";
 
 $route['dashboard/order'] = "d_orders";
+$route['dashboard/order/cambiar_cancel'] = "d_orders/cambiar_cancel";
+$route['dashboard/order/cambiar_processed'] = "d_orders/cambiar_processed";
+$route['dashboard/order/cambiar_awaiting'] = "d_orders/cambiar_awaiting";
 
 $route['dashboard/cobros'] = "d_pays";
 $route['dashboard/cobros_details/([0-9]+)'] = "d_pays/details/$1";

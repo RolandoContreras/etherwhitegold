@@ -95,6 +95,7 @@
                                             <li><a href="<?php echo site_url()."dashboard/panel";?>"><i class="icon-large icon-th"></i>Panel</a></li>
                                             <li><a href="<?php echo site_url()."dashboard/clientes";?>"><i class="icon-large icon-th"></i>Customer</a></li>
                                             <li><a href="<?php echo site_url()."dashboard/comentarios";?>"><i class="icon-large icon-th"></i>Comments</a></li>
+                                            <li><a href="<?php echo site_url()."dashboard/pagos";?>"><i class="icon-large icon-th"></i>Payments</a></li>
                                             <li><a href="<?php echo site_url()."dashboard/usuarios";?>"><i class="icon-large icon-th"></i>Users</a></li>
                                         </ul>
                                         </div>

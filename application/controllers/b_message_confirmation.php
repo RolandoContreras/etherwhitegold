@@ -74,7 +74,7 @@ class B_message_confirmation extends CI_Controller {
         //GET DATE TODAY    
         $params_bonus = array(
                         "select" =>"sum(amount_ewg) as total",
-                        "where" => "customer_id = $customer_id and active = 1");
+                        "where" => "customer_id = $customer_id and active = 3 and status_value = 1");
         $obj_total_ewg = $this->obj_orders->get_search_row($params_bonus); 
         return $obj_total_ewg = $obj_total_ewg->total;
     }
@@ -112,13 +112,19 @@ class B_message_confirmation extends CI_Controller {
 
                     /// GET DATA METHOD POST
                         $bonus_id = $_POST['bonus_id'];
+                        $eth = $_POST['eth'];
+                        $ewg = $_POST['ewg'];
                         $message = $_POST['message'];
                         $img = $_FILES["image_file"]["name"];
+                        
+                        
                     // INSERT ON TABLE activation_message
                         $data = array(
                                 'customer_id' => $customer_id,
                                 'date' => date("Y-m-d H:i:s"),
                                 'message' => $message,
+                                'amount_ewg' => $ewg,
+                                'amount_eth' => $eth,
                                 'status_value' => 1,    
                                 'active' => 1,    
                                 'img' => $img,
