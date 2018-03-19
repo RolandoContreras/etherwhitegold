@@ -5,6 +5,7 @@ class Home extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model("bonus_model","obj_bonus");
+        $this->load->model("orders_model","obj_orders");
     }
 	/**
 	 * Index Page for this controller.
@@ -32,7 +33,11 @@ class Home extends CI_Controller {
             $data['round'] = $obj_bonus->name;
             $data['percent'] = $obj_bonus->percent;
             
-            //SEND VIEW
+            //TOTAL PAY
+            $obj_total_eth = formate_number($this->total_ethereum_to_sell(),2);
+            $data['obj_total_eth'] = $obj_total_eth;
+            
+            //SEND DATA VIEW
             $this->load->view('home',$data);
 	}
         
@@ -47,4 +52,13 @@ class Home extends CI_Controller {
         $obj_bonus = $this->obj_bonus->get_search_row($params_bonus); 
         return $obj_bonus;
         }
+        
+        public function total_ethereum_to_sell(){
+        //GET DATE TODAY    
+        $params_bonus = array(
+                        "select" =>"sum(amount_ether) as total",
+                        "where" => "active = 3 and status_value = 1");
+        $obj_total_ewg = $this->obj_orders->get_search_row($params_bonus); 
+        return $obj_total_ewg = $obj_total_ewg->total;
+    }
 }

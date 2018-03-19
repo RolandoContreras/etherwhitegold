@@ -40,7 +40,7 @@
                     <div class="wellcome-heading">
                         <h2><?php echo $round." : ".$percent."% discount";?></h2>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="13000000" style="width: 15%">0 ETH</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="13000000" style="width: 15%"><?php echo $obj_total_eth;?> ETH</div>
                         </div>
                     </div>
                     <div class="get-start-area">
