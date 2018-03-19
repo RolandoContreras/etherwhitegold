@@ -25,7 +25,7 @@
                                         <tr>
                                             <td><a href="<?php echo site_url().'dashboard/clientes'?>"><b><?php echo $obj_total->total_customer;?></b><i class="fa fa-users"></i> Customer
                                                 </a></td>
-                                                <td><a href="<?php echo site_url().'dashboard/clientes'?>"><b class="cmd">0</b><i class="fa fa-bitcoin"></i> buyer</a></td>
+                                                <td><a href="<?php echo site_url().'dashboard/clientes'?>"><b class="cmd"><?php echo $obj_total->pending_pay;?></b><i class="fa fa-bitcoin"></i> Buyer</a></td>
                                         </tr>
                                         <tr>
                                             <td><a href="<?php echo site_url().'dashboard/comentarios';?>"><b><?php echo $obj_total->total_comments;?></b><i class="fa fa-comments"></i> Comments</a></td>
