@@ -38,7 +38,10 @@
             <div class="row h-100 align-items-center">
                 <div class="col-4 col-md">
                     <div class="wellcome-heading">
-                        <h2><?php echo $round." : ".$percent."% Discount";?></h2>
+                        
+                        
+                        <h2>Waiting for Promotion</h2>
+                        <!--<h2><?php echo $round." : ".$percent."% Discount";?></h2>-->
                         <div class="progress">
                             <!--<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="13000000" style="width: 20%"><?php echo $obj_total_eth;?> ETH</div>-->
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="13000000" style="width: 20%">0 ETH</div>
