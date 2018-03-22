@@ -40,7 +40,8 @@
                     <div class="wellcome-heading">
                         <h2><?php echo $round." : ".$percent."% Discount";?></h2>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="13000000" style="width: 20%"><?php echo $obj_total_eth;?> ETH</div>
+                            <!--<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="13000000" style="width: 20%"><?php echo $obj_total_eth;?> ETH</div>-->
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="13000000" style="width: 20%">0 ETH</div>
                         </div>
                     </div>
                     <div class="get-start-area">
@@ -59,7 +60,7 @@
                         var myCountdown1 = new Countdown({
                             year: 2018, 	
                             month:5, 
-                            day:17,
+                            day:21,
                             width:300, 
                             height:60,  
                             rangeHi:"day",
