@@ -1246,6 +1246,11 @@ p {
     margin-bottom: 50px;
 }
 
+#sponsor {
+    font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px 25px 25px 0;
+}
 #name {
     font-size: 18px;
     padding: 15px 15px;

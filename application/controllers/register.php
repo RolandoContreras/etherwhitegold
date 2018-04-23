@@ -22,9 +22,21 @@ class Register extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{
+	{   
+            $url = explode("/", uri_string());
+            if (isset($url[2])) {
+                $username = $url[2];
+                //Select params
+                $params = array(
+                    "select" => "customer_id,first_name, username",
+                    "where" => "username = '$username'");
+                $obj_customer['obj_customer'] = $this->obj_customer->get_search_row($params);
+                
+            }else{
+                $obj_customer = "";
+            }
             /// VIEW
-            $this->load->view("register");
+            $this->load->view("register", $obj_customer);
 	}
         
         public function username()
@@ -74,6 +86,7 @@ class Register extends CI_Controller {
                     $data['message'] = "false";
                 }else{
                     //GET DATA $_POST
+                    $sponsor = $this->input->post('customer_id');
                     $username = $this->input->post('username');  
                     $password = $this->input->post('password');  
                     $name = $this->input->post('name');  
@@ -89,6 +102,7 @@ class Register extends CI_Controller {
                     //INSERT INTO TABLE CUSTOMER
                     $data = array(
                         'username' => $username,
+                        'parents_id' => $sponsor,
                         'password' => $password,
                         'first_name' => $name,
                         'last_name' => $last_name,

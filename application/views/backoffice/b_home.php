@@ -98,6 +98,30 @@
                                     <!-- panel body --> 
                                     <div class="panel-body"> 
                                             <p>
+                                                <img src="<?php echo site_url().'static/backoffice/images/share.jpg';?>" alt="share"/>
+                                            </p>
+                                    </div> 
+                            </div> 
+                    </div>
+                    <div class="col-md-9"> 
+                            <div class="panel panel-default">
+                                    <div class="panel-heading clearfix"> 
+                                        <div class="panel-title"><b>SPONSORSHIP LINK</b></div> 
+                                    </div> 
+                                    <!-- panel body --> 
+                                    <div class="panel-body"> 
+                                        <p>Dear user you have a link to sponsor new associates in Etherwhitegold under your organization. <br>•	Sponsorship link: <a href="<?php echo site_url().'register/afiliate/'.str_to_minuscula($obj_customer->username);?>" class="alert-link" target="_blank"><?php echo site_url().'register/afiliate/'.str_to_minuscula($obj_customer->username);?></a><br>By sharing this link you can sponsor more people.<br></p>
+                                        <br/>
+                                        <a href="<?php echo site_url().'register/afiliate/'.str_to_minuscula($obj_customer->username);?>" target="_blank"><button class="btn btn-success btn-block" type="button">SHARE LINK</button></a>
+                                    </div> 
+                            </div> 
+                    </div>
+                
+                    <div class="col-md-3"> 
+                        <div class="panel panel-default">
+                                    <!-- panel body --> 
+                                    <div class="panel-body"> 
+                                            <p>
                                                 <img src="<?php echo site_url()."static/page_front/images/etherwhitegold.jpg";?>" alt="etherwhitegold"/>
                                             </p>
                                     </div> 

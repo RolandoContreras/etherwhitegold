@@ -64,6 +64,27 @@
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
+                                    <?php if(isset($obj_customer)){ ?>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input class="form-control" id="sponsor" name="sponsor" type="text" readonly="readonly" value="<?php  
+                                                        if(isset($obj_customer->username)){
+                                                            echo $obj_customer->username;
+                                                        }?>" placeholder="<?php 
+                                                        if(isset($obj_customer->username)){
+                                                            echo $obj_customer->username;
+                                                        }?>"/>
+                                                        <input type="hidden"  id="customer_id" name="customer_id" name="customer_id" value="<?php  
+                                                        if(isset($obj_customer->customer_id)){
+                                                            echo $obj_customer->customer_id;
+                                                        }
+                                                        ?>" placeholder="<?php 
+                                                        if(isset($obj_customer->customer_id)){
+                                                            echo $obj_customer->customer_id;
+                                                        }?>"/>
+                                                </div>
+                                            </div>
+                                    <?php } ?>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <input onblur="validate_username(this.value);" type="text" class="form-control" name="username" id="username" placeholder="Username" required>

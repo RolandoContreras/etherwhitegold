@@ -94,6 +94,7 @@ $route['logout'] = "b_home/logout";
 $route['backoffice/misdatos'] = "b_data";
 
 $route['register/username'] = "register/username";
+$route['register/afiliate/([0-9a-z_-]+)'] = "register/index/$1";
 
 $route['dashboard'] = "dashboard";
 $route['dashboard/panel'] = "panel";
