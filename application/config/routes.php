@@ -61,31 +61,13 @@ $route['term_condition'] = "term";
 $route['backoffice'] = "b_home";
 $route['backoffice/productos'] = "b_product";
 $route['backoffice/profile'] = "b_data";
-$route['backoffice/upgrade'] = "b_upgrade";
-$route['backoffice/binario'] = "b_binario";
-$route['backoffice/binario/([0-9a-z_-]+)'] = "b_binario/index/$1";
-
-$route['backoffice/academy'] = "b_academy";
-$route['backoffice/academy/courses'] = "b_academy/courses";
+$route['backoffice/guests'] = "b_guests";
 
 $route['backoffice/order'] = "b_order";
 
 $route['backoffice/messages'] = "b_messages";
 $route['backoffice/messages/bonus'] = "b_messages/message_type";
 $route['backoffice/messages/bonus/([0-9a-z_-]+)'] = "b_messages/message_type/$1";
-
-$route['backoffice/messages/support'] = "b_messages/message_type";
-$route['backoffice/messages/support/([0-9a-z_-]+)'] = "b_messages/message_type/$1";
-
-$route['backoffice/messages/social'] = "b_messages/message_type";
-$route['backoffice/messages/social/([0-9a-z_-]+)'] = "b_messages/message_type/$1";
-
-$route['backoffice/compose_message'] = "b_messages/compose_message"; 
-
-
-$route['backoffice/unilevel'] = "b_unilevel";
-$route['backoffice/unilevel/([0-9a-z_-]+)'] = "b_unilevel/index/$1";
-
 
 $route['backoffice/message_confirmation'] = "b_message_confirmation";
 $route['backoffice/message_confirmation/upload'] = "b_message_confirmation/upload";
