@@ -22,11 +22,11 @@
                     </div>
                 </div>
                 <!-- Signup btn -->
-                <div class="col-12 col-lg-2">
+<!--                <div class="col-12 col-lg-2">
                     <div class="sing-up-button d-none d-lg-block">
                         <a href="<?php echo site_url().'register';?>">Participe ICO</a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </header>
@@ -62,8 +62,8 @@
                     <script type="application/javascript">
                         var myCountdown1 = new Countdown({
                             year: 2018, 	
-                            month:5, 
-                            day:21,
+                            month:6, 
+                            day:14,
                             width:300, 
                             height:60,  
                             rangeHi:"day",
@@ -107,8 +107,9 @@
                         <div class="name_spe">18</div>
                         Amount:
                         <div class="name_spe">13,000,000</div>
+                        
                         Contract:
-                        <div class="name_spe">0x4380fe4B02844a4e4afC3e8E51491587c214df55</div>
+                        <div class="name_spe">0xFc3ca1A14725A86C4431D143806c8b9781d36CD4</div>
                     </div>
                     </div>
                 </div>
