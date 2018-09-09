@@ -25,7 +25,7 @@
 //$config['base_url'] = 'http://theempirefxc.com/';
 
 //$config['base_url'] = 'https://etherwhitegold.io/';
-$config['base_url'] = 'http://localhost/etherwhitegold/';
+$config['base_url'] = 'http://etherwhitegold.io/';
 
 
 /*

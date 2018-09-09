@@ -62,7 +62,7 @@
                     <script type="application/javascript">
                         var myCountdown1 = new Countdown({
                             year: 2018, 	
-                            month:6, 
+                            month:7, 
                             day:14,
                             width:300, 
                             height:60,  
@@ -404,7 +404,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+<!--                <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/gorka_carballo.jpg';?>" alt="Gorka Carballo">
@@ -419,8 +419,8 @@
                             <p>Advisor</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                </div>-->
+<!--                <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="<?php echo site_url().'static/page_front/images/team/julian_zamudio.jpg';?>" alt="Julian Zamudio">
@@ -435,7 +435,7 @@
                             <p>Advisor</p>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
